@@ -29,7 +29,7 @@ Il y a 3 choses à faire :
 - Faire votre annexe
 - Mettre des images dans vos annexes.
 
-### Je corrige les erreurs dans son texte
+### Je corrige les erreurs dans mon texte
 
 Dans le fichier Rapport MIG LH2.tex
 
