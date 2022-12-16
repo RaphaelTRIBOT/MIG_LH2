@@ -38,7 +38,7 @@ J'ai fait référence à des figures ( voir figure 3 etc...) et cela n'est pas c
 
 ### Je fais mon annexe. 
 
-Dans le fichier Rapport MIG LH2.tex et dans le dossier Image
+Dans le fichier Rapport MIG LH2.tex et dans le dossier Annexe du dossier Image
 
 Vous écrivez à la fin du rapport dans la partie qui vous est allouée.
 Vous écrivez comme les autres écrivent.
