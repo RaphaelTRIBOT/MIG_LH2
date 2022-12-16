@@ -45,6 +45,8 @@ Vous écrivez comme les autres écrivent.
 
 ### J'insère des images dans le fichier
 
+Une fois que vous avez écrit votre texte. Il faut insérer des images. Pour cela il faut taper le code suivant:
+
 ```latex 
 \begin{figure}[h]
 \centering
@@ -52,3 +54,6 @@ Vous écrivez comme les autres écrivent.
 \caption{Titre de votre figure.}
 \end{figure}
 ```
+
+A cet endroit il y aura une image. Il faudra ensuite mettre l'image dans un dossier et appeler cette image dans votre code  (le fameux \includegraphics{ } ).
+Vous créez un dossier dans lequel vous mettez votre image et vous la mettez. Il faut recopier le chemin de l'image dans le include. Voila.
