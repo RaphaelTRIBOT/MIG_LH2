@@ -23,3 +23,10 @@ Il ne devrait pas avoir d'erreur pendant ces étapes, s'il y en a **NE TOUCHEZ A
 
 
 ## Comment rédiger
+
+Il y a 3 choses à faire :
+- Corriger les petites erreurs dans votre texte
+- Faire votre annexe
+- Mettre des images dans vos annexes.
+
+
