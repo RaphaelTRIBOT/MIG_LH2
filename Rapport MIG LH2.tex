@@ -249,7 +249,7 @@ Les schémas de chacun des scénarios seront présentés en annexe A. Elles perm
 
 
 \section{Le stockage souterrain d'hydrogène}
-Un des intérêts premiers de l'hydrogène est sa capacité, une fois produit, d'être stocké sans pertes énergétiques. \textit{A contrario}, des batteries stockant de l'électricité se déchargent au cours du temps. En tirant partie de cette propriété de l'hydrogène, nous caractérisons donc des reservoirs pour celui-ci. 
+Un des intérêts premiers de l'hydrogène est sa capacité, une fois produit, d'être stocké sans pertes énergétiques. \textit{A contrario}, des batteries stockant de l'électricité qui se déchargent au cours du temps. En tirant partie de cette propriété de l'hydrogène, nous caractérisons donc des reservoirs pour celui-ci. 
 
 Ceux-ci seront enterrés: la pression des roches entourant les stockages permet d'utiliser moins de matériaux de construction. De plus grandes quantités d'hydrogène peuvent ainsi être conservées.
 
@@ -281,7 +281,7 @@ Reste à dimensionner les puissances électriques nécessaires à ce type d'inst
 \subsubsection{Configurations de cavité minée}
 On s'intéresse aux cavités minées, dans un premier temps pour stocker du gaz, et ensuite du liquide. Les tableaux de données sont encore une fois disponibles en annexe B.
 
-Il faut équilibrer les forces de pression du gaz sur la cavité $F_{LRC}$ (Lined Rock Cavern, Cavité minée revêtue) et le poids $W$ de des roches surplombant celle-ci Comme on peut le voir sur la figure ~\ref{fig:chap2schemaContrainteMinee}. On a $$F_{LRC}=\pi r^2 \rho \ \ , \ \ W =\rho g \pi [r^2 d + (r d^2 tan(\alpha)) + \frac{1}{3} d^3 tan^2(\alpha)]$$
+Il faut équilibrer les forces de pression du gaz sur la cavité $F_{LRC}$ (Lined Rock Cavern, Cavité minée revêtue) et le poids $W$ de des roches surplombant celle-ci, comme on peut le voir sur la figure ~\ref{fig:chap2schemaContrainteMinee}. On a $$F_{LRC}=\pi r^2 \rho \ \ , \ \ W =\rho g \pi [r^2 d + (r d^2 tan(\alpha)) + \frac{1}{3} d^3 tan^2(\alpha)]$$
 
 \begin{figure}[h!]
 \centering
@@ -290,7 +290,7 @@ Il faut équilibrer les forces de pression du gaz sur la cavité $F_{LRC}$ (Line
 \label{fig:chap2schemaContrainteMinee}
 \end{figure}
 
-On note donc $FS= W/F_{LRC} $ le facteur de sécurité. La figure ~\ref{chap2graphFS} le montre à différentes pression en fonction de la profondeur: 
+On note donc $FS= W/F_{LRC} $ le facteur de sécurité. La figure ~\ref{fig:chap2graphFS} le montre à différentes pression en fonction de la profondeur: 
 
 \begin{figure}[!h]
 \centering
@@ -301,12 +301,16 @@ On note donc $FS= W/F_{LRC} $ le facteur de sécurité. La figure ~\ref{chap2gra
 
 Le facteur de sécurité étant jugé suffisant à partir de 1,5 on choisit une pression de 20 MPa pour une profondeur de 100m (on a fixé $\alpha = 40°$ et on a pris un rayon de 15m).\\
 
-On peut aussi dimensionner les stckages liquide. Le stockage liquide est plus simple à dimensionner étant donné la quasi-constance de la densité de l’hydrogène liquide aux conditions ambiantes de température et de pression, de plus le stockage liquide se faisant à faibles pressions (celle du boil off, que l’on néglige dans notre dimensionnement préliminaire) on peut stocker le LH2 en surface, dans des réservoirs enterrés à de très faibles profondeurs ou dans des cavités minées revêtues.
+\subsubsection{Configurations du stockage liquide}
+L’hydrogène ne peut exister sous forme liquide qu'à des températures extrêmement basses (de l’ordre de -253°C), cependant aucune forme de stockage n’est capable de maintenir l’hydrogène à cette température, celui-ci se réchauffe donc entraînant l’évaporation d’une partie du stock et l’augmentation de la pression dans le réservoir, c’est le phénomène de boil-off.
 
-Configuration 5 -  Les dimensions d’un réservoir enterré sont données en annexe C. Elles nous permettent d’en déduire le volume ainsi que la masse d’hydrogène stockée.
-On calcule donc le volume du réservoir cylindrique: $71,5m^3$ et avec la masse volumique de l’hydrogène liquide ($71,0 kg/m^3$) on en déduit que le réservoir stocke 5 tonnes d’hydrogène.
+Si l’on néglige ce boil-off, le stockage de l’hydrogène sous forme liquide est relativement simple à dimensionner, en effet, sa densité liquide est quasiment constante.
+De plus les conditions de pression étant plus favorables, on peut stocker le LH2 en surface, dans des réservoirs enterrés à de très faibles profondeurs ou dans des cavités minées revêtues.
 
-Il y a deux approches de dimensionnement, la première est de reprendre les scénarios gazeux précédent et de calculer la quantité d’hydrogène liquide que l’on peut stocker dans une cavité de même dimension; on obtient dans ce cas là, une masse de 5000 tonnes d’hydrogène stockable dans une cavité de $75 000 m^3$. La seconde approche consiste à dimensionner une nouvelle cavité plus petite et directement adaptée à l’usage considéré.
+Il y a deux approches de dimensionnement, la première est de reprendre les scénarios de stockage gazeux précédent et de calculer la quantité d’hydrogène liquide que l’on peut stocker dans une cavité de même dimension; on obtient dans ce cas là, une masse de 5000 tonnes d’hydrogène stockable dans une cavité de $75 000 m^3$. La seconde approche consiste à dimensionner une nouvelle cavité plus petite et directement adaptée à l’usage considéré.
+
+On peut également considérer le stockage dans un réservoir enterré dont les dimensions sont données en annexe C. On peut donc calculer le volume du réservoir cylindrique: $71,5m^3$ et, connaissant la masse volumique de l’hydrogène liquide ($71,0 kg/m^3$), on en déduit que le réservoir stocke 5 tonnes d’hydrogène. De tels réservoirs seraient adaptés au scénario 5.
+
 
 
 \subsection{Rhéologie des roches}
