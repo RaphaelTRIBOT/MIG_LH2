@@ -20,6 +20,11 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage{babel}
 \usepackage[section]{placeins}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    linktoc=all,     %set to all if you want both sections and subsections linked
+}
+
 
 \titleformat{\section}
 {\color{blue}\normalfont\Large\bfseries}
@@ -77,10 +82,23 @@ Rapport réalisé par les élèves de première année du cycle ingénieur civil
 \newpage
 
 \section*{Résumé}
+Face à une crise climatique sans précédent, il est urgent de chercher certaines solutions qui peuvent nous permettre de réduire nos émissions de CO2. Les méthodes de production, de transport et d’utilisation de l’énergie se doivent d’être le plus décarbonées possible, notamment grâce aux énergies renouvelables. Or, la demande en énergie est fluctuante et la production de ces énergies renouvelables est intermittente. Il est donc nécessaire de trouver un vecteur efficace qui nous permettrait de stocker massivement l’énergie, mais aussi dont l’utilisation dans les domaines de l’industrie ou des transports serait décarbonée. 
 
+C’est donc dans ce contexte que l’hydrogène, ou plus précisément la molécule de dihydrogène, nous apporte certains éléments de réponse. Par sa production grâce à l’électrolyse de l’eau ou au vaporeformage, son stockage dans des cavités salines ou minées et son utilisation dans les secteurs de l’industrie et des transports, il constitue un moyen prometteur de répondre aux problèmes évoqués. L’hydrogène peut également être liquéfié pour augmenter sa densité énergétique et favoriser son stockage.
+
+Notre étude vise à donner une vision générale de la chaîne technique de l’hydrogène, de sa production à sa distribution, en passant par son stockage, son transport et sa liquéfaction et de la faisabilité en se tournant vers les aspects économique et social.
+
+\newpage
 \section*{Abstract}
+Facing up with an unprecedented climate crisis, solutions are urgent to be looked for so that we can cut down our CO2 emissions. We have to search new ways to product, transport and use energy, which have to be as carbon-free as possible. Wheather it be in electricity production, transportations or industry, we have to found out how to keep our current economic productivity and efficiency, while favouring the energy transition. Therefore, it would be useful to find an energy carrier which would allow us to stock enormous amouts of energy, but also to find more eco-friendly energy sources for our transportations and industries.
 
+So, in this context, hydrogen- or, to be more accurate, the dihydrogen molecule- is a part of the answer. This energy carrier could be useful in several situations, such as in electric energy storage or as a fuel for our vehicles, supposing that it would be produced as a carbon-free way.
 
+Nowadays, the most eco-friendly and the most promising way to manufacture gaseous dihydrogen is the water electrolysis, even though methods of steam methan reforming will also be pored over. Then, hydrogen can be transported and eventually used as an energy source. It can also be liquified in order to improve its energy density.
+
+Our goal here is to study each step of the hydrogen supply-chain, from its manufacturing to its distribution, under a technical perspective, above all with descriptions of manufacturing proceedings, the optionnal liquefaction and its assets, storage and transportation ; but also  under an economic and societal perspective, focusing on its sociological acceptabillity and its economic sustainability.
+
+\newpage
 \section*{Remerciements}
 Nous souhaiterions remercier l’ensemble des personnes qui nous ont accompagnés durant cette étude, qui ont pris de leur temps pour nous présenter le domaine de l’hydrogène et pour nous encadrer sur plusieurs heures ou plusieurs jours.
 
@@ -98,7 +116,7 @@ Enfin, notre reconnaissance va vers toutes les personnes nous ayant accompagnés
 \newpage
 \tableofcontents
 
-
+\newpage
 
 
 
@@ -120,7 +138,7 @@ Enfin, notre reconnaissance va vers toutes les personnes nous ayant accompagnés
 
 \section*{Introduction} \addcontentsline{toc}{section}{Introduction}
 
-Le dihydrogène $H_2$, communément appelée hydrogène, est la molécule la plus répandue dans l'univers. Elle est le constituant pricipal du Soleil et des planètes géantes comme Jupiter ou Saturne. Sur Terre, l'hydrogène n'existe presque pas seul. La molécule d'hydrogène est combinée à d'autres éléments plus lourds. Par exemple, le méthane $CH_4$ est composé d'un atome de carbone $C$ et de 2 molécules de dihydrogène. La molécule de dihydrogène est une des molécule les plus simple dans l'univers. Un atome d'hydrogène n'est qu'un proton $H^+$ autour duquel gravite un unique électron. Deux atomes d'hydrogène en liaison covalente simple forment $H_2$.\\
+Le dihydrogène $H_2$, communément appelée hydrogène, est la molécule la plus répandue dans l'univers. Elle est le constituant pricipal du Soleil et des planètes géantes comme Jupiter ou Saturne. Sur Terre, l'hydrogène n'existe presque jamais seul. La molécule d'hydrogène est combinée à d'autres éléments plus lourds. Par exemple, le méthane $CH_4$ est composé d'un atome de carbone $C$ et de 2 molécules de dihydrogène. La molécule de dihydrogène est une des molécule les plus simple dans l'univers. Un atome d'hydrogène n'est qu'un proton $H^+$ autour duquel gravite un unique électron. Deux atomes d'hydrogène en liaison covalente simple forment $H_2$.\\
 
 Pour réduire nos émissions de gaz à effet de serre et ainsi respecter les accords de Paris, il devient nécessaire de se passer des ressources fossiles. Depuis quelques années, l'hydrogène est alors à la mode. Il est présenté comme une solution d'avenir pour supporter la transition énergétique. Nous éclairons avant toute chose un point crucial: l'hydrogène n'est pas une énergie primaire. En effet, comme mentionné plus haut, l'hydrogène n'est pas pésent à l'état naturel. Il faut donc réaliser des transformations chimiques et thermodynamiques pour le produire. En somme, il faut apporter de l'énergie de l'extérieur pour produire de l'hydrogène. Cette énergie doit être bas-carbone, c'est alors qu'on parle d'hydrogène bas-carbone, parfois appelé à tort - l'hydrogène est incolore - hydrogène vert.  \\
 
@@ -193,7 +211,7 @@ En France, France Hydrogène propose deux scénarios pour le développement d’
 \begin{figure}[h]
 \centering
 \includegraphics[width=.9\linewidth]{image/chap1/ambitions_scenarios.PNG}
-\caption{Détail des scénrios France Hydrogène \cite{hydrogen_2021}}
+\caption{Détail des scénarios France Hydrogène \cite{hydrogene_2021}}
 \end{figure}
 
 \subsection{Les chaines de procédés}
@@ -227,12 +245,12 @@ Alimentation d’un pôle industriel en Hydrogène (l’énergie utilisée par t
 \textbf{ Scénario 4 : Power to Industry }\\
 Alimentation de toutes les infrastructures du port de Marseille-Fos. C’est un projet qui aura lieu entre 2026 et 2031 et qui vise à décarboner l’activité industrielle du port de Marseille-Fos. L’Hydrogène serait produit par SMR. L’Hydrogène serait stocké en cavité minée, la période d’injection serait de 3 semaines pour 1 semaine de soutirage. La masse d’Hydrogène utile serait 1000 tonnes. \\
 
-\textbf{Scénario 5 : Power to Mobility}\\
+\textbf{Scénario 5 :  Power to Mobility }\\
+Stockage de l'hydrogène sous forme liquide dans des stations afin d’alimenter une flotte de 10 000 taxis à Paris. La demande en Hydrogène est de 27 T par jour. \\
+
+\textbf{Scénario 6 : Power to Mobility}\\
 Étude du stockage de l'hydrogène sous forme liquide dans un réservoir enterré de 73m3 .Ces réservoirs d’une capacité de 5T permettraient d’alimenter des stations pour les véhicules à Hydrogène. \\
 
-\textbf{Scénario 6 :  Power to Mobility }\\
-Stockage de l'hydrogène sous forme liquide dans des stations afin d’alimenter une flotte de 10 000 taxis à Paris. La demande en Hydrogène est de 27 T par jour. \\
- 
 \textbf{Scénario 7 : Power to Industry. }\\
 Stockage de l'hydrogène sous forme liquide en cavité minée. Cette configuration est analogue à celle du port de Marseille puisqu’elle vise à comparer l’efficacité du stockage sous forme liquide et gazeuse. Les durées de soutirage et la masse utile (1000 T) sont les mêmes que pour le scénario de Marseille-Fos.\\
 
@@ -249,7 +267,7 @@ Les schémas de chacun des scénarios seront présentés en annexe A. Elles perm
 
 
 \section{Le stockage souterrain d'hydrogène}
-Un des intérêts premiers de l'hydrogène est sa capacité, une fois produit, d'être stocké sans pertes énergétiques. \textit{A contrario}, des batteries stockant de l'électricité se déchargent au cours du temps. En tirant partie de cette propriété de l'hydrogène, nous caractérisons donc des reservoirs pour celui-ci. 
+Un des intérêts premiers de l'hydrogène est sa capacité, une fois produit, d'être stocké sans pertes énergétiques. \textit{A contrario}, des batteries stockant de l'électricité qui se déchargent au cours du temps. En tirant partie de cette propriété de l'hydrogène, nous caractérisons donc des réservoirs pour celui-ci. 
 
 Ceux-ci seront enterrés: la pression des roches entourant les stockages permet d'utiliser moins de matériaux de construction. De plus grandes quantités d'hydrogène peuvent ainsi être conservées.
 
@@ -281,7 +299,7 @@ Reste à dimensionner les puissances électriques nécessaires à ce type d'inst
 \subsubsection{Configurations de cavité minée}
 On s'intéresse aux cavités minées, dans un premier temps pour stocker du gaz, et ensuite du liquide. Les tableaux de données sont encore une fois disponibles en annexe B.
 
-Il faut équilibrer les forces de pression du gaz sur la cavité $F_{LRC}$ (Lined Rock Cavern, Cavité minée revêtue) et le poids $W$ de des roches surplombant celle-ci Comme on peut le voir sur la figure ~\ref{fig:chap2schemaContrainteMinee}. On a $$F_{LRC}=\pi r^2 \rho \ \ , \ \ W =\rho g \pi [r^2 d + (r d^2 tan(\alpha)) + \frac{1}{3} d^3 tan^2(\alpha)]$$
+Il faut équilibrer les forces de pression du gaz sur la cavité $F_{LRC}$ (Lined Rock Cavern, Cavité minée revêtue) et le poids $W$ de des roches surplombant celle-ci, comme on peut le voir sur la figure ~\ref{fig:chap2schemaContrainteMinee}. On a $$F_{LRC}=\pi r^2 \rho \ \ , \ \ W =\rho g \pi [r^2 d + (r d^2 tan(\alpha)) + \frac{1}{3} d^3 tan^2(\alpha)]$$
 
 \begin{figure}[h!]
 \centering
@@ -290,7 +308,7 @@ Il faut équilibrer les forces de pression du gaz sur la cavité $F_{LRC}$ (Line
 \label{fig:chap2schemaContrainteMinee}
 \end{figure}
 
-On note donc $FS= W/F_{LRC} $ le facteur de sécurité. La figure ~\ref{chap2graphFS} le montre à différentes pression en fonction de la profondeur: 
+On note donc $FS= W/F_{LRC} $ le facteur de sécurité. La figure ~\ref{fig:chap2graphFS} le montre à différentes pression en fonction de la profondeur: 
 
 \begin{figure}[!h]
 \centering
@@ -301,12 +319,16 @@ On note donc $FS= W/F_{LRC} $ le facteur de sécurité. La figure ~\ref{chap2gra
 
 Le facteur de sécurité étant jugé suffisant à partir de 1,5 on choisit une pression de 20 MPa pour une profondeur de 100m (on a fixé $\alpha = 40°$ et on a pris un rayon de 15m).\\
 
-On peut aussi dimensionner les stckages liquide. Le stockage liquide est plus simple à dimensionner étant donné la quasi-constance de la densité de l’hydrogène liquide aux conditions ambiantes de température et de pression, de plus le stockage liquide se faisant à faibles pressions (celle du boil off, que l’on néglige dans notre dimensionnement préliminaire) on peut stocker le LH2 en surface, dans des réservoirs enterrés à de très faibles profondeurs ou dans des cavités minées revêtues.
+\subsubsection{Configurations du stockage liquide}
+L’hydrogène ne peut exister sous forme liquide qu'à des températures extrêmement basses (de l’ordre de -253°C), cependant aucune forme de stockage n’est capable de maintenir l’hydrogène à cette température, celui-ci se réchauffe donc entraînant l’évaporation d’une partie du stock et l’augmentation de la pression dans le réservoir, c’est le phénomène de boil-off.
 
-Configuration 5 -  Les dimensions d’un réservoir enterré sont données en annexe C. Elles nous permettent d’en déduire le volume ainsi que la masse d’hydrogène stockée.
-On calcule donc le volume du réservoir cylindrique: $71,5m^3$ et avec la masse volumique de l’hydrogène liquide ($71,0 kg/m^3$) on en déduit que le réservoir stocke 5 tonnes d’hydrogène.
+Si l’on néglige ce boil-off, le stockage de l’hydrogène sous forme liquide est relativement simple à dimensionner, en effet, sa densité liquide est quasiment constante.
+De plus les conditions de pression étant plus favorables, on peut stocker le LH2 en surface, dans des réservoirs enterrés à de très faibles profondeurs ou dans des cavités minées revêtues.
 
-Il y a deux approches de dimensionnement, la première est de reprendre les scénarios gazeux précédent et de calculer la quantité d’hydrogène liquide que l’on peut stocker dans une cavité de même dimension; on obtient dans ce cas là, une masse de 5000 tonnes d’hydrogène stockable dans une cavité de $75 000 m^3$. La seconde approche consiste à dimensionner une nouvelle cavité plus petite et directement adaptée à l’usage considéré.
+Il y a deux approches de dimensionnement, la première est de reprendre les scénarios de stockage gazeux précédent et de calculer la quantité d’hydrogène liquide que l’on peut stocker dans une cavité de même dimension; on obtient dans ce cas là, une masse de 5000 tonnes d’hydrogène stockable dans une cavité de $75 000 m^3$. La seconde approche consiste à dimensionner une nouvelle cavité plus petite et directement adaptée à l’usage considéré.
+
+On peut également considérer le stockage dans un réservoir enterré dont les dimensions sont données en annexe C. On peut donc calculer le volume du réservoir cylindrique: $71,5m^3$ et, connaissant la masse volumique de l’hydrogène liquide ($71,0 kg/m^3$), on en déduit que le réservoir stocke 5 tonnes d’hydrogène. De tels réservoirs seraient adaptés au scénario 5.
+
 
 
 \subsection{Rhéologie des roches}
@@ -967,12 +989,14 @@ Tout l’intérêt de l’hydrogène liquide réside dans le transport de celui-
 Ainsi on pourrait envisager le transport de l’hydrogène liquide par camion pour les courtes à moyennes distances, et par bateau pour les longues distances. Concernant le transport d’hydrogène liquide par camion, il s’effectue dans des citernes pouvant transporter de grandes quantités d’hydrogène liquide [V]. C’est ainsi le moyen de transport pour lequel nous avons opté pour les configurations 4 et 5. Concernant premièrement la configuration 4, il s’agit d’un stockage en cavité minée revêtue d’une capacité de 230 tonnes d’hydrogène liquide se situant à 240 km du lieu d’utilisation. Il faudrait alors 50 camions par jour pour transporter l’hydrogène sous conditionnement liquide. Concernant la configuration 5, il s’agit aussi d’une cavité minée revêtue, mais d’une capacité plus faible (143 tonnes) et relativement proche du lieu d’utilisation (12 km). Ainsi, il faudrait en théorie 30 camions par jour, cependant étant donné la faible distance séparant les lieux de stockage et d’utilisation, on pourrait réduire le nombre de camions en leur faisant effectuer plusieurs fois le trajet.\\
 
 \begin{multicols}{2}
+
+Concernant le transport par bateau, un projet pilote est actuellement en cours (Figure 27). Il s’agit du « Suiso Frontier », destiné à relier l’Australie au Japon, et dont la capacité est de 1250 m3 (soit près de 90 tonnes d’hydrogène liquide \cite{The_Suiso_Frontier}. Ce moyen de transport n’est pas nécessairement intéressant pour nos scénarios, étant donné que tout est localisé en France. Cependant, comme pour le projet pilote, il devient très intéressant lorsque l’on veut transporter de l’hydrogène d’un continent à un autre. Ainsi, cela pourrait être particulièrement pertinent si l’on envisage que l’hydrogène tienne un rôle important dans la transition énergétique.
+
 \begin{center}
 \includegraphics[width=.9\linewidth]{image/chap3/Figure 3.ii-3.jpg}
 \captionof{figure}{Projet pilote Suiso Frontier}
 \end{center}
 
-Concernant le transport par bateau, un projet pilote est actuellement en cours (Figure 27). Il s’agit du « Suiso Frontier », destiné à relier l’Australie au Japon, et dont la capacité est de 1250 m3 (soit près de 90 tonnes d’hydrogène liquide \cite{The_Suiso_Frontier}. Ce moyen de transport n’est pas nécessairement intéressant pour nos scénarios, étant donné que tout est localisé en France. Cependant, comme pour le projet pilote, il devient très intéressant lorsque l’on veut transporter de l’hydrogène d’un continent à un autre. Ainsi, cela pourrait être particulièrement pertinent si l’on envisage que l’hydrogène tienne un rôle important dans la transition énergétique.
 \end{multicols}
 
 \subsection{Applications aux scénarii retenus}
@@ -1064,13 +1088,13 @@ Nous avons donc mené notre propre enquête dont le détail a été développé 
 
 
 \subsection{Les sites de stockage}
-Nous nous intéressons ici au choix des sites en France, à la fois pour les deux types de cavités retenus pour notre étude, pour les différentes phases de l’hydrogène et les deux scénarios qui nous intéressent.
+Nous nous intéressons ici au choix des sites de stockage en France, à la fois pour les cavités minées et salines, pour le stockage gazeux et liquide et pour les utilisations pour la mobilité et l'industrie. 
 \subsubsection{Critères de choix}
 Le choix des sites potentiels pour le stockage de l’hydrogène souterrain est dépendant de plusieurs critères : 
 \begin{itemize}
-\item critères géologiques : dans le cadre de la France métropolitaine, on dispose d’une géologie variée,comme on peut le voir sur la carte. La profondeur, l’épaisseur et la pureté de la roche souhaitée entrent en jeu.
-\item critères géographiques : la zone choisie nécessite une liaison au réseau électrique haute tension et un acheminement d’critèreshydrogène. Dans le cas des cavités salines, il est également nécessaire de prendre en compte les possibilités d’acheminement de l’eau lors du creusement des cavités.
-\item critères économiques : les perspectives économiques liées au marché et aux besoins hydrogène doivent être pris en compte. On s’intéresse notamment aux besoins et à la présence d’infrastructures de production d’énergies renouvelables à proximité, dans la perspective de produire de l’hydrogène dit “vert”. Il faut également prendre en compte les deux scénarios retenus.
+\item critères géologiques : dans le cadre de la France métropolitaine, on dispose d’une géologie variée, comme on peut le voir sur la carte géologique fournie en annexe M. La profondeur, l’épaisseur et la pureté de la roche souhaitée entrent en jeu.
+\item critères géographiques : la zone choisie nécessite une liaison au réseau électrique haute tension et un acheminement d’hydrogène. Dans le cas des cavités salines, il est également nécessaire de prendre en compte les possibilités d’acheminement de l’eau lors du creusement des cavités.
+\item critères économiques : les perspectives économiques liées au marché et aux besoins hydrogène doivent être pris en compte. On s’intéresse notamment aux besoins et à la présence d’infrastructures de production d’énergies renouvelables à proximité, dans la perspective de produire de l’hydrogène dit “vert”. Il faut également prendre en compte les scénarios retenus.
 \item critères environnementaux : les zones isolées et non protégées sont à privilégier. Dans le cas des cavités salines, on s’intéresse aussi aux possibilités d’exutoire de saumure ou de partenariat industriel pour une revalorisation.
 \end{itemize}
 
@@ -1078,20 +1102,21 @@ Le choix des sites potentiels pour le stockage de l’hydrogène souterrain est 
 
 \begin{multicols}{2}
 Le sel se forme par évaporation des sels contenus dans l’eau de mers existant il y a plusieurs millions d’années. Il peut être présent sous forme de diapirs ou de couches.
-La principale difficulté réside donc dans le fait que le sel n’est pas présent partout en France. Il n’est concentré que dans certaines régions, comme en témoigne la carte ci-dessous \cite{Hadj_Hassen_Jallais_2020}.
+La principale difficulté réside donc dans le fait que le sel n’est pas présent partout en France. Il n’est concentré que dans certaines régions, comme en témoigne la carte ci-contre (figure ~\ref{fig:carteSelFrance}) \cite{Hadj_Hassen_Jallais_2020}.
 
 Les principales zones de recherches sont donc le Bassin Aquitain, la vallée du Rhône, le bassin Rhénan et l’Alsace-Lorraine. 
-La deuxième difficulté est la profondeur de la couche de sel et l’épaisseur de celle-ci. Pour creuser une cavité saline qui respecte les données choisies, l’idéal serait de trouver du sel atteignant des profondeurs de l’ordre de 1000 mètres et une épaisseur de quelques centaines de mètres.
+La deuxième difficulté est la profondeur de la couche de sel et l’épaisseur de celle-ci. Pour creuser une cavité saline qui respecte les critères choisis, l’idéal serait de trouver du sel atteignant des profondeurs de l’ordre de 1000 mètres et une épaisseur de quelques centaines de mètres.
 
 
 \begin{center}
 \includegraphics[width=.95\linewidth]{image/chap4/IV.4.ii.jpg}
 \captionof{figure}{Couches géologiques de sel en France \cite{Hadj_Hassen_Jallais_2020}}
+\label{fig:carteSelFrance}
 \end{center}
 
 \end{multicols}
 
-Les recherches menées à l’aide du site Infoterre et de coupes géologiques nous ont permis de sélectionner 5 sites pouvant accueillir des cavités salines $[cf Annexe]$ : 
+Les recherches menées à l’aide du site Infoterre et de coupes géologiques nous ont permis de sélectionner 5 sites pouvant accueillir des cavités salines (ceux-ci sont présentés en détail dans l'annexe M) : 
 \begin{itemize}
 \item Sites de Dax et Gaujacq : le stockage est intéressant car l’épaisseur de la couche de sel à cet endroit semble être assez importante.
 \item Site de Manosque : ce site contient déjà des infrastructures de stockage d’hydrocarbures, ce qui rend facile l’installation de cavités d’hydrogène.
@@ -1099,26 +1124,27 @@ Les recherches menées à l’aide du site Infoterre et de coupes géologiques n
 \item Site de Mackenheim : l’épaisseur de la couche à cet endroit est plus faible que pour les autres, mais cela reste intéressant dans une optique d’ouverture sur le marché européen.
 \end{itemize}
 
-Ces sites ont été choisis en fonction des critères définis en amont. La figure 32 résume leur intérêt.
+Ces sites ont été choisis en fonction des critères définis en amont. Les sites choisis sont résumés sur la carte montrée à la figure ~\ref{fig:carteResumee}.
 
 Les sites choisis ont été reliés à une configuration pour alimenter en hydrogène les zones d’intérêt. Hauterives a par exemple été choisi pour incarner la configuration 1 et alimenter Lyon en hydrogène dans l’optique du scénario P2M. 
 
 \subsubsection{Choix de sites potentiels pour des cavités minées}
 Les zones de recherche sont celles présentant des roches compétentes principalement du granite et du calcaire et à bonne profondeur, dans notre cas 100m 
-Parmis la liste de 8 sites étudiés/retenus nous présentons ici un en particulier qui correspond au scénario:/la configuration numéro 6.
+Parmis la liste de 8 sites retenus nous présentons ici un en particulier qui correspond au scénario numéro 6.
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=.8\linewidth]{image/chap4/Mobilité et industrie recadré.PNG}
-\caption{Sites classés par fonction}
+\caption{Résumé des sites retenus. Source: carte de France Hydrogène\hyperref[sec:presRef]{[I]} et carte géologique BRGM\cite{InfoTerreCarte}}
+\label{fig:carteResumee}
 \end{figure}
 
 
 \subsubsection{Choix des sites pour le stockage liquide}
 La particularité du stockage liquide est qu’il ne nécessite pas de grandes profondeurs (engendrant donc des coûts moins élevés) et que les cavités sont plus petites. 
-Nous nous sommes alors intéressés à des régions où nous n’avions pas encore sélectionné de sites, afin de pallier le manque. Par exemple, la région du Havre était signalée par France Hydrogène comme une zone à besoin. Dans cette ville, il existe des zones composées de craie, à une profondeur de 3 mètres $[cf Annexe]$. Nous avons également cherché à placer un réservoir en Normandie, région laissée de côté jusqu’alors. Le granite d’Avranches s’est avéré très pertinent car il n’est pas profond $[cf Annexe]$.
+Nous nous sommes alors intéressés à des régions où nous n’avions pas encore sélectionné de sites, afin de pallier le manque. Par exemple, la région du Havre était signalée par France Hydrogène comme une zone à besoin. Dans cette ville, il existe des zones composées de craie, à une profondeur de 3 mètres. Nous avons également cherché à placer un réservoir en Normandie, région laissée de côté jusqu’alors. Le granite d’Avranches s’est avéré très pertinent car il n’est pas profond.
 Paris est également une ville pour laquelle les cavités enterrées et le stockage liquide sont intéressants. En effet, la mobilité parisienne est très développée et nécessite donc de l’hydrogène pour alimenter les transports en commun. En se plaçant à Boulogne, on trouve du calcaire à 3m de profondeur, ce qui est intéressant. 
-Nous avons aussi retenu le granite de Grézieu-la-Varenne, près de Lyon, pour les mêmes raisons de profondeur $[cf Annexe]$.
+Nous avons aussi retenu le granite de Grézieu-la-Varenne, près de Lyon, pour les mêmes raisons de profondeur. Les détails des sites géologiques sont présentés en annexe M.
 
 
 
@@ -1191,7 +1217,7 @@ Afin de déterminer le prix de l’électricité de la partie conditionnement, n
 En général, l’eau utilisée dans les échangeurs est directement puisée dans les nappes phréatiques, nous avons négligé le prix de l’eau devant celui de l’électricité. On retiendra que le prix de l’électricité de l’électrolyseur est très important par rapport au reste des coûts annuels.  
 
 \subsubsection{Flux entrants : évaluation des recettes}
-Concernant les recettes, nous avons uniquement considéré celles dues à la vente de l’hydrogène, sous forme liquide ou gazeuse. Pour l’application industrielle, \textbf{nous avons fixé un prix de l'hydrogène de 5€/kg et pour la mobilité, un prix de 14€/kg} [1].
+Concernant les recettes, nous avons uniquement considéré celles dues à la vente de l’hydrogène, sous forme liquide ou gazeuse. Pour l’application industrielle, \textbf{nous avons fixé un prix de l'hydrogène de 5€/kg et pour la mobilité, un prix de 14€/kg} \hyperref[sec:presRef]{[VII]}.
 Nous avons décidé de ne pas prendre en compte la valorisation de capacité de stockage, c’est-à-dire la potentielle prime gouvernementale attribuée pour des capacités de stockage d’énergie verte. Cela ne gêne pas notre étude car cette dernière est comparative.
 Pour les scénarios utilisant la technique de production SMR, il est impératif d’utiliser une cellule CCS pour capter le carbone rejeté mais cela entraîne un coût important (en CAPEX et en OPEX). Ce coût est en réalité amorti par la taxe carbone (taxe environnementale sur les émissions de $CO_2$) non prise en compte dans notre étude.
 
@@ -1242,46 +1268,137 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 
 \section*{Conclusion}  \addcontentsline{toc}{section}{Conclusion}
 
+\phantomsection
+
+Pour réduire nos émissions de gaz à effet de serre, la production d’énergies renouvelables est amenée à augmenter et à constituer une part très importante de la production électrique. Néanmoins, le caractère intermittent de cette production pose problème si on veut être sûr de pouvoir alimenter le réseau en accord avec la demande fluctuante. Dans cette optique, l’utilisation d’un gaz, que l’on produit et que l’on stocke grâce à l’excédent d’énergie, puis que l’on utilise lorsque la production d’énergie devient trop faible, semble être une bonne solution. L’hydrogène, présenté dans cette étude, constitue un moyen efficace de pallier ces problèmes. 
+
+chapitre 1
+
+chapitre 2
+
+chapitre 3
+
+chapitre 4
+
+chapitre 5
 
 
 
-
-
-
-
-
-
-
-
-
+\newpage
 
 %début des annexes
 \backmatter
-\section*{Annexes} 
-\addcontentsline{toc}{section}{Annexes}
 
-\subsection*{Annexe A: Chapitre 1} 
+\section*{Annexes} \addcontentsline{toc}{section}{Annexes}
+
+\subsection*{Tableau de bord}\addcontentsline{toc}{subsection}{Tableau de bord}
+Lors de la première journée,  après un rapide rappel des objectifs du MIG, nous avons assisté à une conférence de France Hydrogène pendant la fin de matinée. Cette conférence était utile pour nous présenter le marché actuel du dihydrogène en France et dans le monde, les intérêts de cette molécule et les enjeux techniques et économiques liés à celle-ci. 
+Nous avons ensuite enchaîné sur une visite de Elogen l’après-midi, qui est le premier fabriquant d’électrolyseur en France : cela nous a permis d‘apprendre les procédés techniques concrets qui servent à la production d’hydrogène vert et des précisions utiles sur les défis et les enjeux environnementaux, techniques et économiques liés à ce mode de production. 
+
+Durant la deuxième journée, nous nous sommes rendus aux laboratoires d’engie. Ils ont pu nous présenter leurs projets liés au dihydrogène, en particulier à la liquéfaction de cette molécule. Ce processus nous a été décrit comme complexe et coûteux par un ingénieur de recherche et un chef de projet de cette entreprise, qui nous ont ensuite fait visiter leurs installations de laboratoire. Nous avons pu ainsi mieux comprendre la complexité de la liquéfaction de l’hydrogène et les processus déjà existants, ainsi que les perspectives d’améliorations futurs de ceux-ci.
+
+Pendant la troisième journée, nous sommes allés sur les sites de Air Liquide. Ils ont utilisés la matinée pour nous présenter leur entreprise ainsi que nous décrire la méthode de production de dihydrogène la plus utilisée actuellement, qui est le vaporeformage du méthane. Nous avons ensuite démarré l’après-midi par une visite de leurs deux stations à hydrogène, qui permettent d’alimenter un réseau de bus et un réseau de taxi et nous avons ensuite enchaîné sur des présentations qui portaient sur les enjeux liés à la sécurité dans le maniement de l’hydrogène gazeux, certains procédés de stockage souterrain de l’hydrogène et enfin les procédés de captation et de valorisation du CO2 émis après vaporeformage du méthane. 
+\begin{center}
+\includegraphics[width=0.5\linewidth]{image/annexe/tab_bord1.png}
+\end{center}
 
 
+A l’occasion de la quatrième journée, nous avons passé la matinée à nous familiariser avec les études bibliographiques afin de nous aider dans nos futures recherches documentaires. Puis, l’après-midi a été consacré aux différentes présentations de Geostock, un des principaux acteurs mondiaux de stockage de gaz, qui nous a décrit les différentes technologies de stockage du dihydrogène gazeux, les cavités salines et les cavités minées, revêtues ou non.
 
-\FloatBarrier
-\subsection*{Annexe B: Configuration cavités minées} 
+Enfin, nous avons consacré la cinquième journée à la visite d’un site de stockage de gaz de Storengy, autre acteur majeur du stockage de gaz en France, à Bourg-en-Bresse. Après une présentation de l’entreprise et des techniques de stockage de gaz, nous avons ainsi pu voir de nos propres yeux plusieurs installations : compresseurs, détendeur, centre de contrôle… cette visite avait l’utilité de nous rapprocher le plus possible du terrain et des opérations sur place. Là aussi, les enjeux économiques et techniques liés au stockage souterrain du dihydrogène gazeux pour les années à venir nous ont été décrits.
+\begin{center}
+\includegraphics[width=0.5\linewidth]{image/annexe/tab_bord2.png}
+\end{center}
+
+\subsection*{Annexe A: Configurations étudiées} 
 
 \begin{figure}[h]
 \centering
-%\includegraphics[width=0.8\linewidth]{image/annexe/annexea/figure1annexea.png}
-\caption{Flow sheet de la configuration 1 }
+\includegraphics[width=0.9\linewidth]{image/annexe/config_cavite_minee/configs.png}
+\caption{Détail des scénarios}
 \end{figure}
 
+\FloatBarrier
+\subsection*{Annexe B: Configurations des cavités minées} 
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/config_cavite_minee/c1.png}
+  \captionof{figure}{Configuration 1 }
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.7\linewidth]{image/annexe/config_cavite_minee/c2.png}
+  \captionof{figure}{Configuration 2 }
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.7\linewidth]{image/annexe/config_cavite_minee/c3.png}
+  \captionof{figure}{Configuration 3 }
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/config_cavite_minee/c4.png}
+  \captionof{figure}{Configuration 4 }
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.7\linewidth]{image/annexe/config_cavite_minee/c5.png}
+  \captionof{figure}{Configuration 5 }
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/config_cavite_minee/c6.png}
+  \captionof{figure}{Configuration 6 }
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{image/annexe/config_cavite_minee/c7.png}
+  \captionof{figure}{Configuration 7 }
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{image/annexe/config_cavite_minee/donnes.png}
+  \captionof{figure}{Données }
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
 
 \FloatBarrier
 \subsection*{Annexe C : Dimensions du réservoir enterré}
 
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.8\linewidth]{image/annexe/config_cavitee_minee/Annexe6_CHAPII_2_1.png}
-%\caption{Dimensions exactes du réservoir enterré}
-%\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/reservoir_ent/dimReservoir.png}
+\caption{Dimensions exactes du réservoir enterré}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/reservoir_ent/reservoir3D.png}
+\caption{Schéma d'un réservoir enterré - Emad Jahangir}
+\end{figure}
 
 \FloatBarrier
 \subsection*{Annexe D : Rhéologie des roches} 
@@ -1289,6 +1406,7 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 \FloatBarrier
 \subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} 
 
+<<<<<<< HEAD
 Pour l'application à l'industrie (détaillée dans le 2.3.1-B), on a utilisé les données d'entrée ci-dessous:
 
 \begin{figure}[h]
@@ -1379,13 +1497,59 @@ Tous les critères dont on a parlé dans le paragraphe 2.3.1-B sont bien satisfa
 \newpage
 \FloatBarrier
 \subsection*{Annexe F : Simulation numérique du réservoir enterré sur COMSOL}
+=======
+Voici quelques extraits de la notice du logiciel DEMETHER.
+>>>>>>> 67c0ab3dd6094eb5c0c03f1395582da0c1b34bdb
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=.8\linewidth]{image/annexe/reservoir_ent/Annexe_1_.png}
-\caption{Schéma d'un résérvoir entérré - Emad Jahangir}
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 1.png}
 \end{figure}
-  
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 2.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 3.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 4.png}
+\end{figure}
+
+Voici les résultats obtenus pour l’application du stockage en cavités minées à la mobilité.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_pression.jpg}
+    \caption{Evolution de la pression dans la cavité}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_temperature.jpg}
+\caption{Evolution de la température}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_orthoradiale.jpg}
+\caption{Evolution de la contrainte orthoradiale}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_axiale.jpg}
+\caption{Evolution de la contrainte selon z (MPa)}
+\end{figure}
+
+\newpage
+\FloatBarrier
+\subsection*{Annexe F : Simulation numérique du réservoir enterré sur COMSOL}
   
 \begin{figure}[h]
 \centering
@@ -1486,13 +1650,48 @@ Méthode d’effondrement des couches d’insolubles :
 Il s’agit de lessiver en dessous de la couche pour la fragiliser sans la faire tomber, puis de remonter les tuyaux à son niveau, pour ainsi lessiver au-dessus de la couche et la faire s’écrouler sans qu’elle n’abîme les tuyaux. 
 
 \FloatBarrier
-\subsection*{Annexe H : Achille création cavités minées}
-Comme expliqué précédemment dans le rapport, la technique pour creuser les cavités est déjà bien connue des ingénieurs. De même pour les revêtements, la technique de pose a déja été étudiée par les ingénieurs. Nous nous sommes donc contentés de reprendre les travaux de la cavité de Skallen dont les photographies suivantes sont issues.
+\subsection*{Annexe H : Création cavités minées}
+Comme expliqué précédemment dans le rapport, la technique pour creuser les cavités est déjà bien connue des ingénieurs. De même pour les revêtements, la technique de pose des revêtements a déja été étudiée par les ingénieurs. Nous nous sommes donc contentés de reprendre les travaux de la cavité de Skallen dont les photographies suivantes sont issues.
 
 \FloatBarrier
 \subsubsection*{La méthode des longs trous pour creuser les cavités}
 Comme évoqué dans la partie correspondante, nous allons ici détailler la méthode des longs trous pour creuser les cavités.
 Dans un premier temps, il s’agit de creuser des galeries au dessus et en dessous de la cavité souhaitée selon le schéma de la figure
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.8\linewidth]{image/annexe/chap2/figure4iiacreusagegalerie.png}
+  \caption{Creusage des galeries inférieures et supérieures}
+  \end{figure}
+
+Dans un second temps,on creuse progressivement l’espace entre les deux galeries par longues sections verticales en évacuant les produits par la galerie inférieure.
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.8\linewidth]{image/annexe/chap2/figure4iibcreusagegalerie.png}
+  \caption{Creusage des longs trous}
+  \end{figure}
+
+Toutes ces opérations sont faites avec des explosifs qui fracturent les roches en développant des contraintes de traction lors de la réflection des ondes  issues de l’explosion.
+
+\FloatBarrier
+\subsubsection*{Disposer le revêtement}
+
+Pour étanchéifier les cavités avec le revêtement en béton et en liner métallique, on dispose tout d’abord le liner métallique en commençant par la voûte supérieure. On dispose ensuite les parois du liner par tranche que l’on soude à l’ensemble déjà monté par dessous en l’élevant progressivement pour atteindre finalement le sommet de la cavité. Une fois le liner totalement installé, on coule entre ce liner et la paroi rocheuse du béton qu’on aura pris soin d’armer au préalable avec une structure métallique entre le liner et la paroi rocheuse.
+Les illustrations sont issues de la présentation Storengy sur la cavité Skallen.
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.8\linewidth]{image/annexe/chap2/soudure.png}
+  \caption{Soudure du revêtement métalique}
+  \end{figure}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.8\linewidth]{image/annexe/chap2/beton.png}
+  \caption{Béton coulé entre la paroi et le revetement une fois celui-ci installé}
+  \end{figure}
+
+
 
 \FloatBarrier
 \subsection*{Annexe I : Compression}
@@ -1562,16 +1761,161 @@ Dans un premier temps, il s’agit de creuser des galeries au dessus et en desso
 
 \FloatBarrier
 \newpage
-\subsection*{Annexe L : Achille étude de l'acceptabilité}
+\subsection*{Annexe L : Étude de l'acceptabilité}
 
 Voici les résultats détaillés de notre enquête que nous avons partagé sur les réseaux sociaux Linkedin et Facebook. Ce questionnaire a aussi été diffusé au sein des familles des élèves du MIG qui l’ont à leur tour relayé
 Tout d’abord nous avons posé quelques questions pour connaître le profil des individus ayant répondu au sondage.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/annexeacceptabilite/graph1.png}
+\end{figure}
+
+Nous avons remarqué qu’une majorité de nos réponses était donnée par des profils scientifiques ce qui ne représente pas la population dans son ensemble en terme de proportions.
+Nous avons ensuite interrogé la population sur leur connaissance du sujet.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/annexeacceptabilite/graph2i.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/annexeacceptabilite/graph2ii.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/annexeacceptabilite/graph2iii.png}
+\end{figure}
+
+Enfin nous avons posé des questions sur la représentation commune de l’hydrogène dans la conscience collective.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/annexeacceptabilite/graph3.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/annexeacceptabilite/graph4.png}
+\end{figure}
+
+On remarque que les jeunes se sentent concernés par les enjeux environnementaux mais ne s’imaginent pas un futur sans mix énergétique. Le problème du coût de l’hydrogène reste un enjeu de taille et leur réduction serait un des premiers objectifs à viser pour augmenter la commercialisation de cette technologie.
 
 
 \FloatBarrier
 \newpage
 \subsection*{Annexe M : Choix des sites de stockage} 
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{image/annexe/chap4/carteGeolFr.png}
+\caption{Carte géologique de la france \cite{InfoTerreCarte} }
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{image/annexe/chap4/sites_1.png}
+\caption{Sites retenus partie 1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{image/annexe/chap4/sites_2.png}
+\caption{Sites retenus partie 2}
+\end{figure}
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/montvalent.png}
+         \caption{Montvalent}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/comiac.png}
+         \caption{Comiac}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/clisson.png}
+         \caption{Clisson}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/chuelles.png}
+         \caption{Chuelles}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/roquebrune.png}
+         \caption{Roquebrune-sur-Argens}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/vairsurloire.png}
+         \caption{Vair-sur-Loire}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/gerardmer.png}
+         \caption{Gerardmer}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/minees/grezieu.png}
+         \caption{Grézieu-la-Varenne}
+     \end{subfigure}
+        \caption{Logs géologiques des sites pour cavités minées}
+\end{figure}
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/salines/gaujacq.png}
+         \caption{Gaujacq}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/salines/dax.png}
+         \caption{Dax}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/salines/manosque.png}
+         \caption{Manosque}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/salines/hauterives.png}
+         \caption{Hauterives}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/salines/mackenheim.png}
+         \caption{Mackenheim}
+     \end{subfigure}
+        \caption{Logs géologiques des sites pour cavités salines}
+\end{figure}
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/le_havre.png}
+         \caption{Le havre}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{image/annexe/chap4/avranches.png}
+         \caption{Avranches}
+     \end{subfigure}
+        \caption{Logs géologiques des sites pour réservoirs enterrés}
+\end{figure}
 \FloatBarrier
 \subsection*{Annexe N : Eléments d'évaluation économique}
 
@@ -1642,6 +1986,7 @@ Pour les coûts liés à la création de cavités minées revêtues, nous nous s
 \FloatBarrier
 
 \newpage
+\phantomsection %je comprend pas mais ça répare les liens vers ces sections
 
 %Bibliographie
 
@@ -1649,6 +1994,7 @@ Pour les coûts liés à la création de cavités minées revêtues, nous nous s
 \bibliography{bibliographie} 
 
 \section*{Références aux présentations} \addcontentsline{toc}{section}{Références aux présentation}
+\label{sec:presRef}
 
 $[I]$   France Hydrogène. Présentation à l'école des Mines\\
 

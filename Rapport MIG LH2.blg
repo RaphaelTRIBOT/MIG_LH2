@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Rapport MIG LH2.aux
+The style file: plain.bst
+Database file #1: bibliographie.bib
+Warning--to sort, need author or key in unkown1
+Warning--to sort, need author or key in The_Suiso_Frontier
+Warning--empty publisher in ADEME_2022
+Warning--empty publisher in Hadj_Hassen_Jallais_2020
+Warning--empty publisher in hydrogene_2021
+Warning--empty booktitle in Nicolas_2008
+You've used 13 entries,
+            2118 wiz_defined-function locations,
+            559 strings with 5412 characters,
+and the built_in function-call counts, 2677 in all, are:
+= -- 227
+> -- 91
+< -- 0
++ -- 40
+- -- 26
+* -- 113
+:= -- 441
+add.period$ -- 31
+call.type$ -- 13
+change.case$ -- 48
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 123
+empty$ -- 283
+format.name$ -- 26
+if$ -- 570
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 11
+newline$ -- 60
+num.names$ -- 22
+pop$ -- 103
+preamble$ -- 1
+purify$ -- 39
+quote$ -- 0
+skip$ -- 104
+stack$ -- 0
+substring$ -- 66
+swap$ -- 13
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 6
+while$ -- 22
+width$ -- 15
+write$ -- 107
+(There were 6 warnings)
