@@ -401,7 +401,7 @@ Pour les cavités salines, il est également nécessaire de prendre en compte le
 
 On a donc simulé grâce au logiciel DEMETHER l’état de ces quatre zones dans le cas de l’installation et la maintenance d’une cavité saline cylindrique pendant une durée de plus de trente ans (correspond environ à la durée de vie d’une cavité). La modélisation commence par le lessivage (technique pour creuser la cavité dans le cas des cavités salines), puis on remplit la cavité et finalement on simule 30 ans de cycle. On a également étudié deux situations : le cas où le stockage est destiné à l’industrie, et le cas où il est destiné à la mobilité (voir annexe).Les données utilisées sont exposées en Annexe. \\
 
-Dans une application à l'industrie, nous considérons 1095 jours de lessivage à $P = P_{saumure} = 11,7 MPa$, 180 jours de remplissage (où la pression diminue jusqu’à $P = 14,5 MPa$) et 30 ans de cycle. Nos résultats ont confirmé que la cavité saline envisagée était bien réalisable. En effet, nos modélisations servent notamment à vérifier plusieurs conditions de stabilité, parmi lesquelles on a : une pression minimale et une pression maximale, des contraintes négatives (ce qui confirme qu’il s’agit bien d’une compression et non pas d’une traction) et faibles (autour de $15 MPa$ en valeur absolue) , des pertes volumiques en dessous de 1\% par an et des conditions particulières sur les déviateurs. Dans le cas de l’industrie, on vérifie que toutes ces conditions sont bien remplies.\\
+Dans une application à l'industrie, nous considérons 1095 jours de lessivage à $P = P_{saumure} = 11,7 MPa$, 180 jours de remplissage (où la pression diminue jusqu’à $P = 14,5 MPa$) et 30 ans de cycle. Nos résultats ont confirmé que la cavité saline envisagée était bien réalisable. En effet, nos modélisations servent notamment à vérifier plusieurs conditions de stabilité, parmi lesquelles on a : une pression minimale et une pression maximale, des contraintes négatives (ce qui confirme qu’il s’agit bien d’une compression et non pas d’une traction) et faibles (autour de $15 MPa$ en valeur absolue) , des pertes volumiques en dessous de 1\% par an et le déviateur $q(p)$ doit toujours être inférieur à la droite tracée sur lan figure 8.c . Dans ce cas, on vérifie que toutes ces conditions sont bien remplies dans les figures 8 et 9 ci-dessous.\\
 
 \begin{figure}[h!]
 \centering
@@ -451,7 +451,7 @@ Dans une application à l'industrie, nous considérons 1095 jours de lessivage �
 \label{fig:7 figures}
 \end{figure}
 
-On remarque que les conditions de stabilité citées précédemment sont bien remplies. La pression est bien comprise dans l’intervalle de pressions stables (supérieure à Pmin pour éviter le fluage et inférieure à Pmax pour empêcher la création de fractures), le déviateur $q(p)$ est toujours inférieur à la droite tracée et les contraintes sont bien négatives et faibles. \\
+On remarque que les conditions de stabilité citées précédemment sont bien remplies. La pression est bien comprise dans l’intervalle de pressions stables (supérieure à Pmin pour éviter le fluage et inférieure à Pmax pour empêcher la création de fractures), le déviateur $q(p)$ est toujours inférieur à la droite tracée et les contraintes sont bien négatives et faibles. L'application pour la mobilité est en annexe. \\
 
 
 \textbf{C-Applications aux cavités minées revêtues}\\
@@ -1014,8 +1014,8 @@ Chaque scénario étudié peut être synthétisé par un \textit{flowsheet}. Un 
 \subsection{Réglementation}
 
 Afin de stocker de l’hydrogène en souterrain, il est nécessaire d’effectuer plusieurs procédures administratives. L’installation de la cavité est réglementée par le code minier (articles 211-1 et suivants).
-Tout d’abord, la possession d’un titre minier (Livre I – Titres II à IV + décret 2006-648) est nécessaire pour pouvoir construire la cavité souterraine. Si le stockage est supérieur à 100 kg d’Hydrogène, le seuil des Installations Classées pour la Protection de l’Environnement (ICPE), nous ne sommes plus soumis uniquement au code minier mais aussi au code environnemental. Dans ce cas, les travaux suivent la directive SEVESO, directive européenne qui encadre les sites industriels à risque majeur. 
-L’installation peut ainsi être classée selon un seuil SEVESO bas ou un seuil SEVESO haut (ce qui dépend de la quantité stockée, voir figure 4,1). Dans le cas contraire, on est soumis aux titres VI du livre II du code minier, le décret n°2006-649 du 2 juin 2006 relatif aux travaux miniers, aux travaux de stockage souterrain et à la police des mines et des stockages souterrains, le décret n°2016-1303 du 4 octobre 20164 relatif aux travaux de recherches par forage et d’exploitation par puits de substances minières (dit décret « forage »), et l’arrêté ministériel du 14 octobre 2016. Si la cavité existe déjà, il faut déclarer qu’on modifie un ICPE déjà existant au Préfet, s’il juge que les modifications sont notables, une demande doit être déposée selon le code de l’environnement. Celle-ci doit contenir une étude de dangers (L181-25 + D181-15-2-III) et une étude d’impact (L122-3 + R122-4 et 5) ou d’incidence environnementale (L181-8 et R181-14).
+Tout d’abord, la possession d’un titre minier (Livre I – Titres II à IV + décret 2006-648) est nécessaire pour pouvoir construire la cavité souterraine. Si le stockage est supérieur à 100 kg d’Hydrogène, ce qui correspond au seuil des Installations Classées pour la Protection de l’Environnement (ICPE), ont est soumis au code minier mais aussi au code environnemental. Dans ce cas, les travaux suivent la directive SEVESO, directive européenne qui encadre les sites industriels à risque majeur. 
+L’installation peut ainsi être classée selon un seuil SEVESO bas ou un seuil SEVESO haut (ce qui dépend de la quantité stockée, voir figure en annexe). Dans le cas contraire, on est soumis aux titres VI du livre II du code minier, le décret n°2006-649 du 2 juin 2006 relatif aux travaux miniers, aux travaux de stockage souterrain et à la police des mines et des stockages souterrains, le décret n°2016-1303 du 4 octobre 20164 relatif aux travaux de recherches par forage et d’exploitation par puits de substances minières (dit décret « forage »), et l’arrêté ministériel du 14 octobre 2016. Si la cavité existe déjà, il faut déclarer qu’on modifie un ICPE déjà existant au Préfet, s’il juge que les modifications sont notables, une demande doit être déposée selon le code de l’environnement. Celle-ci doit contenir une étude de dangers (L181-25 + D181-15-2-III) et une étude d’impact (L122-3 + R122-4 et 5) ou d’incidence environnementale (L181-8 et R181-14).
 
 
 
@@ -1289,6 +1289,7 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 
 \FloatBarrier
 \subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} 
+
 
 \newpage
 \FloatBarrier
