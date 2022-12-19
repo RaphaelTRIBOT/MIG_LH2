@@ -16,9 +16,9 @@
 \usepackage{color}
 \usepackage{titling}
 \usepackage{caption}
+\usepackage{babel}
 \usepackage{natbib} 
 \usepackage[nottoc]{tocbibind}
-\usepackage{babel}
 \usepackage[section]{placeins}
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
@@ -93,7 +93,7 @@ C’est donc dans ce contexte que l’hydrogène, ou plus précisément la molé
 
 Notre étude vise à donner une vision générale de la chaîne technique de l’hydrogène, de sa production à sa distribution, en passant par son stockage, son transport et sa liquéfaction et de la faisabilité en se tournant vers les aspects économique et social.
 
-\newpage
+
 \section*{Abstract}
 Facing up with an unprecedented climate crisis, solutions are urgent to be looked for so that we can cut down our CO2 emissions. We have to search new ways to product, transport and use energy, which have to be as carbon-free as possible. Wheather it be in electricity production, transportations or industry, we have to found out how to keep our current economic productivity and efficiency, while favouring the energy transition. Therefore, it would be useful to find an energy carrier which would allow us to stock enormous amouts of energy, but also to find more eco-friendly energy sources for our transportations and industries.
 
@@ -103,7 +103,7 @@ Nowadays, the most eco-friendly and the most promising way to manufacture gaseou
 
 Our goal here is to study each step of the hydrogen supply-chain, from its manufacturing to its distribution, under a technical perspective, above all with descriptions of manufacturing proceedings, the optionnal liquefaction and its assets, storage and transportation ; but also  under an economic and societal perspective, focusing on its sociological acceptabillity and its economic sustainability.
 
-\newpage
+
 \section*{Remerciements}
 Nous souhaiterions remercier l’ensemble des personnes qui nous ont accompagnés durant cette étude, qui ont pris de leur temps pour nous présenter le domaine de l’hydrogène et pour nous encadrer sur plusieurs heures ou plusieurs jours.
 
@@ -241,7 +241,7 @@ Les scénarios retenus s’ancrent dans deux thématiques : alimenter les indust
 \textbf{Scénario 1 : Power to Industry } \\
 Alimentation de l’aéroport Charles de Gaules, stockage en cavité saline. On se propose ici d’alimenter toute l’infrastructure de l’ensemble de l’aéroport Charles de Gaulles à l’hydrogène. Cela ne concerne pas le carburant des avions. L’hydrogène serait produit par électrolyse et stocké en cavité saline. La consommation journalière de l’aéroport en H2 serait selon une estimation donnée par Air Liquide de 300T par jour, avec 12h d’injection et 12h de soutirage. \\
  
-\textbf{Scénarios 2 :  Power to Mobility } \\
+\textbf{Scénario 2 :  Power to Mobility } \\
 Stockage en cavité minée de l’hydrogène pour alimenter les mobilités (taxis, bus, voitures). Ici on stocke 230 T d’H2 par jour avec 12h d’injections et 12h de soutirage. \\
  
 \textbf{ Scénario 3 :  Power to Industry } \\
@@ -891,7 +891,7 @@ En ce qui concerne le choix des compresseurs, nous avions le choix entre des com
 
 
 \begin{multicols}{2}
-On cherche à liquéfier l'hydrogène pour augmenter sa densité énergétique. Liquéfier l'hydrogène pour le transporter ou le stocker est un défit technique de taille: l'hydrogène est liquide à une températue inférieure à 20K à pression athmosphérique. Il s'agit donc de dimmensionner et caractériser un ensemble de cycles thermodynamiques pour refroidir l'hydrogène. 
+On cherche à liquéfier l'hydrogène pour augmenter sa densité énergétique. Liquéfier l'hydrogène pour le transporter ou le stocker est un défit technique de taille: l'hydrogène est liquide à une températue inférieure à 20K à pression athmosphérique. Il s'agit donc de dimensionner et caractériser un ensemble de cycles thermodynamiques pour refroidir l'hydrogène. 
 
 De plus, la liquéfaction de l'hydrogène présente un défi de nature quantique : la conversion orthohydrogène-parahydrogène. On parle de deux isomères de l'hydrogène. Pour l'orthohydrogène le proton de chaque molécule d'hydrogène possède des spins parallèles, pour le parahydrogène le proton de chaque molécule d'hydrogène possède des spins antiparallèles
 
@@ -950,7 +950,7 @@ Nous détaillons ici les différentes étapes de la liquéfaction. On suppose qu
 \item On sépare les deux phases dans un séparateur.
 \end{enumerate}
 
-Un schéma plus détaillé des cycles thermodynamiques est présenté en annexe. On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud.
+On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud. L'annexe J décrit le principe de modélisation du procédé de liquéfaction sous \textit{Aspen Plus} et les équations fonctionnelles utilisées dans le logiciel.
 
 
 \subsection{Transport d'hydrogène}
@@ -1275,7 +1275,7 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 
 \phantomsection
 
-Pour réduire nos émissions de gaz à effet de serre, la production d’énergies renouvelables est amenée à augmenter et à constituer une part très importante de la production électrique. Néanmoins, le caractère intermittent de cette production pose problème si on veut être sûr de pouvoir alimenter le réseau en accord avec la demande fluctuante. Dans cette optique, l’utilisation d’un gaz, que l’on produit et que l’on stocke grâce à l’excédent d’énergie, puis que l’on utilise lorsque la production d’énergie devient trop faible, semble être une bonne solution. L’hydrogène, présenté dans cette étude, constitue un moyen efficace de pallier ces problèmes. 
+Pour réduire nos émissions de gaz à effet de serre, la production d’énergies renouvelables est amenée à augmenter et à constituer une part très importante de la production électrique. Néanmoins, le caractère intermittent de cette production pose problème si on veut être sûr de pouvoir alimenter le réseau en accord avec la demande fluctuante. 
 
 chapitre 1
 
@@ -1903,6 +1903,17 @@ Les illustrations sont issues de la présentation Storengy sur la cavité Skalle
 
 \FloatBarrier
 \subsection*{Annexe J : Procédé de liquéfaction} 
+
+Aspen Plus est un logiciel sous licence. Plusieurs équations fonctionnelles sont mises à disposition de l'utilisateur pour calculer les évolutions des grandeurs thermodynamiques lors des différentes transformations. Nous avons utilisé les équations fonctionnelles de GERG2008. Les caluls sont alors réalisés par le logiciel Aspen Plus sur la base de ces équations.
+
+Pour résumer nous avons utilisé:
+\begin{itemize}
+\item Aspen Plus V10 (36.0.0.249). USA: Aspen Technology Inc; 2017
+\item qui intègre la version 10 d' Aspen Process Economic Analyzer V10 (1st Qtr 2016 Pricing Basis)
+\item  le modèle thermodynamique GERG2008 dans Aspen Plus
+\end{itemize}
+
+Les méthodes pour estimer les CAPEX et les OPEX sont implémentées dans Aspen Plus via APEA. Elles permettent d'estimer les coûts à partir d'une base de données mise à jour régulièrement.
 
 
 \newpage
