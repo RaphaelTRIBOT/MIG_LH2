@@ -24,7 +24,12 @@
 \hypersetup{
     linktoc=all,     %set to all if you want both sections and subsections linked
 }
-
+\usepackage{selinput}
+\SelectInputMappings{%
+	agrave={à},
+	ccedilla={ç},
+	Euro={€}
+}
 
 \titleformat{\section}
 {\color{blue}\normalfont\Large\bfseries}
@@ -1402,6 +1407,211 @@ Enfin, nous avons consacré la cinquième journée à la visite d’un site de s
 
 \FloatBarrier
 \subsection*{Annexe D : Rhéologie des roches} 
+Cette section présente le détail des essais réalisés en laboratoire afin de caractériser la rhéologie des roches utiles à l’étude de cavités. 
+Les propriétés ainsi mesurées ont été implémentées dans le fichier input du logiciel DEMETER. 
+
+\subsubsection*{Échantillons de roches}
+
+L’éprouvette de roche doit être propre et normalisée afin de réaliser les essais nécessaires à sa caractérisation. 
+Pour ce faire, plusieurs étapes entrent en jeu : 
+\begin{itemize}
+\item Carottage : On prélève un échantillon du sol à étudier à l’aide d’un carottier, pour obtenir un prélèvement tubulaire de la roche. Cet échantillon ainsi obtenu est envoyé dans des laboratoires spécialisés pour analyse. 
+\item
+Préparation de l’échantillon : l'échantillon est soumis à des opérations de carottage si besoin, de découpage et de rectification des faces pour préparer des éprouvettes normalisées par rapport au type d'essai à conduire (Figure ~\ref{fig:d1}). On définit l’élancement d’une éprouvette comme le rapport de sa hauteur sur son diamètre.
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/annexe_D/D1.png}
+\caption{Carottes de sel du laboratoire de Fontainebleau, et éprouvettes d’essais}
+\label{fig:d1}
+\end{figure}
+
+\FloatBarrier
+
+\subsubsection{Mesure des propriétés physiques }
+Sur chaque éprouvette préparée, on détermine généralement : 
+\begin{itemize}
+\item La masse volumique par pesée et mesure du volume de l’échantillon dans son état initial,
+\item La vitesse du son par mesure du temps de propagation que met une onde de compression pour traverser l'échantillon. Celle-ci permet de caractériser l’homogénéité du matériau en question. 
+\end{itemize}
+ 
+Pour le sel on trouve une masse volumique d’environ $2200 kg/m^3$ et une vitesse de son de l'ordre de 4500 m/s. 
+
+\subsubsection{Essais de RDM }
+
+\paragraph{Essai brésilien }
+
+Pour faire un essai de traction de manière directe il faudrait réussir à « tirer » l’échantillon avec des pinces de traction. Cette méthode fonctionne pour des matériaux résistants à la traction mais le sel y est très sensible. C’est pour cela qu’on réalise cet essai de manière indirecte, c’est à dire que l’on prend un échantillon d’élancement 0,5 que l’on vient compresser diamétralement en créant ainsi une traction le long du diamètre perpendiculaire (Figure ~\ref{fig:d2})
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.5\linewidth]{image/annexe/annexe_D/D2.png}
+\caption{Essai de traction indirecte en laboratoire (essai brésilien)}
+\label{fig:d2}
+\end{figure}
+
+\FloatBarrier
+On en déduit la résistance à la traction que l’on définit comme la contrainte horizontale lors de la rupture : 
+$$Rt = (F/ \pi RH)$$
+ 
+avec : 
+\begin{itemize}
+\item Rt , la résistance à la traction 
+\item F, l’effort fourni par la presse à la rupture 
+\item R et H respectivement le rayon et la hauteur de l’éprouvette. 
+\end{itemize}
+
+Dans le cas du sel, on trouve une valeur d’environ 1,5MPa. Pour des raisons de sécurité, nous avons décidé de prendre une résistance à la traction nulle comme critère de stabilité des cavités. 
+
+
+\paragraph{Essai de compression : cisaillement indirect }
+
+Les essais de compression sont réalisés avec des éprouvettes d’élancement 2 pour éviter tout effet de flambage.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.3\linewidth]{image/annexe/annexe_D/D3.png}
+\caption{Flambage de la roche lors d’un essai de compression}
+\label{fig:d3}
+\end{figure}
+\FloatBarrier
+
+Les essais de compression peuvent être simples ou triaxiaux et permettent de mesurer les paramètres élastiques à travers des cycles charge/décharge : le module de Young et le coefficient de Poisson.   
+
+L’essai uni-axial est appelé essai de compression simple. On place l’éprouvette sous une presse et on lui applique une contrainte longitudinale %σ jusqu’à sa rupture. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.3\linewidth]{image/annexe/annexe_D/D4.png}
+\caption{Schéma d’un essai de compression simple }
+\label{fig:d4}
+\end{figure}
+\FloatBarrier
+                         
+ Les déformations longitudinales et transversales de la roche sont définies respectivement comme : 
+  
+$$\epsilon _l = \frac{\Delta l}{l_0} \; \textrm{  et  } \; \epsilon _t=\frac{\Delta b}{b_0}= \nu \epsilon _l $$  
+ avec $\nu$ le coefficient de poisson 
+
+Dans sa zone élastique, la roche suit la loi de Hooke $\sigma =\epsilon _l E$, ou E représente le module d’Young du matériau (en pascals)
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.45\linewidth]{image/annexe/annexe_D/D5.png}
+\caption{Graphique de comportement de la roche lors de l’essai de compression }
+\label{fig:d5}
+\end{figure}
+\FloatBarrier
+
+Plusieurs techniques sont utilisées pour accéder au coefficient de poisson et au module d’Young, la plus courante étant les jauges de déformations. 
+Au cours d’un essai de compression triaxiale, l’éprouvette est placée dans une cellule cylindrique (Figure ~\ref{fig:d6}). L’espace entre les parois de la cellule et l’éprouvette, isolée par une jaquette en silastène, est rempli d’huile qui, une fois pressurisée, assure une pression latérale constante sur l’éprouvette (pression de confinement). Le maintien de la pression latérale est assuré par un générateur de pression à volume contrôlé qui permet de mesurer la variation du volume d’huile dans la cellule pendant toute la durée de l’essai. Cette variation du volume d’huile à une pression de confinement constante permet de calculer la variation du volume de l’éprouvette. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.4\linewidth]{image/annexe/annexe_D/D6.png}
+\caption{Cellule triaxiale au laboratoire du centre de Géosciences }
+\label{fig:d6}
+\end{figure}
+\FloatBarrier
+
+Dans le cas de l’essai triaxial, avec une pression de confinement P constante et une pression axiale Q, le déviateur de contraintes s’écrit : q = Q-P
+Les essais de compression triaxiale permettent d'accéder à l'endommagement du sel via le déviateur dilatant qd. Ce dernier correspond à la valeur du déviateur à partir duquel le comportement de l'éprouvette n'est plus contractant. La Figure ~\ref{fig:d7} illustre les résultats d'un essai triaxial (à droite la contrainte axiale en fonction de la déformation longitudinale et à gauche le déviateur en fonction de la variation volumique). 
+Le déviateur dilatant augmente avec la pression de confinement appliqué. Le critère de dilatance est souvent exprimé par une relation entre le déviateur dilatant et la pression moyenne (Figure ~\ref{fig:d8})
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.4\linewidth]{image/annexe/annexe_D/D7.png}
+\caption{Résultats d'un essai de compression triaxiale (en bleu : déformations globales mesurées par un capteur inductif et par variation de volume d'huile, en rouge: déformations locales mesurées par jauges)}
+\label{fig:d7}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.4\linewidth]{image/annexe/annexe_D/D8.png}
+\caption{Exemples de critères de dilatance sur différents sels (Labaune et al., 2017)}
+\label{fig:d8}
+\end{figure}
+\FloatBarrier
+
+Nous avons simplifié la relation en adoptant un critère de dilatance relation linéaire : et en fixant des valeurs moyennes de a = 1.3 et b = 2.5 (en MPa). 
+\paragraph{Essai de cisaillement}
+
+L’essai a pour objet de mesurer les caractéristiques de rupture d’un échantillon de sol fin saturé soumis à un cisaillement direct selon un plan imposé, à une vitesse constante. De cet essai peuvent être déduites les valeurs de l’angle de frottement effectif $\phi$ et la cohésion effective C. 
+
+L’essai s’effectue sur une éprouvette de sol placée dans un bâti de cisaillement constitué de deux demi boîtes indépendantes. Le plan de séparation des deux demi boîtes constitue un plan de glissement préférentiel correspondant au plan de cisaillement de l’éprouvette.
+L’essai consiste à : 
+\begin{itemize}
+\item Consolider l’éprouvette de section s dans une première phase en appliquant sur la face supérieure un effort vertical constant maintenu pendant tout l’essai (contrainte $\sigma n=N/s$)
+\item La phase de consolidation permet de calculer la vitesse à laquelle doit être cisaillé l’échantillon.
+\item Cisailler ensuite le long du plan de séparation des 2 demi-boîtes en leur imposant un déplacement relatif à vitesse constante.
+\item L’effort de cisaillement horizontal (T) est mesuré et la contrainte   $\sigma=T/s$ est calculée.
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.7\linewidth]{image/annexe/annexe_D/D9.png}
+\caption{Essai de cisaillement en laboratoire}
+\label{fig:d9}
+\end{figure}
+\FloatBarrier
+
+
+La figure ~\ref{fig:d10} montre des courbes expérimentales d'un essai de cisaillement direct 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.7\linewidth]{image/annexe/annexe_D/D10.png}
+\caption{Courbe contrainte-déformation d’un essai de cisaillement direct}
+\label{fig:d10}
+\end{figure}
+\FloatBarrier
+
+
+On obtient ainsi les courbes de cisaillement effort- déformation et l’on peut en déduire les droites
+($\tau ; \sigma n$) pour les valeurs à la rupture et à l’état critique.
+Il est alors simple de déterminer l’angle de frottement $\phi$ et la cohésion effective C, respectivement la pente et l’ordonnée à l’origine de ces droites.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.45\linewidth]{image/annexe/annexe_D/D11.png}
+\caption{Courbe de cisaillement effort-déformation}
+\label{fig:d11}
+\end{figure}
+\FloatBarrier
+
+
+
+\paragraph{Essai de fluage }
+
+
+Pour les matériaux visqueux, dont le sel fait parti, leur déformation va dépendre du temps, c’est le phénomène de fluage.  
+
+L’intensité de ce phénomène dépend à la fois de la contrainte et de la température à laquelle est effectuée l’essai. C’est pour cela qu’on réalise l'essai dans un laboratoire en sous-sol, où la température est contrôlée. Une éprouvette d’élancement deux est placée dans une cellule triaxale où lui sont imposées une pression axiale, une pression latérale et une température (Figure ~\ref{fig:d12}). Un essai a une durée typique de quelques mois, au cours de laquelle on fait varier par paliers le déviateur de contraintes et la température pour simuler les conditions réelles d’évolution du sel et où l’on mesure l’évolution de la déformation axiale de l’éprouvette. 
+
+Il existe de nombreuses lois qui permettent de décrire le comportement du sel en fonction de la température, du temps, des contraintes de pression et du déviateur. Nous avons décidé d’utiliser la loi de Lemaître dans notre étude. (cf chapitre 2) 
+
+La Figure ~\ref{fig:d13} donne un exemple d'essai de fluage réalisé au laboratoire du centre de Géosciences.
+Pour caractériser le niveau de fluage d'un sel, on définit l'indice de fluage qui correspond à la déformation viscoplastique calculée en \% pour un déviateur de 10 MPa, un temps de 365 jours et une température T = 328 K. 
+Dans notre étude, nous avons retenu pour le sel les paramètres suivants : $\alpha=0,3 ; \beta=3,24 ; K = 0,72MPa ; A=2500 \textrm{ et } Tr=30 \textrm{°C}$. Ces paramètres conduisent à un indice de fluage de l'ordre de 6 \%. Cet indice traduit un sel relativement fluant.
+Le coefficient de dilatation thermique $\alpha th$ peut être mesuré à chaque changement de palier de température sous déviateur de contraintes nul, c'est à dire lorsque la déformation ne provient que de la dilatation thermique. Dans notre étude, nous avons retenu $\alpha th = 40 10-6 K-1$. Les autres paramètres thermiques retenus pour le sel, la conductivité thermique et la capacité thermique volumique, sont respectivement de 5,78Wm-1K-1 et de 2 MJm-3K-1.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/annexe_D/D12.png}
+\caption{Dispositif pour la réalisation d'un essai de fluage multipaliers (centre de Géosciences)}
+\label{fig:d12}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/annexe_D/D13.png}
+\caption{Exemple d'ajustement d'un essai de fluage multipaliers par la loi de Lemaitre}
+\label{fig:d13}
+\end{figure}
+\FloatBarrier
+
 
 \FloatBarrier
 \subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} 
