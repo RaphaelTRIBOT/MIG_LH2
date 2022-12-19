@@ -1,12 +1,12 @@
 \begin{thebibliography}{10}
 
-\bibitem{The_Suiso_Frontier}
-
-
 \bibitem{unkown1}
 Comparison of specific energy (energy per mass or gravimetric density) and
   energy density (energy per volume or volumetric density) for several fuels
   based on lower heating values.
+
+\bibitem{The_Suiso_Frontier}
+The suiso frontier.
 
 \bibitem{ADEME_2022}
 ADEME.
@@ -17,6 +17,10 @@ ADEME.
 International~Energy Agency.
 \newblock {\em Global Hydrogen Review 2021}.
 \newblock OECD, Oct 2021.
+
+\bibitem{InfoTerreCarte}
+BRGM.
+\newblock Carte géologique brgm.
 
 \bibitem{Geostock_2022}
 Geostock.
