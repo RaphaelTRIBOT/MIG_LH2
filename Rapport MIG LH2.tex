@@ -563,30 +563,30 @@ Ces contraintes prennent des valeurs positives. Les roches entourant la cavité 
 On distingue les reservoirs enterrés et les cavités minées revêtues.\\
 
 \textbf{A-Réservoirs enterrés}\\
-Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique (cf figure 1) enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données sur (figure 2).\\
+Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données en annexe C.\\
 
 Due à la température de l’hydrogène liquide dans le réservoir ($T = 20K$), le froid risque de se propager dans le sol entourant la cuve et l’eau qu’il contient peut se geler. L’eau solide occupant un volume plus important que l’eau liquide, cela risquerait d’engendrer un phénomène de gonflement du sol. Afin d’éviter ce phénomène, nous avons mené une étude sur le logiciel COMSOL pour suivre l’évolution de température dans le sol et en surface.\\
 Pour cela, nous allons dimensionner le type d'isolant, l'épaisseur de l'isolant et la profondeur d'enfouissement.\\
 
-Nous avons travaillé sur un réservoir en 2D sur le logiciel d’une part pour écourter les temps de calculs et d’autre part car l’étude en 2D est plus contraignante que celle en 3D : en effet on néglige les effets de bord en 2D, ce qui en réalité permet une meilleure évacuation de la chaleur. Nous avons pris également en compte le gradient de température dans le sol : on perd 3°C tous les 100m. Tous les clichés présentés sont pris au bout de 10ans(annexe F).  \\
+Nous avons travaillé sur un réservoir en 2D sur le logiciel d’une part pour écourter les temps de calculs et d’autre part car l’étude en 2D est plus contraignante que celle en 3D : en effet on néglige les effets de bord en 2D, ce qui en réalité permet une meilleure évacuation de la chaleur. Nous avons pris également en compte le gradient de température dans le sol : on perd 3°C tous les 100m. Tous les clichés présentés sont pris au bout de 10ans (annexe F).  \\
 
 
 \begin{itemize}
 \item Température extérieure constante \\ Dans un premier temps nous avons lancé la simulation pour une température extérieure constante de 17°C, deux types d’isolants (air et perlite) d’une épaisseur de 15cm.  
-Les résultats sont présentés en figure 3.
+Les résultats sont présentés en figure 50.
 \item Température extérieur variable \\ En réalité, la température dépend des saisons. Pour en tenir compte on suppose une température sous la forme : $$T_a(t) = A_a=B_a cos(\frac{2\pi(t-t_a)}{\tau})$$ $$A_a=\frac{1}{2}(T_{max} + T_{min}) \ , \ \ B_a =\frac{1}{2} ( T_{max} + T_{min})$$
 Avec $T_{max}=25°C$,$T_{min}=5°C$ et $\tau=365 j$.
 \end{itemize}
 
-Voir figure 4 pour les différents résultats ainsi que figure 5 ou on fait varier les épaisseurs
+Voir figure 51 pour les différents résultats ainsi que figure 52 ou on fait varier les épaisseurs
 On voit que l’air, même à 30cm d’épaisseur ne constitue pas un très bon isolant. Pour la perlite, on peut descendre à 7 cm sans que l’eau contenue dans le sol ne gèle. Pour que le dimensionnement puisse garantir l’isolation pour des conditions plus extrêmes de température (qui dépendent de l’endroit de creusement) et pour maintenir une marge de sécurité, on prend une épaisseur de 30cm.
-Dans ce cas, même pour une température moyenne de 2°C, l’isolation est efficace alors que ce n’est pas le cas pour une épaisseur de 7cm (figure 6)
+Dans ce cas, même pour une température moyenne de 2°C, l’isolation est efficace alors que ce n’est pas le cas pour une épaisseur de 7cm 
 
 On peut maintenant jouer sur 3 autres paramètres: 
 \begin{itemize}
-\item la porosité du sol: plus un sol est poreux et plus le froid se propage loin (figure 7)
-\item La profondeur: on voit que dans les deux cas, la répartition de température est assez semblable (figure 8). Pour des raisons économiques évidentes, on va donc se placer à une faible profondeur.
-\item H, le coefficient d’échange avec le sol: on voit que lorsque les échanges thermiques avec la surface sont importants, le froid se propage vers le bas, et remonte moins en surface. (figure 9 )
+\item la porosité du sol: plus un sol est poreux et plus le froid se propage loin (figure 53)
+\item La profondeur: on voit que dans les deux cas, la répartition de température est assez semblable (figure 54). Pour des raisons économiques évidentes, on va donc se placer à une faible profondeur.
+\item H, le coefficient d’échange avec le sol: on voit que lorsque les échanges thermiques avec la surface sont importants, le froid se propage vers le bas, et remonte moins en surface. (figure 55)
 \end{itemize}
 
 Ainsi en tenant compte de ces conditions, on retiendra pour notre isolant la perlite avec une épaisseur de 30cm et une faible profondeur de du réservoir. \\
