@@ -345,10 +345,10 @@ Les résultats des essais de fluage sont ajustés grâce à une méthode des moi
 
 \subsection{Simulations numériques des cavités}
 
-Le but est maintenant de confirmer la fiabilité du dimensionnement préliminaire défini ci-dessus en modélisant les différentes cavités. Pour cela, nous avons simulé les propriétés thermomécaniques des cavités à l’aide du logiciel \emph{DEMETHER} et nous avons vérifié la stabilité des stockages. Nous avons également adapté le dimensionnement aux résultats.
+Le but est maintenant de confirmer la fiabilité du dimensionnement préliminaire défini ci-dessus en modélisant les différentes cavités. Pour cela, nous avons simulé les propriétés thermomécaniques des cavités à l’aide du logiciel \emph{DEMETHER} (des extraits de la notice que nous a donnée Laura Blanco Martin se trouvent en annexe E) et nous avons vérifié la stabilité des stockages. Nous avons également adapté le dimensionnement aux résultats.
 
 \subsubsection{Des cavités pour GH\textsubscript{2}}
-Pour pouvoir faire les simulations des cavités de stockage, il faut tout d’abord s’intéresser à la théorie de la modélisation et au fonctionnement du logiciel utilisé. \\
+Pour pouvoir faire les simulations des cavités de stockage, il faut tout d’abord s’intéresser à la théorie de la modélisation et à la prise en main du logiciel utilisé. \\
 
 \textbf{A-Théorie des modélisations}\\
 
@@ -467,7 +467,7 @@ On remarque que les conditions de stabilité citées précédemment sont bien re
 
 Nous avons utilisé le logiciel DEMETHER dans le but de simuler la création, le remplissage et les cycles soutirage-injection des cavités minées non revêtues (le logiciel ne permettant pas de modéliser l’interaction entre revêtement et le gaz/les roches) et d’adapter le dimensionnement préliminaire pour assurer la stabilité.\\
 
-Contrairement au sel, les roches n’ont pas un comportement visco-plastique mais uniquement élastique, il n’y a pas de phénomène de fluage. Nous avons pris en entrée, cinq paramètres pour décrire les propriétés thermodynamiques des roches compétentes qui entourent la cavité : deux propriétés mécaniques et trois propriétés thermiques résumées dans le tableau ci-dessous:\\
+Contrairement au sel, les roches n’ont pas un comportement visco-plastique mais uniquement élastique, il n’y a pas de phénomène de fluage. Nous avons pris en entrée, cinq paramètres pour décrire les propriétés thermodynamiques des roches résistantes qui entourent la cavité : deux propriétés mécaniques et trois propriétés thermiques résumées dans le tableau ci-dessous:\\
 
 
 \begin{table}[h]
@@ -491,7 +491,7 @@ Coefficient de dilatation thermique ($K^{-1}$) & $5\times 10^{-1}$ \\
 
 Les critères de stabilité des cavités minées à respecter sont : une pression maximale pour ne pas créer de microfissures dans la roche, une pression minimale pour éviter un effondrement de la cavité, des contraintes négatives pour que les roches soient en permanence en compression (elles résistent très mal à la traction), des variations de températures raisonnables, des températures positives pour éviter que les roches ne gèlent et se dilatent.\\
 
-Nous avons simulé des cavités cylindriques contenant du dihydrogène gazeux avec les débits d’injection et de soutirage issus du dimensionnement préliminaire. Des simulations ont permis de montrer que les dimensionnements préliminaires conduisaient à des cavités instables. La solution était alors de créer plusieurs cavités plus petites.
+Nous avons simulé des cavités cylindriques contenant de l'hydrogène gazeux avec les débits d’injection et de soutirage issus du dimensionnement préliminaire. Des simulations ont permis de montrer que les dimensionnements préliminaires conduisaient à des cavités instables. La solution était alors de créer plusieurs cavités plus petites. On retrouve les caractéristiques des cavités pour les applications de l'hydrogène à la mobilité et à l'industrie dans la table 2 ci-dessous.
 
 \begin{table}[h]
 \centering
@@ -508,9 +508,7 @@ Mobilité & 100 & 2 & 30 & 15 & 22 000 \\
 \end{table}
 
 
-Regardons les résultats obtenus pour une application industrielle du stockage de l’hydrogène gazeux (les résultats pour une application à la mobilité sont donnés en annexe). A noter que nous avons simulé la cavité et la roche autour de celle-ci, mais pas le puits ni la roche autour de celui-ci. \\
-
-Les cavités ont été simulées sur une durée de trente ans, ce qui correspond plus ou moins à leur durée de vie. \\
+Regardons les résultats obtenus pour une application industrielle du stockage de l’hydrogène gazeux (les résultats pour une application à la mobilité sont donnés en annexe E). A noter que nous avons simulé la cavité et la roche autour de celle-ci, mais pas le puits ni la roche autour de celui-ci. \\
 
 On simule dans un premier temps l'évolution de la pression.
 \begin{figure}[h]
@@ -555,7 +553,7 @@ On simule enfin les contraintes dans la cavité. La composante orthoradiale de l
   \label{fig:contrainte}
 \end{figure}
 
-Ces contraintes prennent des valeurs positives. Les roches entourant la cavité entrent donc en traction, ce qui justifie la nécessité d’un revêtement.
+Les contraintes observées sur la figure 12 prennent des valeurs positives. Les roches entourant la cavité entrent donc en traction, ce qui justifie la nécessité d’un revêtement.
 
 
 
@@ -1366,6 +1364,54 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 \FloatBarrier
 \subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} 
 
+Voici quelques extraits de la notice du logiciel DEMETHER.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 1.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 2.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 3.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 4.png}
+\end{figure}
+
+Voici les résultats obtenus pour l’application du stockage en cavités minées à la mobilité.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_pression.jpg}
+    \caption{Evolution de la pression dans la cavité}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_temperature.jpg}
+\caption{Evolution de la température}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_orthoradiale.jpg}
+\caption{Evolution de la contrainte orthoradiale}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_axiale.jpg}
+\caption{Evolution de la contrainte selon z}
+\end{figure}
+
 \newpage
 \FloatBarrier
 \subsection*{Annexe F : Simulation numérique du réservoir enterré sur COMSOL}
@@ -1585,9 +1631,13 @@ Gazole (€/L)&1,16\\
 \begin{tabular}{|c|c|}
 \hline
 Béton armé (€/m3)&300\\
+\hline
 Béton non armé (€/m3)&185\\
+\hline
 Sable (€/m3)&100\\
+\hline
 Acier-inox (€/kg)&1,50\\
+\hline
 Perlite (€/m3)&190\\
 \hline
 \end{tabular}
