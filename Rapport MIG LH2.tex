@@ -1015,8 +1015,7 @@ Chaque scénario étudié peut être synthétisé par un \textit{flowsheet}. Un 
 
 Afin de stocker de l’hydrogène en souterrain, il est nécessaire d’effectuer plusieurs procédures administratives. L’installation de la cavité est réglementée par le code minier (articles 211-1 et suivants).
 Tout d’abord, la possession d’un titre minier (Livre I – Titres II à IV + décret 2006-648) est nécessaire pour pouvoir construire la cavité souterraine. Si le stockage est supérieur à 100 kg d’Hydrogène, ce qui correspond au seuil des Installations Classées pour la Protection de l’Environnement (ICPE), ont est soumis au code minier mais aussi au code environnemental. Dans ce cas, les travaux suivent la directive SEVESO, directive européenne qui encadre les sites industriels à risque majeur. 
-L’installation peut ainsi être classée selon un seuil SEVESO bas ou un seuil SEVESO haut (ce qui dépend de la quantité stockée, voir figure en annexe). Dans le cas contraire, on est soumis aux titres VI du livre II du code minier, le décret n°2006-649 du 2 juin 2006 relatif aux travaux miniers, aux travaux de stockage souterrain et à la police des mines et des stockages souterrains, le décret n°2016-1303 du 4 octobre 20164 relatif aux travaux de recherches par forage et d’exploitation par puits de substances minières (dit décret « forage »), et l’arrêté ministériel du 14 octobre 2016. Si la cavité existe déjà, il faut déclarer qu’on modifie un ICPE déjà existant au Préfet, s’il juge que les modifications sont notables, une demande doit être déposée selon le code de l’environnement. Celle-ci doit contenir une étude de dangers (L181-25 + D181-15-2-III) et une étude d’impact (L122-3 + R122-4 et 5) ou d’incidence environnementale (L181-8 et R181-14).
-
+L’installation peut ainsi être classée selon un seuil SEVESO bas ou un seuil SEVESO haut (ce qui dépend de la quantité stockée). Dans le cas contraire, on est soumis aux titres VI du livre II du code minier, le décret n°2006-649 du 2 juin 2006 relatif aux travaux miniers, aux travaux de stockage souterrain et à la police des mines et des stockages souterrains, le décret n°2016-1303 du 4 octobre 20164 relatif aux travaux de recherches par forage et d’exploitation par puits de substances minières (dit décret « forage »), et l’arrêté ministériel du 14 octobre 2016. Si la cavité existe déjà, il faut déclarer qu’on modifie un ICPE déjà existant au Préfet, s’il juge que les modifications sont notables, une demande doit être déposée selon le code de l’environnement. Celle-ci doit contenir une étude de dangers (L181-25 + D181-15-2-III) et une étude d’impact (L122-3 + R122-4 et 5) ou d’incidence environnementale (L181-8 et R181-14).
 
 
 \subsection{Sécurité et risques environnementaux}
@@ -1290,6 +1289,92 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 \FloatBarrier
 \subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} 
 
+Pour l'application à l'industrie (détaillée dans le 2.3.1-B), on a utilisé les données d'entrée ci-dessous:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/cav_sal/ind.png}
+  \caption{Données d'entrée dans le cas de l'industrie.}
+  \end{figure}
+
+On a également modélisé des cavités salines qui stockeraient de l'hydrogène destiné à la mobilité. Pour cela, on a d'abord utilisé les données d'entrée suivantes:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/cav_sal/p2mf.png}
+  \caption{Données d'entrée dans le cas de la mobilité.}
+  \end{figure}
+
+Pour une cavité sphérique d'un rayon de 21 m, on obtient l'évolution de la pression suivante:
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/cav_sal/P2M_faux/P.png}
+  \caption{Evolution de la pression (MPa)}
+  \end{figure}
+
+On remarque que la pression n'est pas comprise entre la pression maximale et minimale, donc on en conclue que les données d'entrée aboutissent à une cavité pas stable. Par manque de temps, notre encadrante Laura Blanco Martín a fait les calculs qui nous ont permis d'obtenir une cavité sphérique stable. Le rayon devait valoir 25 mètres, et on observe qu'en effet la cavité obtenue avec cette donnée est bien satisfaisante.
+
+  \begin{figure}[h!]
+    \centering
+    
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/P.png}
+        \caption{Evolution de la pression (MPa).}
+    \end{subfigure}
+    \hspace{1cm}
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/P_zoom.png}
+        \caption{Evolution de la pression zoomée (MPa)}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.42\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/q(t).png}
+        \caption{déviateurs (MPa).}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.42\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/M.png}
+        \caption{masse (kg).}
+    \end{subfigure}
+    
+    begin{subfigure}[b]{0.42\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/T.png}
+        \caption{température (ºC).}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.42\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/Delta_vol_(1).png}
+        \caption{écart volumique (\%).}
+    \end{subfigure}
+    \caption{Evolution de la pression (MPa), déviateurs (MPa), masse (kg), , température (ºC), écart volumique (\%). }
+    
+    \end{figure}
+    
+    \begin{figure}[h!]
+    \centering
+    
+    begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/stt.png}
+        \caption{Evolution de la contrainte orthoradiale (MPa).}
+    \end{subfigure}
+    \hspace{1cm}
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/stt_zoom.png}
+        \caption{Evolution de la contrainte orthoradiale zoomée (MPa)}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.42\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/szz.png}
+        \caption{Evolution de la contrainte selon z (MPa).}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.42\linewidth}
+        \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/szz_zoom.png}
+        \caption{Evolution de la contrainte selon z zoomée (MPa).}
+    \end{subfigure}
+
+    \caption{Evolution de la  contrainte orthoradiale (MPa) et contrainte selon z (MPa) au cours du temps dans la cavité}
+    \label{fig:7 figures}
+    \end{figure}
+
+Tous les critères dont on a parlé dans le paragraphe 2.3.1-B sont bien satisfaits. Cette cavité est bien réalisable.
 
 \newpage
 \FloatBarrier
