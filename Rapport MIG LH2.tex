@@ -868,15 +868,15 @@ L'hydrogène sort de l'électrolyseur à 3 MPa et à 60°C, et de la cellule SMR
 
 D'un point de vue technique, le taux de compression ne peut techniquement pas dépasser 3, c'est-à-dire que la pression de sortie doit être inférieure à trois fois la pression d'entrée. De plus, la température dans le compresseur ne doit pas excéder 150°C afin de ne pas l'endommager [VI]. Par conséquent, il est nécessaire de refroidir l'hydrogène en sortie du compresseur avec des échangeurs et d'utiliser plusieurs étages de compression. \\
 
-Pour ce faire, nous avons, à l’aide du diagramme des frigoristes de l’hydrogène, réalisé une étude thermodynamique simple pour dessiner les différents étages de compression, puis les avons modélisés à l’aide du logiciel ASPEN PLUS, couramment utilisé dans l'industrie notamment dans le domaine de la thermodynamique des procédés. \\
+Pour ce faire, nous avons, à l’aide du diagramme des frigoristes de l’hydrogène, réalisé une étude thermodynamique simple pour dessiner les différents étages de compression, puis les avons modélisés à l’aide du logiciel ASPEN PLUS, couramment utilisé dans l'industrie notamment dans le domaine de la thermodynamique des procédés. L'annexe I détaille l'outil \textit{Aspen Plus} et ses crédits.
 
 En ce qui concerne le choix des compresseurs, nous avions le choix entre des compresseurs volumétriques et dynamiques. Après des recherches bibliographiques, le choix du compresseur volumétrique nous a paru le plus pertinent au vu des propriétés volumiques de l’hydrogène (densité)[VII]. Nous l’avons modélisé sur ASPEN PLUS comme un compresseur idéal isotherme. Pour les échangeurs, le liquide réfrigérant utilisé est de l’eau. \\
 
 \begin{figure}[h!]
-\centering
-\includegraphics[width=.8\linewidth]{image/chap3/etage_compression.PNG}
-\caption{Procédé de compression modélisé avec \textit{ASPEN Plus} }
- \end{figure}
+ \centering
+ \includegraphics[width=.8\linewidth]{image/chap3/etage_compression.PNG}
+ \caption{Procédé de compression modélisé avec \textit{ASPEN Plus} }
+\end{figure}
 
 
 
@@ -891,15 +891,15 @@ On cherche à liquéfier l'hydrogène pour augmenter sa densité énergétique. 
 De plus, la liquéfaction de l'hydrogène présente un défi de nature quantique : la conversion orthohydrogène-parahydrogène. On parle de deux isomères de l'hydrogène. Pour l'orthohydrogène le proton de chaque molécule d'hydrogène possède des spins parallèles, pour le parahydrogène le proton de chaque molécule d'hydrogène possède des spins antiparallèles
 
 
- \begin{center}
+\begin{center}
   \includegraphics[width=\linewidth]{image/chap3/diagramme de phase H2.png}
-    \captionof{figure}{Diagrammes de phase de l'hydrogène}
+  \captionof{figure}{Diagrammes de phase de l'hydrogène}
 \end{center}
 
 \end{multicols}
 
 \begin{figure}[!h]
-\centering
+  \centering
   \includegraphics[width=0.6\linewidth]{image/chap3/Ortho-para.png}
  \caption{Proportion ortho-para en fonction de la température et énergie de conversion \cite{orthopara}.}
 \end{figure}
@@ -945,8 +945,8 @@ Nous détaillons ici les différentes étapes de la liquéfaction. On suppose qu
 \item On sépare les deux phases dans un séparateur.
 \end{enumerate}
 
-On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud. L'annexe J décrit le principe de modélisation du procédé de liquéfaction sous \textit{Aspen Plus} et les équations fonctionnelles utilisées dans le logiciel.
-
+On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud. L'annexe I décrit le principe de modélisation du procédé de liquéfaction sous \textit{Aspen Plus} et les équations fonctionnelles utilisées dans le logiciel.
+L'annexe J détaille le procédé de liquéfaction.
 
 \subsection{Transport d'hydrogène}
 Le transport d'hydrogène pose des problèmes techniques nouveaux de part la nature thermodynamique de l'hydrogène. Le transport de l’hydrogène peut être envisagé sous deux conditionnement différents. Premièrement sous conditionnement gazeux par pipeline ou camion, mais aussi sous conditionnement liquide par camion ou bateau.
@@ -1691,9 +1691,6 @@ Les illustrations sont issues de la présentation Storengy sur la cavité Skalle
 \FloatBarrier
 \subsection*{Annexe I : Compression}
 
-\FloatBarrier
-\subsection*{Annexe J : Procédé de liquéfaction} 
-
 Aspen Plus est un logiciel sous licence. Plusieurs équations fonctionnelles sont mises à disposition de l'utilisateur pour calculer les évolutions des grandeurs thermodynamiques lors des différentes transformations. Nous avons utilisé les équations fonctionnelles de GERG2008. Les caluls sont alors réalisés par le logiciel Aspen Plus sur la base de ces équations.
 
 Pour résumer nous avons utilisé:
@@ -1704,6 +1701,28 @@ Pour résumer nous avons utilisé:
 \end{itemize}
 
 Les méthodes pour estimer les CAPEX et les OPEX sont implémentées dans Aspen Plus via APEA. Elles permettent d'estimer les coûts à partir d'une base de données mise à jour régulièrement.
+
+\FloatBarrier
+\subsection*{Annexe J : Procédé de liquéfaction} 
+
+On peut se pencher plus en détail sur le cycle de refroidissement et  de liquéfaction de l'hydrogène. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/liquefaction/cycle_liqu.jpg}
+  \caption{Liquéfaction de l'hydrogène}
+\end{figure}
+
+Nous avons sythétisé ici au maximum les différents procédés de liquéfaction de l'hydrogène présent dans la littérature.
+Contrairement à la section liquéfaction du chapitre 3, il n'y a pas la présence d'un compresseur et d'un échangeur thermique en amont pour amener l'hydrogène
+à une température de $T=300K$ et une pression $P=30 bar$. Nous détaillons les grandes lignes de ce procédé:
+\begin{enumerate}
+  \item L'hydrogène gazeux est refroidi jusqu'à $T=80 K$ dans un bain d'azote liquide. On remarque que ce bain refroidi aussi de l'hélium comprimé à la température de l'hydrogène.
+  \item L'hélium est ensuite détendu, ce qui le refroidit. Ainsi l'hélium refroidit l'hydrogène à $T=20K$ et l'amène à un état supercritique. Les catalyseurs de la réaction 
+  ortho-para sont positionnés dans les échageurs thermiques pour convertir l'orthohydrogène en parahydrogène pendant le refroidissement. De plus, les industriels utilisent des mélanges de liquide de refroidissement (et pas seulement de l'helium) pour que la courbe de changement d'état 
+  du mélange réfrigérant et de l'hydrogène soient le plus semblables possible. En effet, les liquides diphasés offrent de meilleurs propriétés d'échanges thermiques.
+  \item Une détente Joule-Thomson ramène l'hydrogène à pression atmosphérique et dans un état diphasé. Dans le procédé de liquéfaction ainsi réalisé, on touve une proportion d'$LH_2$ de $70\%$ dans le séparateur de phases.
+\end{enumerate}
 
 
 \newpage
