@@ -280,7 +280,7 @@ Nous détaillons ici les techniques de dimensionnement de différentes configura
 La cavité saline est envisagée uniquement pour le stockage de l'hydrogène en phase gazeuse. Nous cherchons à déterminer la pression dans la cavité et son volume. Prenons comme exemple la première configuration. On injecte l’H2 dans la cavité pendant 12h puis on le soutire pendant les 12h restantes. Le débit d’injection (respectivement soutirage) serait alors donné par $$ D_{injection}=\frac{m_{H_2}}{T_{injection}} \ \ \  D_{soutirage}=\frac{m_{H_2}}{T_{soutirage}} $$
 
 \begin{multicols}{2}
-Initialement, le massif est soumis à un régime de contraintes initiales dans trois directions (cf. ~\ref{fig:chap2contrainteSaline}) La contrainte verticale est donnée par le poids des terrains : $$\sigma_\nu = \rho g H $$ avec $\rho$ la masse volumique, $g=10 m.s^{-2} $ l'accélération de pensanteur et $H$ la profondeur.
+Initialement, le massif est soumis à un régime de contraintes initiales dans trois directions (cf. ~\ref{fig:chap2contrainteSaline}) La contrainte verticale est donnée par le poids des terrains : $$\sigma_\nu = \rho g H $$ avec $\rho$ la masse volumique du sol, $g=10 m.s^{-2} $ l'accélération de pensanteur et $H$ la profondeur.
  
 \begin{center}
 \includegraphics[width=.4\linewidth]{image/chap2/cube_contraintes.png}
@@ -567,7 +567,7 @@ Les contraintes sur la figure 12 prennent des valeurs positives. Les roches ento
 On distingue les reservoirs enterrés et les cavités minées revêtues.\\
 
 \textbf{A-Réservoirs enterrés}\\
-Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique (cf. figure x) enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données dans l'Annexe F sur la figure 47.\\
+Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique (cf. annexe C figure 48) enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données dans l'Annexe C sur la figure 47.\\
 
 Compte tenu de la température de l’hydrogène liquide dans le réservoir ($T = 20K$), le froid risque de se propager dans le sol entourant la cuve et l’eau qu’il contient peut geler. L’eau solide occupant un volume plus important que l’eau liquide, cela risquerait d’engendrer un phénomène de gonflement du sol. Afin d’éviter ce phénomène, nous avons mené une étude sur le logiciel \emph{COMSOL} pour suivre l’évolution de température dans le sol et en surface. Pour cela, nous allons dimensionner le type d'isolant, l'épaisseur de l'isolant et la profondeur d'enfouissement.\\
 
@@ -575,7 +575,7 @@ Nous avons travaillé sur un réservoir en 2D d’une part pour écourter les te
 
 
 Dans un premier temps, nous avons lancé la simulation pour une température extérieure constante de 17°C, deux types d’isolants (air et perlite) d’une épaisseur de 15 cm.  
-Les résultats sont présentés en figure x de l'Annexe F. En réalité, la température dépend des saisons. Pour en tenir compte on suppose une température sous la forme : $$T_a(t) = A_a=B_a cos(\frac{2\pi(t-t_a)}{\tau})$$ $$A_a=\frac{1}{2}(T_{max} + T_{min}) \ , \ \ B_a =\frac{1}{2} ( T_{max} + T_{min})$$
+Les résultats sont présentés en figure 72 de l'Annexe F. En réalité, la température dépend des saisons. Pour en tenir compte on suppose une température sous la forme : $$T_a(t) = A_a=B_a cos(\frac{2\pi(t-t_a)}{\tau})$$ $$A_a=\frac{1}{2}(T_{max} + T_{min}) \ , \ \ B_a =\frac{1}{2} ( T_{max} + T_{min})$$
 Avec $T_{max}=25°C$,$T_{min}=5°C$ et $\tau=365 j$.
 
 
