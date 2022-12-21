@@ -25,6 +25,15 @@
     linktoc=all,     %set to all if you want both sections and subsections linked
 }
 
+\usepackage[toc,page,header]{appendix}
+\usepackage{minitoc}
+\renewcommand \thepart{}
+\renewcommand \partname{}
+\doparttoc % Tell to minitoc to generate a toc for the parts
+\faketableofcontents % Run a fake tableofcontents command for the partocs
+
+
+
 \titleformat{\section}
 {\color{blue}\normalfont\Large\bfseries}
 {\color{blue}\thesection}{1em}{}
@@ -76,6 +85,7 @@ $$\ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \as
 
 
 \newpage
+\part{} % Start the document part
 
 \section*{Remerciements}
 Nous souhaiterions remercier l’ensemble des personnes qui nous ont accompagnés durant cette étude, qui ont pris de leur temps pour nous présenter le domaine de l’hydrogène et pour nous encadrer sur plusieurs heures ou plusieurs jours.
@@ -110,7 +120,9 @@ Our goal here is to study each step of the hydrogen supply-chain, from its manuf
 
 
 \newpage
-\tableofcontents
+
+%\tableofcontents
+\parttoc % Insert the document TOC
 
 \newpage
 
@@ -1247,9 +1259,15 @@ chapitre 5
 %début des annexes
 \backmatter
 
-\section*{Annexes} \addcontentsline{toc}{section}{Annexes}
+%\newpage
+\appendix
+\addcontentsline{toc}{section}{Annexes} % Add the appendix text to the document TOC
 
-\subsection*{Tableau de bord de la première semaine}\addcontentsline{toc}{subsection}{Tableau de bord}
+\section*{Annexes}% \addcontentsline{toc}{section}{Annexes}
+\part{Appendix} % Start the appendix part
+\parttoc % Insert the appendix TOC
+
+\subsection*{Tableau de bord de la première semaine}%\addcontentsline{toc}{subsection}{Tableau de bord}
 La première semaine a été consacrée à des visites d'entreprise afin de mieux connaître le sujet de l'hydrogène.
 
 Lors de la première journée,  après un rapide rappel des objectifs du MIG, nous avons assisté à une conférence de France Hydrogène pendant la fin de matinée. Cette conférence était utile pour nous présenter le marché actuel du dihydrogène en France et dans le monde, les intérêts de cette molécule et les enjeux techniques et économiques liés à celle-ci. 
