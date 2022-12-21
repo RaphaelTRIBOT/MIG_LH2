@@ -226,7 +226,7 @@ Quels que soient les scénarios envisagés par l’ADEME, une grande part de l�
 
 \subsection{Nos configurations}
 
-Les configurations retenues s’ancrent dans deux thématiques : alimenter les industries ou les mobilités (Power to Mobility (P2M)/ Power to Industry (P2I)) \\
+Les configurations retenues s’ancrent dans deux thématiques : alimenter les industries ou les mobilités (Power to Mobility (P2M)/ Power to Industry (P2I)), et ont pour but de comparer les différents modes de production, la forme de l'hydrogène stocké et le type de stockage. \\
  
 \textbf{Configuration 1 : Power to Mobility } \\
 Alimentation de l’aéroport Charles de Gaulle et stockage en cavité saline. On se propose ici d’alimenter toute l’infrastructure de l’ensemble de l’aéroport à l’hydrogène. Cela ne concerne pas le carburant des avions. L’hydrogène serait produit par électrolyse et stocké en phase gazeuse en cavité saline . La consommation journalière de l’aéroport en H2 serait selon une estimation donnée par Air Liquide de 300 t par jour, avec 12h d’injection et 12h de soutirage. \\
@@ -244,7 +244,7 @@ Alimentation de toutes les infrastructures du port de Marseille-Fos. C’est un 
 Production d'hydrogène par électrolyse et stockage sous forme liquide dans un réservoir enterré de 73$m^3$ .Ce réservoir d’une capacité de 5,2 t constituerait une station pour alimenter les véhicules à hydrogène, avec vaporisation au préalable. \\
 
 \textbf{Configuration 6 : Power to Mobility}\\
-Production d'hydrogène par électrolyse et stockage sous forme liquide dans des cavités minées revêtues afin d’alimenter une flotte de 10 000 taxis à Paris. La demande en hydrogène est de 230 t par jour.  \\
+Production d'hydrogène par électrolyse et stockage sous forme liquide dans des cavités minées revêtues afin d’alimenter un réseau de transport à hydrogène. La demande en hydrogène est de 230 t par jour.  \\
 
 \textbf{Configuration 7 : Power to Industry. }\\
 Stockage de l'hydrogène sous forme liquide en cavité minée revêtue. Cette configuration est analogue à celle du port de Marseille puisqu’elle vise à comparer l’efficacité du stockage sous forme liquide et gazeuse. Les durées de soutirage et la masse utile (1000 t) sont les mêmes que pour le scénario de Marseille-Fos.\\
@@ -603,16 +603,10 @@ Nous devions ainsi dimensionner la cavité afin qu’elle ait une capacité de 1
 
 \end{multicols}
 
-Pour chaque cavité, nous avons conservé la forme des cavités standards (qui est régie par les panneaux d’acier utilisés pour le revêtement). En choisissant une section caractéristique de 36 $m^2$, nous avons obtenu les dimensions suivantes [Figure 14].\\
+Pour chaque cavité, nous avons conservé la forme des cavités standards (qui est régie par les panneaux d’acier utilisés pour le revêtement).\\
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=.6\linewidth]{image/chap2/Figure 3.ii.2-2.png}
-\caption{Dimensionnement des deux cavités minées revêtues}
-\end{figure}
-
-Nous nous sommes ensuite intéressés au revêtement de la cavité minée [Figure 15 a]. Celui-ci est constitué de plusieurs épaisseurs. La première est un « pare-vapeur » permettant l’étanchéité de la cavité. Ensuite vient une couche de béton, puis une couche d’isolant (généralement de la mousse de polyuréthane) entre deux épaisseurs de contreplaqué (afin d’avoir une surface parfaitement plane), ce qui permet à la fois de maintenir l’hydrogène à 20K, mais aussi d’éviter les températures extrêmement froides dans les roches. Puis vient un panneau ondulé en acier inoxydable de faible épaisseur (1,2 mm).
-Ce revêtement est inspiré de ceux utilisés dans les cuves des méthaniers transportant du gaz naturel liquéfié [Figure 15 b] qui sont également adaptés au transport d’un liquide devant être maintenu à très basse température (-160°C à pression atmosphérique).\\
+Nous nous sommes ensuite intéressés au revêtement de la cavité minée (cf. figure 14 a). Celui-ci est constitué de plusieurs épaisseurs. La première est un « pare-vapeur » permettant l’étanchéité de la cavité. Ensuite vient une couche de béton, puis une couche d’isolant (généralement de la mousse de polyuréthane) entre deux épaisseurs de contreplaqué (afin d’avoir une surface parfaitement plane), ce qui permet à la fois de maintenir l’hydrogène à 20K, mais aussi d’éviter les températures extrêmement froides dans les roches. Puis vient un panneau ondulé en acier inoxydable de faible épaisseur (1,2 mm).
+Ce revêtement est inspiré de ceux utilisés dans les cuves des méthaniers transportant du gaz naturel liquéfié (cf. figure 15 b) qui sont également adaptés au transport d’un liquide devant être maintenu à très basse température (-160°C à pression atmosphérique).\\
 
 \begin{figure}[h!]
 \centering
@@ -660,7 +654,7 @@ Avec  $a_0 = 0,5 m/jour$ la vitesse de dissolution du sel pour une paroi vertica
 
 
 Il est techniquement impossible de lessiver sur une hauteur supérieure à 30 m, c’est pourquoi nous créons la cavité par passe, c’est-à-dire que nous superposons plusieurs cylindres de hauteur inférieure à 30 m et de rayon différent.
-Nous avons dessiné les cavités correspondant aux configurations 1 et 3 (cf. figure 16), caractérisé par des volumes utiles de $70000 m^3$ et $1300000 m^3$ puis avons simulé la création afin d'obtenir l’évolution du rayon de la cavité au cours du temps et celle de la concentration de saumure (cf. figure 17).
+Nous avons dessiné les cavités correspondant aux configurations 1 et 3 (cf. figure 15), caractérisé par des volumes utiles de $70000 m^3$ et $1300000 m^3$ puis avons simulé la création afin d'obtenir l’évolution du rayon de la cavité au cours du temps et celle de la concentration de saumure (cf. figure 16).
 
 
 \begin{figure}[h]
@@ -673,7 +667,7 @@ Nous avons dessiné les cavités correspondant aux configurations 1 et 3 (cf. fi
     \includegraphics[width=\linewidth]{image/chap2/Graphe rayon C3 100.png}
     \caption{ }
   \end{subfigure}
-  \caption{Evolution du rayon (b) et de la concentration de saumure (a) au cours du temps pour la configuration 3 }
+  \caption{Evolution de la concentration de saumure (a) et du rayon (b) au cours du temps pour la configuration 3 }
 \end{figure}
 
 Nous remarquons que la durée de création de la cavité pour la configuration 3 est extrêmement longue (plus de 5500 jours, ce qui correspond à plus de 15 ans), nous avons donc essayé d’optimiser ce temps en doublant le débit (100 à 200 $m^3/h$), en sachant que cela allait diminuer la concentration de saumure. On obtient donc une durée plus raisonnable : 3500 jours, ce qui correspond à moins de 10 ans (voir graphes en annexes). En ce qui concerne la configuration 1, la création dure 470 jours, nous n’avons donc pas modifié le débit. 
@@ -695,6 +689,19 @@ Le revêtement est constitué de:
 \item Un liner métallique de 12 à 15 mm qui a pour objectif d'assurer une barrière imperméable (étanchéité).
 \item Un liner bitumineux d'épaisseur 5 mm intercalé entre le béton et l’acier pour éviter la transmission des déformations du terrain à l’acier. Il autorise ainsi un mouvement relatif du liner par rapport au béton et permet que l’ensemble du revêtement résiste aux déformations mécaniques.
 \end{itemize}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{image/chap2/cav_skallen.jpg}
+    \caption{ }
+  \end{subfigure}
+  \begin{subfigure}[b]{0.43\linewidth}
+    \includegraphics[width=\linewidth]{image/chap2/crea_cav_min.jgp}
+    \caption{ }
+  \end{subfigure}
+  \caption{Cavité minée revêtue de Skallen (a) et revêtement associé (b)}
+\end{figure}
 
 Selon les scénarios, il est nécessaire de multiplier les cavités car celles-ci sont limitées en taille. Enfin, suite aux contraintes exercées sur les parois, on ne peut pas disposer aléatoirement les cavités dans les scénarios où il y a plusieurs cavités. Le détail des calculs est donné en annexe. Il faut retenir que pour conserver une marge de sécurité suffisante, chaque cavité doit être éloignée d’une distance au moins égale au double de son diamètre. Le détail des calculs est exposé en Annexe H.
 
@@ -750,13 +757,6 @@ On peut maintenant caractériser la technique SMR par ordres de grandeur.
 \item Prix SMR type une unité de production d’hydrogène à partir du gaz naturel type d’une capacité de $100000 Nm^3/h$ avec purification de l’hydrogène par PSA (pureté 99,9 \% en volume, taux de récupération d’environ 90 \%) représente un investissement d’environ 120 M€.
 \end{itemize}
 
-\begin{center}
-\begin{figure}[!h]
-\includegraphics[width=.9\linewidth]{image/chap3/Arrangement_four_vaporeformage.jpg}
-\caption{Arrangement typique d'un four de vaporeformage \cite{Prod_gaz_synth}}
-\label{fig:arrangement_four}
-\end{figure}
-\end{center}
 
 \subsubsection{L'électrolyse de l'eau}
 
@@ -831,7 +831,7 @@ D'un point de vue technique, le taux de compression ne peut techniquement pas d�
 
 Pour ce faire, nous avons, à l’aide du diagramme des frigoristes de l’hydrogène, réalisé une étude thermodynamique simple pour dessiner les différents étages de compression, puis les avons modélisés à l’aide du logiciel \emph{ASPEN PLUS}, couramment utilisé dans l'industrie notamment dans le domaine de la thermodynamique des procédés. L'annexe I détaille l'outil \textit{Aspen Plus} et ses crédits.
 
-En ce qui concerne le choix des compresseurs, nous avions le choix entre des compresseurs volumétriques et dynamiques. Après des recherches bibliographiques, le choix du compresseur volumétrique nous a paru le plus pertinent au vu des propriétés volumiques de l’hydrogène (densité)[VII]. Nous l’avons modélisé sur \emph{ASPEN PLUS} comme un compresseur idéal isotherme. Pour les échangeurs, le liquide réfrigérant utilisé est de l’eau. Un exemple de schéma du procédé de compression entre la phase de production et de stockage, pour la configuration 1, est donné par la figure 21.\\
+En ce qui concerne le choix des compresseurs, nous avions le choix entre des compresseurs volumétriques et dynamiques. Après des recherches bibliographiques, le choix du compresseur volumétrique nous a paru le plus pertinent au vu des propriétés volumiques de l’hydrogène (densité)[VII]. Nous l’avons modélisé sur \emph{ASPEN PLUS} comme un compresseur idéal isotherme. Pour les échangeurs, le liquide réfrigérant utilisé est de l’eau. Un exemple de schéma du procédé de compression entre la phase de production et de stockage, pour la configuration 1, est donné par la figure 20.\\
 
 \begin{figure}[h!]
  \centering
@@ -845,7 +845,7 @@ En ce qui concerne le choix des compresseurs, nous avions le choix entre des com
 
 
 \begin{multicols}{2}
-On cherche à liquéfier l'hydrogène pour augmenter sa densité énergétique. Liquéfier l'hydrogène pour le transporter ou le stocker est un défit technique de taille: l'hydrogène est liquide à une températue inférieure à 20K à pression athmosphérique (cf. figre 22). Il s'agit donc de dimensionner et caractériser un ensemble de cycles thermodynamiques pour refroidir l'hydrogène. 
+On cherche à liquéfier l'hydrogène pour augmenter sa densité énergétique. Liquéfier l'hydrogène pour le transporter ou le stocker est un défit technique de taille: l'hydrogène est liquide à une températue inférieure à 20K à pression athmosphérique (cf. figre 21). Il s'agit donc de dimensionner et caractériser un ensemble de cycles thermodynamiques pour refroidir l'hydrogène. 
 
 De plus, la liquéfaction de l'hydrogène présente un défi de nature quantique : la conversion orthohydrogène-parahydrogène. On parle de deux isomères de l'hydrogène. Pour l'orthohydrogène le proton de chaque molécule d'hydrogène possède des spins parallèles, pour le parahydrogène le proton de chaque molécule d'hydrogène possède des spins antiparallèles.
 
@@ -864,7 +864,7 @@ De plus, la liquéfaction de l'hydrogène présente un défi de nature quantique
 \end{figure}
 
 
-A 300 K, il y a 25\% de parahydrogène et 75\% d'orthohydrogène. A 20K, il y a 100\% d'orthohydrogène. On observe donc une conversion orthohydrogène à parahydrogène. Or, cette réaction est fortement exothermique (cf. figure 23): 
+A 300 K, il y a 25\% de parahydrogène et 75\% d'orthohydrogène. A 20K, il y a 100\% d'orthohydrogène. On observe donc une conversion orthohydrogène à parahydrogène. Or, cette réaction est fortement exothermique (cf. figure 22): 
  $$ \Delta h _{conv} = 500kJ/kg$$
 En cherchant à refroidir à de l'hydrogène on le réchauffe. L'équilibre s'atteint en quelques jours : c'est une réaction assez lente.
 
@@ -889,7 +889,7 @@ Plusieurs cycles thermodynamiques sont décrits dans la littératures pour liqu�
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\linewidth]{image/chap3/liquéfaction.png}
-\caption{Représentation simplifiée avec \textit{Aspen Plus} de la liquéfaction}
+\caption{Représentation simplifiée avec \textit{ASPEN PLUS} de la liquéfaction}
 \end{figure}
 
 Nous détaillons ici les différentes étapes de la liquéfaction. On suppose que l'hydrogène gazeux arrive sous pression de 2 MPa et à 27°C (sortie de vaporeformage).
@@ -904,7 +904,7 @@ Nous détaillons ici les différentes étapes de la liquéfaction. On suppose qu
 \item On sépare les deux phases dans un séparateur.
 \end{enumerate}
 
-On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud. L'annexe I décrit le principe de modélisation du procédé de liquéfaction sous \textit{Aspen Plus} et les équations fonctionnelles utilisées dans le logiciel.
+On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud. L'annexe J décrit le principe de modélisation du procédé de liquéfaction sous \textit{Aspen Plus} et les équations fonctionnelles utilisées dans le logiciel.
 L'annexe J détaille le procédé de liquéfaction.
 
 \subsection{Transport d'hydrogène}
@@ -932,7 +932,7 @@ $$ p_1^2 - p_2^2 =2 p_1 \rho_1 v_1^2 (\frac{\lambda L}{2 D} + ln\frac{p_2}{p_1})
 Transporter du gaz par pipeline est donc couteux en énergie à cause des pertes de charges. Tous les 100km on perd 1,2\% de l'énergie transportée. De plus, l'hydrogène est une molécule très petite. On assiste donc à des phénomènes de fragilisation des matériaux.
 
 \begin{multicols}{2}
-Pour des courtes ou moyennes distances, le transport par camion est plus adapté. En effet, la construction de pipeline est onéreuse (un million d’euros par kilomètre en ordre de grandeur) et le transport d’hydrogène gazeux par un pipeline soulève de nombreux problèmes techniques. Ainsi on peut transporter l’hydrogène gazeux comprimé dans des bouteilles. Il en existe deux types, le premier est une bouteille entièrement en acier, et l’autre alternative, plébiscitée par Airliquide, est une bouteille composée de plusieurs matériaux ( cf. figure 26). Ces bouteilles sont composées premièrement d’une structure en fibre de carbone garantissant la résistance aux efforts mécaniques. Cette structure recouvre une épaisse couche d’acier sur laquelle repose un liner en polymère qui garantit l’étanchéité de la bouteille. On peut alors comprimer l’hydrogène à 500 bar et stocker de 5 à 10 kg par bouteille \cite{MAHYTEC}. Un camion peut ainsi transporter 300 kg d’hydrogène [V].
+Pour des courtes ou moyennes distances, le transport par camion est plus adapté. En effet, la construction de pipeline est onéreuse (un million d’euros par kilomètre en ordre de grandeur) et le transport d’hydrogène gazeux par un pipeline soulève de nombreux problèmes techniques. Ainsi on peut transporter l’hydrogène gazeux comprimé dans des bouteilles. Il en existe deux types, le premier est une bouteille entièrement en acier, et l’autre alternative, plébiscitée par Airliquide, est une bouteille composée de plusieurs matériaux ( cf. figure 25). Ces bouteilles sont composées premièrement d’une structure en fibre de carbone garantissant la résistance aux efforts mécaniques. Cette structure recouvre une épaisse couche d’acier sur laquelle repose un liner en polymère qui garantit l’étanchéité de la bouteille. On peut alors comprimer l’hydrogène à 500 bar et stocker de 5 à 10 kg par bouteille \cite{MAHYTEC}. Un camion peut ainsi transporter 300 kg d’hydrogène [V].
 
 \begin{center}
 \includegraphics[width=.8\linewidth]{image/chap3/Figure 3.i-1.png}
@@ -949,7 +949,7 @@ Ainsi on pourrait envisager le transport de l’hydrogène liquide par camion po
 
 \begin{multicols}{2}
 
-Concernant le transport par bateau, un projet pilote est actuellement en cours (Figure 27). Il s’agit du « Suiso Frontier », destiné à relier l’Australie au Japon, et dont la capacité est de 1250 m3 (soit près de 90 tonnes d’hydrogène liquide \cite{The_Suiso_Frontier}. Ce moyen de transport n’est pas nécessairement intéressant pour nos scénarios, étant donné que tout est localisé en France. Cependant, comme pour le projet pilote, il devient très intéressant lorsque l’on veut transporter de l’hydrogène d’un continent à un autre. Ainsi, cela pourrait être particulièrement pertinent si l’on envisage que l’hydrogène tienne un rôle important dans la transition énergétique.
+Concernant le transport par bateau, un projet pilote est actuellement en cours (Figure 26). Il s’agit du « Suiso Frontier », destiné à relier l’Australie au Japon, et dont la capacité est de 1250 m3 (soit près de 90 tonnes d’hydrogène liquide \cite{The_Suiso_Frontier}. Ce moyen de transport n’est pas nécessairement intéressant pour nos scénarios, étant donné que tout est localisé en France. Cependant, comme pour le projet pilote, il devient très intéressant lorsque l’on veut transporter de l’hydrogène d’un continent à un autre. Ainsi, cela pourrait être particulièrement pertinent si l’on envisage que l’hydrogène tienne un rôle important dans la transition énergétique.
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{image/chap3/Figure 3.ii-3.jpg}
@@ -960,6 +960,14 @@ Concernant le transport par bateau, un projet pilote est actuellement en cours (
 
 \subsection{Applications aux configurations retenues}
 
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.9\linewidth]{image/chap3/Tableau 1 chap 2.4.png}
+  \caption{Récapitulatif des installations de surface pour les différentes configurations}
+  \end{figure}
+
+
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\linewidth]{image/chap3/Tableau 2 chap 2.4.png}
@@ -968,15 +976,10 @@ Concernant le transport par bateau, un projet pilote est actuellement en cours (
 
 Les simulations numériques du comportement thermomécanique du stockage des configurations nous ont permis de valider ou d'ajuster certains paramètres en jeu. Nous avons extrait de ces simulations 7 applications industrielles ou de mobilité qui ont été étudiées dans le détail.
 
-La figure 28 résume les paramètres des configurations de stockage retenues pour les 7 applications industrielles ou de mobilité, tandis que la figure 29 regroupe les installations de surface qui leur sont associées et les puissances électriques mobilisées.
+La figure 27 regroupe les installations de surface qui leur sont associées et les puissances électriques mobilisées, tandis que la figure 28 résume les paramètres des configurations de stockage retenues pour les 7 applications industrielles ou de mobilité.
 
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.9\linewidth]{image/chap3/Tableau 1 chap 2.4.png}
-\caption{Récapitulatif des installations de surface pour les différentes configurations}
-\end{figure}
 
-Chaque configuration étudiée peut être synthétisée par un \textit{flowsheet}. Un \textit{flowsheet} permet d'indiquer les différents flux physiques qui rentrent ou sortent dans chacune des étapes d'un procédé, d'où son nom. C'est un outil très pratique de visualisation d'un procédé qui permet d'identifier aisément les différentes dépendances. La figure 30 en donne une illustration.
+Chaque configuration étudiée peut être synthétisée par un \textit{flowsheet}. Un \textit{flowsheet} permet d'indiquer les différents flux physiques qui rentrent ou sortent dans chacune des étapes d'un procédé, d'où son nom. C'est un outil très pratique de visualisation d'un procédé qui permet d'identifier aisément les différentes dépendances. La figure 29 en donne une illustration.
 
 \begin{figure}[!h]
 \centering
@@ -1024,11 +1027,6 @@ L'hydrogène est un gaz à effet de serre indirect, en effet, sur une période d
 De plus, lors du stockage, "une fuite dans des aquifères sous-jacents ou de couches superficielles est susceptible d'avoir des impacts environnementaux (contamination des aquifères d'eaux potables, d'éventuels ouvrages souterrains..)" selon ANCRE $[3]$.
 
 L'hydrogène stocké peut aussi constituer une source d'énergie pour de nombreux microorganismes qui le consomment. Le nombre des microorganismes peut augmenter ce qui présente un risque de colmatage de la roche aquifère, et donc une diminution de la porosité. Une telle activité microbienne dans les aquifères modifie durablement les conditions physico-chimiques de l'eau.\\
-
-\begin{center}
-\includegraphics[width=0.65\linewidth]{image/chap4/colmatage.PNG}
-\captionof{figure}{ Phénomènes de colmatage de la roche causés par le développement de microorganismes}
-\end{center}
 
 
 
@@ -1106,7 +1104,7 @@ Nous avons aussi retenu le granite de Grézieu-la-Varenne, près de Lyon, pour l
 
 
 
-\section{Bilan économique}
+\section{Chapitre V : Bilan économique}
 Dans les chapitres précédents, sept principales configurations de stockage en cavités salines, minées et réservoirs enterrés ont été identifiées par rapport aux applications possibles de l'hydrogène produit par électrolyse de l’eau ou vaporeformage.
 
 L’objectif de ce dernier chapitre est d’approfondir l’étude de ces configurations en réalisant une étude économique simple, prenant en compte les coûts générés sur 30 ans. La finalité de ce propos visera une conclusion sur la faisabilité des différents projets, incluant leur rentabilité et de les comparer à d’autres techniques de stockage déjà existantes.
@@ -1126,8 +1124,8 @@ Notre évaluation économique est basée sur un modèle simple dans lequel les d
 De plus, dans l'analyse économique d'un projet, il faut tenir compte des fluctuations de la valeur de la monnaie, qui sont décrites par deux grandeurs : l'inflation (i) et le taux d'intérêt d'un placement ($\tau$). 
 
 \subsubsection{Evaluation des CAPEX}
-Les coûts retenus pour les infrastructures diffèrent d'une configuration à l'autre en fonction de l'application industrielle envisagée (P2I ou P2M), mais aussi en fonction du type de cavité de stockage, du type de transport et des moyens de production.  Les CAPEX calculés pour les 7 infrastructures comprennent leur achat et leur installation (Figure 34).  
-Pour évaluer les investissements initiaux nécessaires à la phase de conditionnement, nous nous sommes appuyés sur des simulations réalisées avec le logiciel \emph{ASPEN PLUS}, et avons implémenté les schémas de conditionnement donnés précédement Les données récoltées sont résumées dans la Figure 34 (exemple pour la configuration 1):
+Les coûts retenus pour les infrastructures diffèrent d'une configuration à l'autre en fonction de l'application industrielle envisagée (P2I ou P2M), mais aussi en fonction du type de cavité de stockage, du type de transport et des moyens de production.  Les CAPEX calculés pour les 7 infrastructures comprennent leur achat et leur installation (cf. figure 32).  
+Pour évaluer les investissements initiaux nécessaires à la phase de conditionnement, nous nous sommes appuyés sur des simulations réalisées avec le logiciel \emph{ASPEN PLUS}, et avons implémenté les schémas de conditionnement donnés précédement Les données récoltées sont résumées dans la figure 32 (exemple pour la configuration 1):
 
 \begin{figure}[h!]
 \centering
@@ -1140,7 +1138,7 @@ Pour les coûts liés à la création de cavités minées revêtues, nous nous s
 Les coûts des installations de génie civil et leur gestion ont également été pris en compte (20 \% du CAPEX initial) et les données que nous avons utilisées pour évaluer les coûts liés au transport ainsi que les prix des matériaux qui interviennent dans nos différentes configurations sont précisés en Annexe L. 
 
 En ce qui concerne le transport de l’hydrogène, le prix des pipelines étant de 1 M€/km, ce qui représente un coût faramineux pour le producteur d’hydrogène, nous avons décidé de considérer que le coût lié aux pipelines serait assumé par l’état ou l’union européenne. Pour les transports par camion, bien que les distances entre les sites de stockage et d’utilisation soient différentes en fonction des configurations, nous allons les considérer identiques et égales à 100 km (dans un souci de comparaison).
-De plus, la durée de vie des appareils nous permet de prévoir le nombre de remplacements afin de calculer le CAPEX de renouvellement sur 30 ans. Nous pouvons ainsi comparer la part des différents appareils dans le CAPEX total sur 30 ans (cf. figure 35).
+De plus, la durée de vie des appareils nous permet de prévoir le nombre de remplacements afin de calculer le CAPEX de renouvellement sur 30 ans. Nous pouvons ainsi comparer la part des différents appareils dans le CAPEX total sur 30 ans (cf. figure 33).
 
 \begin{figure}[h!]
 \centering
@@ -1157,13 +1155,13 @@ De plus, le coût d’un électrolyseur par rapport à une station SMR est bien 
 
 \subsubsection{Evaluation des OPEX}
 
-Les coûts annuels considérés sont principalement le coût de l’électricité dans les phases de production et de conditionnement, auxquels nous avons ajouté les salaires, que nous avons estimés à 15\% du CAPEX d’investissement. La Figure 36 résume les OPEX annuels pour chaque configuration.
+Les coûts annuels considérés sont principalement le coût de l’électricité dans les phases de production et de conditionnement, auxquels nous avons ajouté les salaires, que nous avons estimés à 15\% du CAPEX d’investissement. La figure 34 résume les OPEX annuels pour chaque configuration.
 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\linewidth]{image/chap5/Tableau 3 chap 5.png}
-\caption{ Résumé des OPEX des différentes configurations. }
+\caption{Résumé des OPEX des différentes configurations. }
 \end{figure}
 
 Afin de déterminer le prix de l’électricité de la partie conditionnement, nous avons, à l’aide du logiciel \emph{ASPEN PLUS}, déterminé les puissances de chaque composant en multipliant la variation d’enthalpie à chaque étape et le débit considéré. Puis, dans une démarche de transition énergétique, nous avons utilisé le prix de l’électricité verte en France.
