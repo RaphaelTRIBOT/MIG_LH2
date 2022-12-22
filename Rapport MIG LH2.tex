@@ -230,10 +230,10 @@ Alimentation de l’aéroport Charles de Gaulle et stockage en cavité saline. O
 Stockage gazeux en cavité minée de l’hydrogène pour alimenter les mobilités (taxis, bus, voitures). Ici on stocke 230t d’$H_2$ par jour avec 12h d’injection et 12h de soutirage. \\
  
 \textbf{Configuration 3 :  Power to Industry } \\
-Alimentation d’un pôle industriel en hydrogène. Stockage gazeux dans une cavité saline selon le modèle de celle de Spindletop au Texas d'Air Liquide (backup). On injecte pendant 5 mois pour soutirer pendant 1 mois 6400 t d’$H_2$. L’hydrogène serait produit par SMR. \\
+Alimentation d’un pôle industriel en hydrogène. Stockage gazeux dans une cavité saline selon le modèle de Spindletop au Texas d'Air Liquide (backup). On injecte pendant 5 mois pour soutirer pendant 1 mois 6400 t d’$H_2$. L’hydrogène serait produit par SMR avec captage de $CO_2$. \\
 
 \textbf{Configuration 4 : Power to Industry }\\
-Alimentation de toutes les infrastructures du port de Marseille-Fos. C’est un projet qui aura lieu entre 2026 et 2031 et qui vise à décarboner l’activité industrielle du port de Marseille-Fos. L’Hydrogène serait produit par SMR avec captage de $CO_2$, puis serait stocké en phase gazeuse en cavité minée. La période d’injection serait de 3 semaines pour 1 semaine de soutirage. La masse d’hydrogène utile serait de 1000 t. \\
+Alimentation de toutes les infrastructures du port de Marseille-Fos. C’est un projet qui aura lieu entre 2026 et 2031 et qui vise à décarboner l’activité industrielle du port de Marseille-Fos. L’Hydrogène serait produit par SMR avec captage de $CO_2$, puis stocké en phase gazeuse en cavité minée. La période d’injection serait de 3 semaines pour 1 semaine de soutirage. La masse d’hydrogène utile serait de 1000 t. \\
 
 \textbf{Configuration 5 :  Power to Mobility }\\
 Production d'hydrogène par électrolyse et stockage sous forme liquide dans un réservoir enterré de 73$m^3$ .Ce réservoir d’une capacité de 5,2 t constituerait une station pour alimenter les véhicules à hydrogène, avec vaporisation au préalable. \\
@@ -270,7 +270,7 @@ Nous détaillons ici les techniques de dimensionnement de différentes configura
 La cavité saline est envisagée uniquement pour le stockage de l'hydrogène en phase gazeuse. Nous cherchons à déterminer la pression dans la cavité et son volume. Prenons comme exemple la première configuration. On injecte l’H2 dans la cavité pendant 12h puis on le soutire pendant les 12h restantes. Le débit d’injection (respectivement soutirage) serait alors donné par $$ D_{injection}=\frac{m_{H_2}}{T_{injection}} \ \ \  D_{soutirage}=\frac{m_{H_2}}{T_{soutirage}} $$
 
 \begin{multicols}{2}
-Initialement, le massif est soumis à un régime de contraintes initiales dans trois directions (cf. ~\ref{fig:chap2contrainteSaline}) La contrainte verticale est donnée par le poids des terrains : $$\sigma_\nu = \rho g H $$ avec $\rho$ la masse volumique du sol, $g=10 m.s^{-2} $ l'accélération de pensanteur et $H$ la profondeur.
+Initialement, le massif est soumis à un régime de contraintes initiales dans trois directions (cf. figure ~\ref{fig:chap2contrainteSaline}) La contrainte verticale est donnée par le poids des terrains : $$\sigma_\nu = \rho g H $$ avec $\rho$ la masse volumique du sol, $g=10 m.s^{-2} $ l'accélération de pensanteur et $H$ la profondeur.
  
 \begin{center}
 \includegraphics[width=.4\linewidth]{image/chap2/cube_contraintes.png}
@@ -282,7 +282,7 @@ Initialement, le massif est soumis à un régime de contraintes initiales dans t
 
 Pour simplifier on considère que les deux contraintes horizontales initiales sont égales à la contrainte verticale $\sigma_\nu = \sigma_{h1} = \sigma_{h2} $. Ensuite on prend un coefficient de sécurité pour les pressions maximales et minimales : une pression trop élevée peut causer des fractures dans le sel, endommageant l’étanchéité de celui-ci et une pression trop basse peut faire que la cavité se referme sur elle-même. Ainsi: \ $P_{max} \le 0,8 \sigma_{\nu}$ et $ P_{min} \ge 0,2 \sigma_{\nu} $
 
-En considérant que l'hydrogène est un gaz parfait, on peut calculer le volume de la cavité comme suit : $$ V_{cav} = \frac{m_{totale} R T }{ M(H_2) \Delta P} $$ On définit la masse d'hydrogène coussin comme la masse d'hydrogène pour la pression minimale et on déduit la masse utile : $$ m_{utile} = m_{totale} - m_{coussin} $$
+En considérant que l'hydrogène est un gaz parfait, on peut calculer le volume de la cavité comme suit : $$ V_{cav} = \frac{m_{utile} R T }{ M(H_2) \Delta P} $$ On définit la masse d'hydrogène coussin comme la masse d'hydrogène pour la pression minimale et on déduit la masse utile : $$ m_{utile} = m_{totale} - m_{coussin} $$
 
 Reste à dimensionner les puissances électriques nécessaires à ce type d'installation. La puissance de l'électrolyseur doit être de $P_{elec} = PCI \times D_m $ où le pouvoir calorifique inférieur de l’hydrogène ($PCI$) est de $121 000 MJ/kg$. Sachant que les électrolyseurs ont un rendement de 0.62, la puissance électrique nécessaire est de $P=\frac{P_{elec}}{0.62}$. L'ensemble des résultats sont disponibles en Annexe B.
 
@@ -323,14 +323,13 @@ On peut également considérer le stockage dans un réservoir enterré dont les 
 
 \subsection{Rhéologie des roches}
 
-Lors du dimensionnement d’une cavité (saline ou minée), il est important de connaître les caractéristiques thermomécaniques des roches dans lesquelles la cavité sera créée. Pour ce faire, des échantillons sous forme de carottes sont prélevés dans le site considéré et envoyés dans un laboratoire spécialisé pour réaliser des essais géomécaniques. \\
+Lors du dimensionnement d’une cavité (saline ou minée), il est important de connaître les caractéristiques thermomécaniques des roches dans lesquelles la cavité sera créée. Pour ce faire, des échantillons sous forme de carottes sont prélevés dans le site considéré et envoyés dans un laboratoire spécialisé pour réaliser des essais géomécaniques. 
  
 Outre la mesure des propriétés physiques (masse volumique et vitesse du son qui caractérise la continuité du matériau) et des propriétés thermiques (conductivité, capacité volumique, coefficient de dilatation), la caractérisation de la roche au laboratoire comprend divers types d’essais (essais brésiliens, de compression simple et triaxiale, de cisaillement) dont le détail est donné en Annexe D.
  
 Aussi, le sel étant un matériau viscoplastique, il convient de réaliser des essais de fluage. En effet, si on applique une contrainte constante à notre éprouvette de sel, sa déformation va dépendre du temps.  
 On effectue donc un essai triaxial durant quelques mois pour mesurer la déformation relative de l’échantillon au cours de l’expérience sous différents paliers de déviateur de contraintes et de température.
 
-\vspace{.5cm}
 Plusieurs lois permettent de caractériser cette déformation, mais nous avons choisi d’utiliser la loi puissance de Lemaitre. En somme, au cours d'un essai de fluage, la déformation axiale totale de l'éprouvette est la somme d’une déformation élastique, d'une déformation viscoplastique irréversible donnée par la loi de Lemaitre, et d'une déformation de dilatation thermique.
 
 $$ \epsilon = \frac{q}{E} + (\frac{q}{K})^{\beta} exp(A[\frac{1}{T_{ref}} - \frac{1}{T}])t^{\alpha} + a_{th} (T-T_0) $$
@@ -467,6 +466,8 @@ Dans la première application relative à l'industrie (configuration 3), nous co
 \label{fig:7 figures}
 \end{figure}
 
+
+
 \textbf{C-Applications aux cavités minées revêtues}\\
 
 Nous avons également utilisé le logiciel \emph{DEMETHER} dans le but de simuler la création, le remplissage et les cycles soutirage-injection des cavités minées non revêtues (le logiciel ne permettant pas de modéliser l’interaction entre revêtement et le gaz/les roches).
@@ -511,7 +512,7 @@ Mobilité & 100 & 2 & 30 & 15 & 22 000 \\
 \end{table}
 
 
-Regardons les résultats obtenus pour une application industrielle du stockage de l’hydrogène gazeux (les résultats pour une application à la mobilité sont donnés en annexe E). \\
+Regardons les résultats obtenus pour une application industrielle du stockage de l’hydrogène gazeux (les résultats pour une application à la mobilité sont donnés en annexe E). 
 
 \begin{figure}[h]
 \centering
@@ -561,11 +562,11 @@ Les contraintes sur la figure 12 prennent des valeurs positives. Les roches ento
 On distingue les reservoirs enterrés et les cavités minées revêtues.\\
 
 \textbf{A-Réservoirs enterrés}\\
-Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique (cf. annexe C figure 48) enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données dans l'Annexe C sur la figure 47.\\
+Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique (cf. annexe C figure 48) enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données dans l'Annexe C sur la figure 47.
 
 Compte tenu de la température de l’hydrogène liquide dans le réservoir ($T = 20K$), le froid risque de se propager dans le sol entourant la cuve et l’eau qu’il contient peut geler. L’eau solide occupant un volume plus important que l’eau liquide, cela risquerait d’engendrer un phénomène de gonflement du sol. Afin d’éviter ce phénomène, nous avons mené une étude sur le logiciel \emph{COMSOL} pour suivre l’évolution de température dans le sol et en surface. Pour cela, nous allons dimensionner le type d'isolant, l'épaisseur de l'isolant et la profondeur d'enfouissement.\\
 
-Nous avons travaillé sur un réservoir en 2D d’une part pour écourter les temps de calculs et d’autre part car l’étude en 2D est plus contraignante que celle en 3D : en effet on néglige les effets de bord en 2D, ce qui en réalité permet une meilleure évacuation de la chaleur. Nous avons pris également en compte le gradient de température dans le sol : on perd 3°C tous les 100m. Toutes les figures présentées en Annexe F sont prises au bout de 10 ans.  \\
+Nous avons travaillé sur un réservoir en 2D d’une part pour écourter les temps de calculs et d’autre part car l’étude en 2D est plus contraignante que celle en 3D : en effet on néglige les effets de bord en 2D, ce qui en réalité permet une meilleure évacuation de la chaleur. Nous avons pris également en compte le gradient de température dans le sol : on perd 3°C tous les 100m. Toutes les figures présentées en Annexe F sont prises au bout de 10 ans.  
 
 
 Dans un premier temps, nous avons lancé la simulation pour une température extérieure constante de 17°C, deux types d’isolants (air et perlite) d’une épaisseur de 15 cm.  
@@ -618,7 +619,7 @@ Ce revêtement est inspiré de ceux utilisés dans les cuves des méthaniers tra
 \includegraphics[width=\linewidth]{image/chap2/Figure 3.ii.2-4.png}
 \caption{Structure du revêtement des cuves des méthaniers}
 \end{subfigure}
-\caption{Revêtments pour les cavitées linées revêtues}
+\caption{Revêtments pour les cavitées minées revêtues}
 \end{figure}
 
 Ensuite, nous nous sommes intéressés au phénomène de formation de glace autour de la cavité. En effet, contrairement au cas du réservoir enterré, il n’est pas nécessaire ici d’éviter complètement la formation de glace, car la cavité est située à faible profondeur dans un massif exposé à l'eau (nappe, circulation dans des fractures...). De plus, la formation d’un anneau de glace autour de la cavité sert également de seconde barrière d’étanchéité (en empêchant l’eau de s’infiltrer mais également l’hydrogène liquide de s’échapper). Cependant, il est nécessaire de contrôler la formation de glace autour de la cavité, pour éviter une surpression contre le revêtement. Ainsi, pendant la création de la cavité, l’eau des roches environnantes doit être draînée. 
@@ -732,7 +733,6 @@ Les unités de grande taille de production d'hydrogène atteignent aujourd’hui
 \end{figure}
 \end{center}
 
-
 Les étapes de production sont les suivantes:
 \begin{enumerate}
 \item Il faut dans un premier temps traiter les composants chlorés et souffrés qui endommagent les catalyseurs lors de la suite du processus. Le souffre est éliminé dans des réacteurs d’adsorption à l’oxyde de zinc \cite{Prod_gaz_synth}
@@ -744,7 +744,7 @@ Les étapes de production sont les suivantes:
 
 \item Le $CO_2$ produit est est ensuite récupéré par absorption par des amines dans une solution aqueuse. $C0_2$ est séparé de $H_2$. Il existe d'autres technologies en développement comme la récupération par cryogénie, développée par \emph{Air Liquide}.
 
-\item L'hydrogène est ensuite purifié dans des unités PSA. Le PSA est un procédé de séparation basé sur l’affinité des différents composés d’un fluide pour un adsorbant solide à la surface duquel certains composés s’adsorbent. L'hydrogène ressort enfin pur. \\
+\item L'hydrogène est ensuite purifié dans des unités PSA. Le PSA est un procédé de séparation basé sur l’affinité des différents composés d’un fluide pour un adsorbant solide à la surface duquel certains composés s’adsorbent. L'hydrogène ressort enfin pur. 
 
 \end{enumerate}
 
@@ -766,9 +766,9 @@ Le signe positif de l’enthalpie signifie que la réaction est endothermique.
 Il y a plusieurs façons d’exploiter cette réaction à travers des demi réactions différentes. Nous nous sommes intéressés à trois technologies:\\
 
 \begin{enumerate}
-\item L’électrolyse à oxyde solide : Les électrolyseurs utilisant cette méthode sont composés d’une anode en LSM (Manganite de lanthane dopé au strontium), et une cathode en nickel. Les demis réactions mis en jeu étant pour l’anode :  $2 O_2^- \rightarrow O_2 + 4 e^- $, et pour la cathode : $H_2O + 2 e^- \rightarrow H_2 + O_2^- $ . Cet électrolyseur nécessite une eau à haute température, un électrolyte pour faire migrer les ions et a une faible densité de courant. \\
+\item L’électrolyse à oxyde solide : Les électrolyseurs utilisant cette méthode sont composés d’une anode en LSM (Manganite de lanthane dopé au strontium), et une cathode en nickel. Les demis réactions mis en jeu étant pour l’anode :  $2 O_2^- \rightarrow O_2 + 4 e^- $, et pour la cathode : $H_2O + 2 e^- \rightarrow H_2 + O_2^- $ . Cet électrolyseur nécessite une eau à haute température, un électrolyte pour faire migrer les ions et a une faible densité de courant. 
 
-\item L’électrolyse alcaline : L’anode de ces électrolyseurs est à base de titane ou de nickel, et la cathode est en acier. Les réactions ayant lieu étant alors pour l’anode :  $2 OH^- \rightarrow H_2O + 1/2 O_2 + 2e^- $, et pour la cathode : $2 H_2O + 2 e^- \rightarrow H_2 +2 HO^- $ . Cet électrolyseur fait intervenir une migration lente des ions OH- à travers une membrane dans un électrolyte, et une faible densité de courant.\\
+\item L’électrolyse alcaline : L’anode de ces électrolyseurs est à base de titane ou de nickel, et la cathode est en acier. Les réactions ayant lieu étant alors pour l’anode :  $2 OH^- \rightarrow H_2O + 1/2 O_2 + 2e^- $, et pour la cathode : $2 H_2O + 2 e^- \rightarrow H_2 +2 HO^- $ . Cet électrolyseur fait intervenir une migration lente des ions OH- à travers une membrane dans un électrolyte, et une faible densité de courant.
 
 \item L’électrolyse PEM : Proton Exchange Membrane : L’anode de ces électrolyseurs est faite en oxyde d'iridium (IrO2) ou de ruthénium (RuO2), et la cathode est en platine. Le fer et le cobalt catalysent la réaction eux aussi mais sont instables dans les conditions de la réaction, d’où l’utilisation du platine. Les réactions aux électrodes sont pour l’anode (1) et la cathode (2):  
 $$2H_2O \rightarrow O_2 + 4H^+ + 4e^- \  (1) \ \ \ , \ \ \ 4H^+ + 4e^-  \rightarrow 2H_2  \ (2)$$
@@ -808,7 +808,7 @@ Pression de fonctionnement&1 bar& 0,3 - 30 Bar & Jusqu'à 35bar \\
   \caption{Une pile PEM}
 \end{figure}
 
-On peut maintenant caractériser la pile PEM par ordre de grandeur:\\
+On peut maintenant caractériser la pile PEM par ordre de grandeur:
 \begin{itemize}
 \item Les unités sont regroupés pour former des stacks (Figure 20(b))
 \item La réaction d’électrolyse ayant une enthalpie de $\Delta H = 280 KJ/mol$
@@ -852,7 +852,7 @@ De plus, la liquéfaction de l'hydrogène présente un défi de nature quantique
 
 \begin{center}
   \includegraphics[width=\linewidth]{image/chap3/diagramme de phase H2.png}
-  \captionof{figure}{Diagrammes de phase de l'hydrogène}
+  \captionof{figure}{Diagramme de phases de l'hydrogène}
 \end{center}
 
 \end{multicols}
@@ -964,19 +964,19 @@ Concernant le transport par bateau, un projet pilote est actuellement en cours (
 \begin{figure}[!h]
   \centering
   \includegraphics[width=0.9\linewidth]{image/chap3/Tableau 1 chap 2.4.png}
-  \caption{Récapitulatif des installations de surface pour les différentes configurations}
+  \caption{Récapitulatif des paramètres nécessaires au dimensionnement des stockages des différentes configurations}
   \end{figure}
 
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\linewidth]{image/chap3/Tableau 2 chap 2.4.png}
-\caption{Récapitulatif des paramètres nécessaires au dimensionnement des stockages des différentes configurations }
+\caption{Récapitulatif des installations de surface pour les différentes configurations}
 \end{figure}
 
 Les simulations numériques du comportement thermomécanique du stockage des configurations nous ont permis de valider ou d'ajuster certains paramètres en jeu. Nous avons extrait de ces simulations 7 applications industrielles ou de mobilité qui ont été étudiées dans le détail.
 
-La figure 27 regroupe les installations de surface qui leur sont associées et les puissances électriques mobilisées, tandis que la figure 28 résume les paramètres des configurations de stockage retenues pour les 7 applications industrielles ou de mobilité.
+La figure 27 regroupe les paramètres des configurations de stockage retenues pour les 7 applications industrielles ou de mobilité, tandis que la figure 28 résume les installations de surface qui leur sont associées et les puissances électriques mobilisées.
 
 
 Chaque configuration étudiée peut être synthétisée par un \textit{flowsheet}. Un \textit{flowsheet} permet d'indiquer les différents flux physiques qui rentrent ou sortent dans chacune des étapes d'un procédé, d'où son nom. C'est un outil très pratique de visualisation d'un procédé qui permet d'identifier aisément les différentes dépendances. La figure 29 en donne une illustration.
@@ -1225,21 +1225,23 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 \phantomsection
 L'hydrogène est un vecteur énergétique qui permettrait la décarbonnation de différents procédés. Nous avons présenté dans cette étude deux utilisations de l'hydrogène: une utilisation Power to Mobility
 et une utilisation Power to Industry. Nous avons volontairement écarté une utilisation Power to Power qui ne représenterait qu'une économie de niche sous l'hypothèse d'une énergie décarbonnée disponible à profusion. Utiliser l'hydrogène dans les transports ou dans l'industrie présente de nombreux défis techniques et sociétaux. 
-Il faut produire, stocker et dstribuer l'hydrogène en prenant en compte les aspects environnementaux des procédés et de la viabilité économique des procédés. Au chapitre premier nous avons présenté le contexte et les ambitions européennes et françaises ainsi que différentes configurations types pour l'utilisation de l'hydrogène. Au chapitre 2 nous avons vu les problématiques de stockage de l'hydrogène et au chapitre ses problématiques de productions. Au chapitre 4 nous avons questionné son acceptabilité sociétale et les risques environnementaux liés à l'hydrogène. Au chaptre 5 nous nous sommes penchés sur la viabilité économique des configurations présentées au chapitre 1.
+Il faut produire, stocker et dstribuer l'hydrogène en prenant en compte les aspects environnementaux des procédés et de la viabilité économique des procédés.
 
-Le chapitre 1 a présenté les ambitions européennes et françaises autour de l'hydrogène. L'UE souhaite produire 10 millions de tonnes d'hydrogène et en importer autant à l'horizon 2030. La France souhaite installer 6,5GW d'électrolyseurs dans un plan d'investissement de 30 milliards d'euros pour faire de la France le leader de l'hydrogène vert en 2030.
+Concernant les ambitions européennes et françaises autour de l'hydrogène, l'UE souhaite produire 10 millions de tonnes d'hydrogène et en importer autant à l'horizon 2030. La France souhaite installer 6,5GW d'électrolyseurs dans un plan d'investissement de 30 milliards d'euros pour devenir le leader de l'hydrogène vert en 2030.
 
 
 Différentes méthodes de stockage  ont été retenues en fonction de l'utilisation de l'hydrogène et de son état (gazeux ou liquide). 
-Il est plus intéressant de stocker de l'hydrogène sous forme liquide puisqu'il contient la même énergie dans un volume beaucoup plus faible comparé à l'état gazeux. 
+Il est plus intéressant de transporter et stocker l'hydrogène sous forme liquide puisqu'il contient la même énergie dans un volume beaucoup plus faible comparé à l'état gazeux. 
 L'hydrogène liquide peut être stocké soit dans des reservoirs enterrés, soit dans des cavités minées revêtues. Limiter la propagation du froid constitue le principal enjeu du stockage liquide et l'isolant thermique retenu est la perlite. Il n'est pas nécessaire  de comprimer l'hydrogène liquide, on évite ainsi d'avoir à creuser aussi profond que dans le cas gazeux. Cela est donc intéressant économiquement. Cependant, il peut être nécessaire de drainer l'eau contenue dans les roches environnantes afin d'éviter l'endommagement de la cavité. Le choix entre cavité minée revêtue et réservoir enterré dépend essentiellement de l'application que l'on souhaite faire de l'hydrogène.
-L'hydrogène gazeux peut être stocké en cavité minée revêtue ou saline. Il semble plus pertinant de privilégier les cavités salines, si possible, puisqu'elles restent plus simples à créer (il n'y a pas besoin de creuser), même si cela peut prendre plusieurs années. Le sel présente également l'avantage d'être naturellement étanche : pas besoin d'isolant ou de béton armé. Enfin, il n'est souvent pas nécessaire de construire plusieurs cavités salines, on évite ainsi les problématiques liées à la distance minimale de sécurité entre les cavités.
+L'hydrogène gazeux peut être stocké en cavité saline ou minée revêtue. Il semble plus pertinant de privilégier les cavités salines, si possible, puisqu'elles restent plus simples à créer, même si cela peut prendre plusieurs années. Le sel présente également l'avantage d'être naturellement étanche : pas besoin d'isolant ou de béton armé. Enfin, il n'est souvent pas nécessaire de construire plusieurs cavités salines, on évite ainsi les problématiques liées à la distance minimale de sécurité entre les cavités.
 
-L'hydrogène n'est pas présent à l'état naturel et il faut donc le produire en apportant de l'énergie de l'extérieur. Nous avons étudié deux méthodes de production de l'hydrogène: le vaporeformage couplé et l'électrolyse. 96\% de l'hydrogène est produit par vaporeformage actuellement. Cette technique utilise du gaz naturel. On on casse les liaisons carbone-hydrogène en chauffant à $760°C$. Le vaporeformage couplé à une captation de $CO_2$ est émeteur de $CO_2$ à hauteur de $550g $ pour $1kg$ de $H_2$ dans le meilleur des cas. Le vaporeformage présente néanmoins un intérêt économique certain. La production d'hydrogène pas vaporeformage est bien connue des industriels. On peut aussi synthétiser de l'hydrogène par électrolyse de l'eau et c'est cette technique qui est mise en avant dans les rapports et publications gouvernementales. Nous avons retenu ce type d'électrolyseurs car ils présentent un temps de réponse très faible et le plus grand débit de production d'hydrogène parmi les technologies d'électrolyse. C'est aussi cette technique qui est utilisé dans les électrolyseurs d'\emph{Elogen}. L'électrolyse a cependant un rendement de $70\%$. Il faut un apport très conséquent d'électricité décarbonée ($55kWh/kg H_2$), ce qui représente un véritable défi. Après production il faut ensuite conditionner l'hydrogène pour son transport ou son utilisation. On peut penser à le liquéfier ou le comprimer à très haute pression. Liquide, l'hydrogène a un pouvoir calorifique 4 fois moins grand que l'essence mais 780 fois plus grand que l'hydrogène gazeux à pression atmosphérique. Pour liquéfier l'hydrogène il faut le refroidir en dessous de 20,3K à pression atmosphérique en prenant en compte la réaction de conversion ortho-parahydrogène fortement exothermique. Comprimer l'hydrogène est aussi une solution pour augmenter sa densité énergétique mais il faut considérer des alliages spéciaux dans les outils de stockage pour supporter les hautes pressions. Transporter l'hydrogène sous forme de gaz fait apparaître des problèmes de pertes de charges dans les conduites et donc des pertes énergétiques. Transporter l'hydrogène sous forme liquide nécessite d'isoler thermiquement les réservoirs pour éviter les phénomènes de regazéification qui pourraient détruire les biens par surpression.
+L'hydrogène n'est pas présent à l'état naturel et il faut donc le produire en apportant de l'énergie de l'extérieur. Nous avons étudié deux méthodes de production de l'hydrogène: le vaporeformage couplé au captage de $CO_2$ et l'électrolyse. 96\% de l'hydrogène est produit par vaporeformage actuellement. Cette technique utilise du gaz naturel. On on casse les liaisons carbone-hydrogène en chauffant à $760°C$. Le vaporeformage couplé à une captation de $CO_2$ est émeteur de $CO_2$ à hauteur de $550g $ pour $1kg$ de $H_2$ dans le meilleur des cas. Le vaporeformage présente néanmoins un intérêt économique certain. La production d'hydrogène pas vaporeformage est bien connue des industriels. On peut aussi synthétiser de l'hydrogène par électrolyse de l'eau et c'est cette technique qui est mise en avant dans les rapports et publications gouvernementales. Nous avons retenu ce type d'électrolyseurs car ils présentent un temps de réponse très faible et le plus grand débit de production d'hydrogène parmi les technologies d'électrolyse. L'électrolyse a cependant un rendement de l'ordre de $62\%$. Il faut un apport très conséquent d'électricité décarbonée ($55kWh/kg H_2$), ce qui représente un véritable défi. Après production, il faut conditionner l'hydrogène pour son transport ou son utilisation. On peut penser à le liquéfier ou le comprimer à très haute pression. Liquide, l'hydrogène a un pouvoir calorifique 4 fois moins grand que l'essence mais 780 fois plus grand que l'hydrogène gazeux à pression atmosphérique. Pour liquéfier l'hydrogène, il faut le refroidir en dessous de 20,3K à pression atmosphérique en prenant en compte la réaction de conversion ortho-parahydrogène fortement exothermique. Comprimer l'hydrogène est aussi une solution pour augmenter sa densité énergétique mais il faut considérer des alliages spéciaux dans les outils de stockage pour supporter les hautes pressions. Transporter l'hydrogène sous forme de gaz fait apparaître des problèmes de pertes de charges dans les conduites et donc des pertes énergétiques. Transporter l'hydrogène sous forme liquide nécessite d'isoler thermiquement les réservoirs pour éviter les phénomènes de regazéification qui pourraient détruire les biens par surpression.
 
-Nous avons considéré dans un quatrième temps les impacts environnementaux et sociétaux de l'hydrogène. L'hydrogène est fortement inflammable et détonnant ce qui nécessite des dispositifs de détection des fuites et de ventilation. C'est aussi un gaz à fort effet de serre 11 fois plus important que le méthane. Les installations de stockage de l'hydrogène peuvent ainsi être classées \textit{SEVESO} au même titre que les installations de stockage de gaz naturel. D'un point de vue sociétal, il semblerait que le public soit relativement favorable au développement de la filière hydrogène et dénonce peu les risques écologiques. L'hydrogène n'est pas perçu comme un vecteur énergétique dominant dans le mix énergétique futur. Nous avons pu caractériser des sites de stockage \textit{ad hoc} en fonction de la géologie française.
+Nous avons considéré dans un quatrième temps les impacts environnementaux et sociétaux de l'hydrogène. L'hydrogène est fortement inflammable et détonnant ce qui nécessite des dispositifs de détection des fuites et de ventilation. C'est aussi un gaz à fort effet de serre : 11 fois plus important que le méthane. Les installations de stockage de l'hydrogène peuvent ainsi être classées \textit{SEVESO} au même titre que les installations de stockage de gaz naturel. D'un point de vue sociétal, il semblerait que le public soit relativement favorable au développement de la filière hydrogène et dénonce peu les risques écologiques. L'hydrogène n'est pas perçu comme un vecteur énergétique dominant dans le mix énergétique futur. Nous avons pu caractériser des sites de stockage \textit{ad hoc} en fonction de la géologie française.
 
-chapitre 5: go go Eva !
+Dans une démarche complète d’étude de faisabilité s’insère l’étude économique du projet. Cette étude converge avec les nombreux constats effectués dans chacune des parties. En effet, en prenant en compte les études faites sur les TRI et VAN de chaque configuration on remarque que la mise en place de cavités salines est plus rentable que les cavités minées revêtues. Aussi, stocker l’hydrogène sous forme liquide est bien plus rentable, même si cela n'est pas compatible avec une mise en place de cavités salines. En omettant l’aspect environnemental du procédé, il est clair qu’un investisseur préfèrera la production par vaporeformage avec captation de $CO_2$ plutôt que par électrolyse. Néanmoins, dans une problématique de développement durable il faut encourager la production d’hydrogène par électrolyse alimentée en électricité verte. 
+Ainsi, dans une optique de stockage d’hydrogène liquide produit par électrolyse, si l’on veut réduire les couts, il est préférable de stocker l’hydrogène dans des réservoir enterrées plutôt que des cavités minées revêtues. 
+Cependant, les coûts sont faramineux, et il apparait clairement que sans subventions de l’état par divers moyens (valorisation des capacités de stockages, aide …) la mise en place de solutions par hydrogène semblent compliquées.
 
 In fine, le développement de la filière hydrogène en France pour décarbonner des procédés nécéssite de surmonter moulte défis techniques dans sa production, son transport et son stockage. Au regard de notre rapport, l'hydrogène peut s'inscrire dans la transition énergétique mais ne sera pour autant pas prédominant dans le mix énergétique final. Si l'hydrogène devait devenir un vecteur énergétique bas-carbone, c'est avant tout sous l'hypothèse d'une énergie primaire elle aussi bas-carbone. La production d'énergie primaire décarbonnée est donc l'objectif principal des prochaines années. 
 
@@ -1277,11 +1279,11 @@ Enfin, nous avons consacré la cinquième journée à la visite d’un site de s
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\linewidth]{image/annexe/config_cavite_minee/configs.png}
-\caption{Détail des scénarios}
+\caption{Détail des configurations}
 \end{figure}
 
 \FloatBarrier
-\subsection*{Annexe B: Configurations des cavités minées} \addcontentsline{toc}{subsection}{Annexe B: Configurations des cavités minées}
+\subsection*{Annexe B: Détails des configurations étudiées} \addcontentsline{toc}{subsection}{Annexe B: Configurations des cavités minées}
 
 \begin{figure}
 \centering
@@ -1395,7 +1397,6 @@ Sur chaque éprouvette préparée, on détermine généralement :
  
 Pour le sel on trouve une masse volumique d’environ $2200 kg/m^3$ et une vitesse de son de l'ordre de 4500 m/s. 
 
-\subsubsection*{Essais de RDM }
 
 \paragraph{Essai brésilien }
 
@@ -1446,7 +1447,7 @@ L’essai uni-axial est appelé essai de compression simple. On place l’éprou
 \end{figure}
 \FloatBarrier
                          
- Les déformations longitudinales et transversales de la roche sont définies respectivement comme : 
+Les déformations longitudinales et transversales de la roche sont définies respectivement comme : 
   
 $$\epsilon _l = \frac{\Delta l}{l_0} \; \textrm{  et  } \; \epsilon _t=\frac{\Delta b}{b_0}= \nu \epsilon _l $$  
  avec $\nu$ le coefficient de poisson 
@@ -1494,7 +1495,7 @@ Le déviateur dilatant augmente avec la pression de confinement appliqué. Le cr
 Nous avons simplifié la relation en adoptant un critère de dilatance relation linéaire : et en fixant des valeurs moyennes de a = 1.3 et b = 2.5 (en MPa). 
 \paragraph{Essai de cisaillement}
 
-L’essai a pour objet de mesurer les caractéristiques de rupture d’un échantillon de sol fin saturé soumis à un cisaillement direct selon un plan imposé, à une vitesse constante. De cet essai peuvent être déduites les valeurs de l’angle de frottement effectif $\phi$ et la cohésion effective C. 
+L’essai a pour objet de mesurer les caractéristiques de rupture d’un échantillon de sol soumis à un cisaillement direct selon un plan imposé, à une vitesse constante. De cet essai peuvent être déduites les valeurs de l’angle de frottement $\phi$ et la cohésion C. 
 
 L’essai s’effectue sur une éprouvette de sol placée dans un bâti de cisaillement constitué de deux demi boîtes indépendantes. Le plan de séparation des deux demi boîtes constitue un plan de glissement préférentiel correspondant au plan de cisaillement de l’éprouvette.
 L’essai consiste à : 
@@ -1502,7 +1503,7 @@ L’essai consiste à :
 \item Consolider l’éprouvette de section s dans une première phase en appliquant sur la face supérieure un effort vertical constant maintenu pendant tout l’essai (contrainte $\sigma n=N/s$)
 \item La phase de consolidation permet de calculer la vitesse à laquelle doit être cisaillé l’échantillon.
 \item Cisailler ensuite le long du plan de séparation des 2 demi-boîtes en leur imposant un déplacement relatif à vitesse constante.
-\item L’effort de cisaillement horizontal (T) est mesuré et la contrainte   $\sigma=T/s$ est calculée.
+\item L’effort de cisaillement horizontal (T) est mesuré et la contrainte   $\tau=T/s$ est calculée.
 \end{itemize}
 
 \begin{figure}[h]
@@ -1526,13 +1527,13 @@ La figure ~\ref{fig:d10} montre des courbes expérimentales d'un essai de cisail
 
 
 On obtient ainsi les courbes de cisaillement effort- déformation et l’on peut en déduire les droites
-($\tau ; \sigma n$) pour les valeurs à la rupture et à l’état critique.
+($\tau ; \sigma n$) pour les valeurs à la rupture.
 Il est alors simple de déterminer l’angle de frottement $\phi$ et la cohésion effective C, respectivement la pente et l’ordonnée à l’origine de ces droites.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=.45\linewidth]{image/annexe/annexe_D/D11.png}
-\caption{Courbe de cisaillement effort-déformation}
+\caption{Critère de Coulomb dans le plan des contraintes (\tau,$\sigma_n$)}
 \label{fig:d11}
 \end{figure}
 \FloatBarrier
@@ -1573,12 +1574,12 @@ Le coefficient de dilatation thermique $\alpha th$ peut être mesuré à chaque 
 \FloatBarrier
 \subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} \addcontentsline{toc}{subsection}{Annexe E : Simulation des cavités salines et minées sur DEMETHER}
 
-Pour l'application à l'industrie (détaillée dans le 2.3.1-B), on a utilisé les données d'entrée ci-dessous:
+Pour l'application à l'industrie avec stockage en cavité saline (configuration 3), on a utilisé les données d'entrée ci-dessous:
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.65\linewidth]{image/annexe/cav_sal/ind.png}
-  \caption{Données d'entrée dans le cas de l'industrie.}
+  \caption{Données d'entrée de la configuration 3}
   \end{figure}
 \FloatBarrier
 On a également modélisé des cavités salines qui stockeraient de l'hydrogène gazeux destiné à la mobilité (configuration 1). Pour cela, on a d'abord utilisé les données d'entrée suivantes:
@@ -1586,7 +1587,7 @@ On a également modélisé des cavités salines qui stockeraient de l'hydrogène
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.65\linewidth]{image/annexe/cav_sal/p2mf.png}
-  \caption{Données d'entrée dans le cas de la mobilité.}
+  \caption{Données d'entrée de la configuration 1}
   \end{figure}
 \FloatBarrier
 Pour une cavité sphérique d'un rayon de 21 m, on obtient l'évolution de la pression suivante:
@@ -1613,7 +1614,7 @@ On remarque que la pression n'est pas comprise entre la pression maximale et min
     
     \begin{subfigure}[b]{0.42\linewidth}
         \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/q(t).png}
-        \caption{déviateurs (MPa).}
+        \caption{déviateur (MPa).}
     \end{subfigure}
     \begin{subfigure}[b]{0.42\linewidth}
         \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/M.png}
@@ -1628,7 +1629,7 @@ On remarque que la pression n'est pas comprise entre la pression maximale et min
         \includegraphics[width=\linewidth]{image/annexe/cav_sal/P2M_bon/Delta_vol_(1).png}
         \caption{Variation volumique (\%).}
     \end{subfigure}
-    \caption{Evolution de la pression (MPa), déviateurs (MPa), masse (kg), , température (ºC), variation volumique (\%). }
+    \caption{Evolution de la pression (MPa), déviateur (MPa), masse (kg), , température (ºC), variation volumique (\%). }
     
     \end{figure}
     
@@ -1660,30 +1661,7 @@ On remarque que la pression n'est pas comprise entre la pression maximale et min
 \FloatBarrier
 Tous les critères dont on a parlé dans le paragraphe 2.3.1-B sont bien satisfaits. Cette cavité est bien réalisable.
 
-
-Voici quelques extraits de la notice du logiciel \emph{DEMETHER}.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 1.png}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 2.png}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 3.png}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=.8\linewidth]{image/annexe/DEMETHER/Notice DEMETHER 4.png}
-\end{figure}
-\FloatBarrier
-Voici les résultats obtenus pour l’application du stockage en cavités minées à la mobilité.
+Voici les résultats obtenus pour l’application du stockage en cavités minées à la mobilité (configuration 2).
 
 \begin{figure}[h]
 \centering
@@ -1716,7 +1694,7 @@ Voici les résultats obtenus pour l’application du stockage en cavités minée
 \begin{figure}[h]
 \centering
 \includegraphics[width=.8\linewidth]{image/annexe/reservoir_ent/Annexe_2.png}
-\caption{Schéma et dimensions d'une coupe - Emad Jahangir }
+\caption{Schéma et dimensions d'une coupe}
 \end{figure}
   
 \begin{figure}[h]
@@ -1765,41 +1743,44 @@ Voici les résultats obtenus pour l’application du stockage en cavités minée
 \newpage
 \subsection*{Annexe G : Création des cavités salines} \addcontentsline{toc}{subsection}{Annexe G : Création des cavités salines}
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
-  \includegraphics[width=.6\linewidth]{image/annexe/créa_cav_mine/Lessivage direct.png}
-  \caption{Lessive direct}
-  \end{figure}
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/annexe/créa_cav_mine/Lessivage direct.png}
+    \caption{ }
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{image/annexe/créa_cav_mine/Lessivage inverse.png}
+    \caption{ }
+  \end{subfigure}
+  \caption{Schémas des lessivages direct (a) et inverse (b)}
+\end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
-  \includegraphics[width=.6\linewidth]{image/annexe/créa_cav_mine/Lessivage inverse.png}
-  \caption{Lessivage inverse}
-  \end{figure}
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C3 200.png}
+    \caption{ }
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C3 200.png}
+    \caption{ }
+  \end{subfigure}
+  \caption{Evolution de la concentration de saumure (a) et du rayon (b) pour la configuration 3 avec un débit de $200 m^3/h$}
+\end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
-  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C3 200.png}
-  \caption{Graphiques de l'évolution de la concentration de saumure pour la configuration 3 avec un débit de $200m^3/h$}
-  \end{figure}
-
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C3 200.png}
-  \caption{Graphiques de l'évolution du rayon pour la configuration 3 avec un débit de $200m^3/h$}
-  \end{figure}
-
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C1.png}
-  \caption{Graphiques de l'évolution de la concentration de saumure pour la configuration 1}
-  \end{figure}
-
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C1.png}
-  \caption{Graphiques de l'évolution du rayon pour la configuration 1}
-  \end{figure}
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C1.png}
+    \caption{ }
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C1.png}
+    \caption{ }
+  \end{subfigure}
+  \caption{Evolution de la concentration de saumure (a) et du rayon (b) pour la configuration 1}
+\end{figure}
 
 Méthode d’effondrement des couches d’insolubles :
 
@@ -1812,7 +1793,7 @@ Méthode d’effondrement des couches d’insolubles :
 Il s’agit de lessiver en dessous de la couche pour la fragiliser sans la faire tomber, puis de remonter les tuyaux à son niveau, pour ainsi lessiver au-dessus de la couche et la faire s’écrouler sans qu’elle n’abîme les tuyaux. 
 
 \FloatBarrier
-\subsection*{Annexe H : Création cavités minées}\addcontentsline{toc}{subsection}{Annexe H : Création cavités minées}
+\subsection*{Annexe H : Création des cavités minées}\addcontentsline{toc}{subsection}{Annexe H : Création cavités minées}
 Comme expliqué précédemment dans le rapport, la technique pour creuser les cavités est déjà bien connue des ingénieurs. De même pour les revêtements, la technique de pose des revêtements a déja été étudiée par les ingénieurs. Nous nous sommes donc contentés de reprendre les travaux de la cavité de Skallen dont les photographies suivantes sont issues.
 
 \FloatBarrier
@@ -1823,7 +1804,7 @@ Dans un premier temps, il s’agit de creuser des galeries au dessus et en desso
 \begin{figure}[!h]
   \centering
   \includegraphics[width=.5\linewidth]{image/annexe/chap2/figure4iiacreusagegalerie.png}
-  \caption{Creusage des galeries inférieures et supérieures}
+  \caption{Creusement des galeries inférieures et supérieures}
   \end{figure}
 
 Dans un second temps,on creuse progressivement l’espace entre les deux galeries par longues sections verticales en évacuant les produits par la galerie inférieure.
@@ -1999,7 +1980,7 @@ On remarque que les jeunes se sentent concernés par les enjeux environnementaux
 
 \FloatBarrier
 \newpage
-\subsection*{Annexe M : Choix des sites de stockage} \addcontentsline{toc}{subsection}{Annexe M : Choix des sites de stockage}
+\subsection*{Annexe M : Choix des potentiels sites de stockage} \addcontentsline{toc}{subsection}{Annexe M : Choix des sites de stockage}
 
 \begin{figure}[h]
 \centering
