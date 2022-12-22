@@ -17,7 +17,7 @@
 \usepackage{titling}
 \usepackage{caption}
 \usepackage{babel}
-\usepackage{natbib} 
+\usepackage[square,sort,comma,numbers]{natbib}
 \usepackage[nottoc]{tocbibind}
 \usepackage[section]{placeins}
 \usepackage[hidelinks]{hyperref}
@@ -69,45 +69,42 @@
 \maketitle
 $$\ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast \ast $$
 \begin{center}
-Rapport réalisé par les élèves de première année du cycle ingénieur civil des Mines de Paris dans le cadre des Métiers de l'Ingénieur Généraliste. \textbf{MIG LH\textsubscript{2}}. \\ Encadrants: EL AHMAR Elise et HADJ HASSEN Faouzi
+  \textbf{MIG LH\textsubscript{2}}. \\ 
+  
+  Encadrants: EL AHMAR Elise et HADJ HASSEN Faouzi
 \end{center}
 
 
-
-
-
-
-
 \newpage
-
-\section*{Résumé}
-Face à une crise climatique sans précédent, il est urgent de chercher certaines solutions qui peuvent nous permettre de réduire nos émissions de CO2. Les méthodes de production, de transport et d’utilisation de l’énergie se doivent d’être le plus décarbonées possible, notamment grâce aux énergies renouvelables. Or, la demande en énergie est fluctuante et la production de ces énergies renouvelables est intermittente. Il est donc nécessaire de trouver un vecteur efficace qui nous permettrait de stocker massivement l’énergie, mais aussi dont l’utilisation dans les domaines de l’industrie ou des transports serait décarbonée. 
-
-C’est donc dans ce contexte que l’hydrogène, ou plus précisément la molécule de dihydrogène, nous apporte certains éléments de réponse. Par sa production grâce à l’électrolyse de l’eau ou au vaporeformage, son stockage dans des cavités salines ou minées et son utilisation dans les secteurs de l’industrie et des transports, il constitue un moyen prometteur de répondre aux problèmes évoqués. L’hydrogène peut également être liquéfié pour augmenter sa densité énergétique et favoriser son stockage.
-
-Notre étude vise à donner une vision générale de la chaîne technique de l’hydrogène, de sa production à sa distribution, en passant par son stockage, son transport et sa liquéfaction et de la faisabilité en se tournant vers les aspects économique et social.
-
-
-\section*{Abstract}
-Facing up with an unprecedented climate crisis, solutions are urgent to be looked for so that we can cut down our CO2 emissions. We have to search new ways to product, transport and use energy, which have to be as carbon-free as possible. Wheather it be in electricity production, transportations or industry, we have to found out how to keep our current economic productivity and efficiency, while favouring the energy transition. Therefore, it would be useful to find an energy carrier which would allow us to stock enormous amouts of energy, but also to find more eco-friendly energy sources for our transportations and industries.
-
-So, in this context, hydrogen- or, to be more accurate, the dihydrogen molecule- is a part of the answer. This energy carrier could be useful in several situations, such as in electric energy storage or as a fuel for our vehicles, supposing that it would be produced as a carbon-free way.
-
-Nowadays, the most eco-friendly and the most promising way to manufacture gaseous dihydrogen is the water electrolysis, even though methods of steam methan reforming will also be pored over. Then, hydrogen can be transported and eventually used as an energy source. It can also be liquified in order to improve its energy density.
-
-Our goal here is to study each step of the hydrogen supply-chain, from its manufacturing to its distribution, under a technical perspective, above all with descriptions of manufacturing proceedings, the optionnal liquefaction and its assets, storage and transportation ; but also  under an economic and societal perspective, focusing on its sociological acceptabillity and its economic sustainability.
-
 
 \section*{Remerciements}
 Nous souhaiterions remercier l’ensemble des personnes qui nous ont accompagnés durant cette étude, qui ont pris de leur temps pour nous présenter le domaine de l’hydrogène et pour nous encadrer sur plusieurs heures ou plusieurs jours.
 
 Nos premiers remerciements vont à Elise El-Ahmar et Faouzi Hadj-Hassen pour leur patience et leur ténacité dans notre encadrement pendant les trois semaines. Leur disponibilité, leurs conseils et leur aide ont été très précieux pour arriver au bout du projet et écrire ce rapport. 
 
-Nous souhaiterions également remercier l’ensemble des chercheurs du Centre de Géosciences MINES Paristech et du Centre de Thermodynamique des Procédés MINES Paristech nous ayant encadrés. Merci à : Laura Blanco Martin pour l’utilisation du logiciel DEMETHER, Emmanuel Ledoux pour ses explications sur la création des cavités, Cathy Descamps-Large pour son exposé sur les aspects sociaux et environnementaux, Bruno Tessier pour les connaissances en géologie qu’il nous a transmises, Emad Jahangir pour son aide dans l’étude du stockage liquide, Damien Goetz pour les bases d’analyse économique qu’il nous a inculquées et Marco Campestrini  et Salem pour l’aide dans l’étude du procédé de liquéfaction.
+Nous souhaiterions également remercier l’ensemble des chercheurs du Centre de Géosciences MINES Paris et du Centre de Thermodynamique des Procédés MINES Paris nous ayant encadrés. Merci à : Laura Blanco Martin pour l’utilisation du logiciel DEMETHER, Emmanuel Ledoux pour ses explications sur la création des cavités, Cathy Descamps-Large pour son exposé sur les aspects sociaux et environnementaux, Bruno Tessier pour les connaissances en géologie qu’il nous a transmises, Emad Jahangir pour son aide dans l’étude du stockage liquide, Damien Goetz pour les bases d’analyse économique qu’il nous a inculquées et Marco Campestrini  et Salem Hoceini pour l’aide dans l’étude du procédé de liquéfaction.
 
-Enfin, notre reconnaissance va vers toutes les personnes nous ayant accompagnés pendant la première semaine, que ce soit par des visites très enrichissantes de leurs lieux de travail ou par des présentations autour de l’hydrogène : Christelle Werquin (France Hydrogène) qui nous a donné une vue très complète du secteur de l’hydrogène, Elogen pour nous avoir accueillis, Florian Jalia et Rémy Linotte (Engie) qui nous ont très bien renseignés, Philippe Arpentinier, Thibault Plays, Simon Jallais, Fabrice Del Corso et Déborah Houssin (Air Liquide) pour leurs présentations essentielles à notre étude,  Arnaud Réveillère (Géostock) qui nous a présenté plus en détail les problématiques de stockage et Grégoire Hévin (Storengy) qui nous a fait visiter le site d’Etrez.
+Enfin, notre reconnaissance va vers toutes les personnes nous ayant accompagnés pendant la première semaine, que ce soit par des visites très enrichissantes de leurs lieux de travail ou par des présentations autour de l’hydrogène : Christelle Werquin (France Hydrogène) qui nous a donné une vue très complète du secteur de l’hydrogène, Eric Gernot et toute l'équipe d'Elogen pour nous avoir accueillis, Florian Jalia et Rémy Linotte (Engie) qui nous ont très bien renseignés, Philippe Arpentinier, Thibault Plays, Simon Jallais, Fabrice Del Corso et Déborah Houssin (Air Liquide) pour leurs présentations essentielles à notre étude,  Arnaud Réveillère (Géostock) et Nicolas Gatelier qui nous ont présenté plus en détail les problématiques de stockage et enfin Grégoire Hévin et Franck Ramilien (Storengy) qui nous ont fait visiter le site d’Etrez.
 
 
+\newpage
+
+\section*{Résumé}
+Face à une crise climatique sans précédent, il est urgent de chercher des solutions qui peuvent permettre de réduire nos émissions de $CO_2$. Les méthodes de production, de transport et d’utilisation de l’énergie se doivent d’être le plus décarbonées possible, notamment grâce aux énergies renouvelables. Or, la demande en énergie est fluctuante et la production de ces énergies renouvelables est intermittente. Il est donc nécessaire de trouver un vecteur efficace qui nous permettrait de stocker massivement l’énergie, mais aussi dont l’utilisation dans les domaines de l’industrie ou des transports serait décarbonée. 
+
+C’est donc dans ce contexte que l’hydrogène, ou plus précisément la molécule de dihydrogène, nous apporte certains éléments de réponse. Par sa production grâce à l’électrolyse de l’eau ou au vaporeformage avec captage de $CO_2$, son stockage dans des cavités salines ou minées et son utilisation dans les secteurs de l’industrie et des transports, il constitue un moyen prometteur de répondre aux problèmes évoqués. L’hydrogène peut également être liquéfié pour augmenter sa densité énergétique et favoriser son stockage.
+
+Notre étude vise à donner une vision générale de la chaîne technique de l’hydrogène, de sa production à sa distribution, en passant par son stockage, son transport et sa liquéfaction et de la faisabilité en se tournant vers les aspects économique et social.
+
+
+\section*{Abstract}
+Facing up with an unprecedented climate crisis, solutions are urgent to be looked for so that we can cut down our $CO_2$ emissions. We have to search new ways to product, transport and use energy, which have to be as carbon-free as possible. Wheather it be in electricity production, transportations or industry, we have to found out how to keep our current economic productivity and efficiency, while favouring the energy transition. Therefore, it would be useful to find an energy carrier which would enable us to store enormous amounts of energy, but also to find more eco-friendly energy sources for our transportations and industries.
+
+So, in this context, hydrogen- or, to be more accurate, the dihydrogen molecule- is a part of the answer. This energy carrier could be useful in several situations, such as in electric energy storage or as a fuel for our vehicles, supposing that it would be produced as a carbon-free way.
+
+Nowadays, the most eco-friendly and the most promising way to manufacture gaseous dihydrogen is the water electrolysis, even though methods of steam methan reforming with $CO_2$ capture will also be pored over. Then, hydrogen can be transported and eventually used as an energy source. It can also be liquified in order to improve its energy density.
+
+Our goal here is to study each step of the hydrogen supply-chain, from its manufacturing to its distribution, under a technical perspective, above all with descriptions of manufacturing proceedings, the optionnal liquefaction and its assets, storage and transportation ; but also  under an economic and societal perspective, focusing on its sociological acceptabillity and its economic sustainability.
 
 
 
@@ -137,19 +134,19 @@ Enfin, notre reconnaissance va vers toutes les personnes nous ayant accompagnés
 
 \section*{Introduction} \addcontentsline{toc}{section}{Introduction}
 
-Le dihydrogène $H_2$, communément appelée hydrogène, est la molécule la plus répandue dans l'univers. Elle est le constituant pricipal du Soleil et des planètes géantes comme Jupiter ou Saturne. Sur Terre, l'hydrogène n'existe presque jamais seul. La molécule d'hydrogène est combinée à d'autres éléments plus lourds. Par exemple, le méthane $CH_4$ est composé d'un atome de carbone $C$ et de 2 molécules de dihydrogène. La molécule de dihydrogène est une des molécule les plus simple dans l'univers. Un atome d'hydrogène n'est qu'un proton $H^+$ autour duquel gravite un unique électron. Deux atomes d'hydrogène en liaison covalente simple forment $H_2$.\\
+Le dihydrogène $H_2$, communément appelée hydrogène, est la molécule la plus répandue dans l'univers. Elle est le constituant pricipal du Soleil et des planètes géantes comme Jupiter ou Saturne. Sur Terre, l'hydrogène n'existe presque jamais seul. La molécule d'hydrogène est combinée à d'autres éléments plus lourds. Par exemple, le méthane $CH_4$ est composé d'un atome de carbone $C$ et de 2 molécules de dihydrogène. La molécule de dihydrogène est une des molécules les plus simples dans l'univers. Un atome d'hydrogène n'est qu'un proton $H^+$ autour duquel gravite un unique électron. Deux atomes d'hydrogène en liaison covalente simple forment $H_2$.
 
-Pour réduire nos émissions de gaz à effet de serre et ainsi respecter les accords de Paris, il devient nécessaire de se passer des ressources fossiles. Depuis quelques années, l'hydrogène est alors à la mode. Il est présenté comme une solution d'avenir pour supporter la transition énergétique. Nous éclairons avant toute chose un point crucial: l'hydrogène n'est pas une énergie primaire. En effet, comme mentionné plus haut, l'hydrogène n'est pas pésent à l'état naturel. Il faut donc réaliser des transformations chimiques et thermodynamiques pour le produire. En somme, il faut apporter de l'énergie de l'extérieur pour produire de l'hydrogène. Cette énergie doit être bas-carbone, c'est alors qu'on parle d'hydrogène bas-carbone, parfois appelé à tort - l'hydrogène est incolore - hydrogène vert.  \\
+Pour réduire nos émissions de gaz à effet de serre et ainsi respecter les accords de Paris, il devient nécessaire de se passer des ressources fossiles. Depuis quelques années, l'hydrogène est alors à la mode. Il est présenté comme une solution d'avenir pour supporter la transition énergétique. Nous éclairons avant toute chose un point crucial: l'hydrogène n'est pas une énergie primaire. En effet, comme mentionné plus haut, l'hydrogène n'est pas pésent à l'état naturel. Il faut donc réaliser des transformations chimiques et thermodynamiques pour le produire. En somme, il faut apporter de l'énergie de l'extérieur pour produire de l'hydrogène. Cette énergie doit être bas-carbone, c'est alors qu'on parle d'hydrogène bas-carbone, parfois appelé à tort - l'hydrogène est incolore - hydrogène vert.
 
-L'hydrogène est utilisé dans différents procédés: dans l'industrie chimique ou comme carburant dans les fusées par exemple. Afin de garder notre planète vivable, nous devons réduire, voire annuler, les émissions de gaz à effet de serre dans chaque secteur. Dans cette étude, nous analysons les secteurs industriels et de la mobilité: l'hydrogène peut contribuer à leur décarbonnation.\\
+L'hydrogène est utilisé dans différents procédés: dans l'industrie chimique ou comme carburant dans les fusées par exemple. Afin de garder notre planète vivable, nous devons réduire, voire annuler, les émissions de gaz à effet de serre dans chaque secteur. Dans cette étude, nous analysons les secteurs industriels et de la mobilité: l'hydrogène peut contribuer à leur décarbonnation.
 
-Présentons donc les intérêts de l'hydrogène dans ces secteurs. Tout d'abord, l'hydrogène pour pallier à l'intermittence des énergies renouvelables. Sa production nécessitant de grandes quantités d'énergie, on produirait de l'hydrogène lorqu'il y a beaucoup de vent, ou beaucoup de soleil. Le stockage d'hydrogène est plus aisé que le stockage de l'électricité. L'hydrogène serait conservé pour une utilisation ultérieure. Sa dénomination de \emph{vecteur énergétique} prend dès lors tout son sens.
+Présentons donc les intérêts de l'hydrogène dans ces secteurs. Tout d'abord, l'hydrogène permet de pallier à l'intermittence des énergies renouvelables. Sa production nécessitant de grandes quantités d'énergie, on produirait de l'hydrogène lorqu'il y a beaucoup de vent, ou beaucoup de soleil. Le stockage d'hydrogène est plus aisé que le stockage de l'électricité. L'hydrogène serait conservé pour une utilisation ultérieure. Sa dénomination de \emph{vecteur énergétique} prend dès lors tout son sens.
 
- Imaginons une production d'hydrogène pour la mobilité: des camions ou des voitures dont le réservoir contient de l'hydrogène. Ces vehicules sont équipés de moteurs à hydrogène, des piles réalisant la réaction inverse de production de l'hydrogène, et qui ne produisent que de l'électricité et de la vapeur d'eau. 
+Considérons une production d'hydrogène pour la mobilité. Cette configuration prend alors la dénomination de "Power to Mobility". Des camions ou des voitures sont dotées d'un réservoir à hydrogène. Ces vehicules sont équipés de moteurs à hydrogène, des piles réalisant la réaction inverse de production de l'hydrogène, et qui ne produisent que de l'électricité et de la vapeur d'eau. 
  
- Imaginons une utilisation dans l'industrie: la synthèse de métal à partir d'oxyde de celui-ci (typiquement $FeO$) ne serait plus émettrice de $CO_2$ mais ne produirait que de la vapeur d'eau. \\
+L'hydrogène peut aussi être produit pour une utilisation industrielle. Cette configuration prend la dénomination de "Power to Industry". Par exemple la synthèse de métal à partir d'oxyde de celui-ci (typiquement $FeO$) ne serait plus émettrice de $CO_2$ mais ne produirait que de la vapeur d'eau.
  
-L’utilisation de l’hydrogène gazeux commence à se développer. En France, l’hydrogène pourrait constituer 20\% de la demande finale d’énergie en 2050. De nombreux projets pilotes sont en cours d’élaboration : stockage pilote à Etrez, développement d’un réseau de bus à hydrogène à Pau ou encore déploiement d’une flotte de taxis à Paris. Dans le même temps, un autre enjeu serait de développer l’hydrogène liquide. Il a plusieurs avantages significatifs : sa densité énergétique est plus élevée, sa forme liquide facilite son transport et son stockage notamment.
+L’utilisation de l’hydrogène gazeux commence à se développer. En France, l’hydrogène pourrait constituer 20\% de la demande finale d’énergie en 2050. De nombreux projets pilotes sont en cours d’élaboration : stockage pilote à Etrez en cavité saline, développement d’un réseau de bus à hydrogène à Pau ou encore déploiement d’une flotte de taxis à Paris. Dans le même temps, un autre enjeu serait de développer l’hydrogène liquide. Il a plusieurs avantages significatifs : sa densité énergétique est plus élevée, sa forme liquide facilite son transport et son stockage notamment.
 
 L’objectif général de notre travail est d’étudier la production, le conditionnement, le transport et le stockage d’hydrogène dans l’optique de son utilisation. Pour ce faire, nous justifierons l’intérêt de son usage gazeux et liquide dans le contexte plus global des enjeux énergétiques et nous définirons les scénarios étudiés. Nous étudierons ensuite de plus près les enjeux du stockage en cavités salines et en cavités minées, en les dimensionnant à l’aide des modèles thermodynamiques et mécaniques. Nous nous intéresserons alors à l’entièreté de la chaîne de production, de conditionnement et de transport afin de définir les configurations les plus adaptées aux scénarios choisis. Nous prolongerons l’étude technique en nous concentrant sur la faisabilité d’un point de vue concret : l’étude de la réglementation, des impacts environnementaux et de l’acceptabilité sociale nous permettrons de choisir des sites de stockage potentiels. Pour finir, nous évaluerons économiquement les projets choisis afin de conclure sur les intérêts de ces procédés. 
 
@@ -162,7 +159,6 @@ L’objectif général de notre travail est d’étudier la production, le condi
 
 
 \section{Chapitre I : L'hydrogène comme vecteur énergétique}
-L'hydrogène pourrait devenir un acteur majeur dans la transition énergétique. Il agirait en tant que vecteur énergétique.
 
 \subsection{Le  contexte de la transition énergétique}
 France Hydrogène prévoit que l'hydrogène pourrait répondre à 20 \% de la demande d’énergie finale en France d’ici 2050  \cite{InternationalEnergyAgency_2021}. De plus, l’hydrogène permet de lutter contre le réchauffement climatique : il réduirait les émissions annuelles de 55 millions de $CO_2$,  soit un tiers des émissions supplémentaires. \\
@@ -171,10 +167,10 @@ L’ADEME a identifié les objectifs pour le vecteur hydrogène dans le cadre de
 
 \begin{multicols}{2}
 
-Le marché de l’hydrogène représente 70 millions de t/an dans le monde et 900 000 t/an en France. L’hydrogène industriel provient à 95 \% d’énergies fossiles, et à 5\% de l’électrolyse. Le marché français de l’hydrogène émet 9 millions tCO2/an. En effet, bien que l’utilisation d’hydrogène ne soit pas émettrice de gaz à effet de serre, sa production l’est (cf. figure 1). \\
+Le marché de l’hydrogène représente 70 millions de t/an dans le monde et 900 000 t/an en France. L’hydrogène industriel provient à 95 \% d’énergies fossiles, et à 5\% de l’électrolyse. Le marché français de l’hydrogène émet 9 millions $tCO_2/an$. En effet, bien que l’utilisation d’hydrogène ne soit pas émettrice de gaz à effet de serre, sa production l’est (cf. figure 1). \\
 
 De plus, il coûte aujourd'hui moins cher de produire l’hydrogène avec des énergies fossiles qu’avec des énergies renouvelables. 
-Produire de l'hydrogène bas carbone et à faible coût représente donc un défi technique de taille. \\
+Produire de l'hydrogène bas carbone et à faible coût représente donc un défi technique de taille. 
 
 \begin{center}
 \includegraphics[width=1\linewidth]{image/chap1/facteur_emission_prod_H2_electrolyse.jpg}
@@ -184,11 +180,10 @@ Produire de l'hydrogène bas carbone et à faible coût représente donc un déf
 
 \end{multicols}
 
-L’utilisation de l’hydrogène sous sa forme liquide n’est pas encore très répandue, elle demande des technologies encore peu développées. Elle est restreinte à des niches comme l’aérospatial qui concentre 34\% de la production de LH2, et à l’électronique (30\%), surtout en Amérique du nord (80\% de la consommation mondiale) selon l'International Energy Agency (IEA). \\
+L’utilisation de l’hydrogène sous sa forme liquide n’est pas encore très répandue, elle demande des technologies encore peu développées. Elle est restreinte à des niches comme l’aérospatial qui concentre 34\% de la production de LH2, et à l’électronique (30\%), surtout en Amérique du nord (80\% de la consommation mondiale) selon l'International Energy Agency (IEA). 
 
 
 \subsection{Les objectifs de la France et de l'Europe en 2030 et 2050}
-
 \begin{multicols}{2}
 
 \begin{center}
@@ -201,36 +196,32 @@ L’hydrogène liquide présente un fort potentiel de croissance dans les année
 
 \end{multicols}
 
-Les objectifs de la transition énergétique française ou européenne sont déterminés par diverses organisations, quelles soient non-gouvernementales comme GIEC(Groupe d'experts intergouvernemental sur l'évolution du climat), ou gouvernementales comme l'Union Européenne.
+Les objectifs de la transition énergétique française ou européenne sont déterminés par diverses organisations, quelles soient non-gouvernementales comme le GIEC (Groupe d'experts intergouvernemental sur l'évolution du climat), ou gouvernementales comme l'Union Européenne.
 
-Au niveau de l’UE et en réponse à la guerre en Ukraine, le projet REPowerEU prévoit de produire des énergies renouvelables, entre autres de produire 10 millions de tonnes d’$H_2$ renouvelable et d’en importer 10 millions d’ici 2030. De plus, l’UE souhaite déployer 40 GW de capacité d’électrolyse d’ici là. \\
+Au niveau de l’UE et en réponse à la guerre en Ukraine, le projet REPowerEU prévoit de produire des énergies renouvelables, entre autres de produire 10 millions de tonnes d’$H_2$ renouvelable et d’en importer 10 millions d’ici 2030. De plus, l’UE souhaite déployer 40 GW de capacité d’électrolyse d’ici là. 
 
-En France, France Hydrogène propose deux scénarios pour le développement d’hydrogène décarboné en France : Ambition 2030 qui consiste à utiliser 680 kt/an et un scénario ambitieux Ambition 30+ qui consiste à utiliser 1090 kt/an. L'association souhaite favoriser trois secteurs : l’industrie, la mobilité et l’énergie. D’ici 2050, la stratégie française hydrogène prévoit l’installation d’une capacité de 6.5GW d’électrolyseurs. Un budget de 7.2 milliards de dollars a été consacré à cette stratégie et en octobre 2021, Emmanuel Macron a présenté France 2030, un plan d’investissement s’élevant à 30 milliards d’euros sur 5 ans et visant à faire de la France le leader de l’hydrogène vert en 2030. \\
+En France, France Hydrogène propose deux scénarios pour le développement d’hydrogène décarboné en France : Ambition 2030 qui consiste à utiliser 680 kt/an et un scénario ambitieux Ambition 30+ qui consiste à utiliser 1090 kt/an. L'association souhaite favoriser trois secteurs : l’industrie, la mobilité et l’énergie. D’ici 2050, la stratégie française hydrogène prévoit l’installation d’une capacité de 6.5GW d’électrolyseurs. Un budget de 7.2 milliards d'euros a été consacré à cette stratégie et en octobre 2021, Emmanuel Macron a présenté France 2030, un plan d’investissement s’élevant à 30 milliards d’euros sur 5 ans et visant à faire de la France le leader de l’hydrogène vert en 2030. \\
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=.9\linewidth]{image/chap1/ambitions_scenarios.PNG}
-\caption{Détail des scénarios France Hydrogène \cite{hydrogene_2021}}
+\caption{Détail des deux scénarios de France Hydrogène \cite{hydrogene_2021}}
 \end{figure}
 
 \subsection{Les chaines de procédés}
 
-Aujourd’hui, la plupart de l’hydrogène est produit par vaporeformage du méthane, ou steam methane reforming en anglais (SMR), ce qui est coûteux en émission carbone. Pour décarboner la synthèse de l’hydrogène, on envisage d’installer des techniques de captage de CO2 sur le procédé de vaporeformage et de développer l’électrolyse, en utilisant de l’électricité décarbonée. On envisage d’installer 80Mt d’électrolyseurs en France et 850 GW dans le monde d’ici 2030 pour atteindre la neutralité carbone en 2050 (IEA). 
-Nous détaillons donc ces deux méthodes de production de l’hydrogène dans notre étude. \\ 
+Aujourd’hui, la plupart de l’hydrogène est produit par vaporeformage du méthane, ou steam methane reforming en anglais (SMR), ce qui est coûteux en émission carbone. Pour décarboner la synthèse de l’hydrogène, on envisage d’installer des techniques de captage de CO2 sur le procédé de vaporeformage et de développer l’électrolyse, en utilisant de l’électricité décarbonée. On envisage d’installer 6,5 GW d’électrolyseurs en France et 850 GW dans le monde d’ici 2030 pour atteindre la neutralité carbone en 2050 (IEA). 
+Nous détaillons donc ces deux méthodes de production de l’hydrogène dans notre étude. 
 
-%ici image
+Le développement à grande échelle de l’hydrogène nécessite d’installer des infrastructures de stockage et de distribution. Premièrement, l’hydrogène est stocké dans des réservoirs. Pour des raisons d’encombrement, il est pressurisé ou liquéfié. Ces réservoirs peuvent être enterrés, semi-enterrés ou aériens. Les réservoirs enterrés présentent de nombreux avantages : ils occupent moins de place au sol, ont une plus grande capacité de stockage et sont plus sécurisés. Nous avons alors choisi de dimensionner uniquement le stockage enterré par la suite. Nous nous sommes intéressés à trois types de cavités : les cavités salines, les cavités minées non revêtues pour le stockage gazeux et les cavités minées revêtues pour le stockage liquide. 
 
-Le développement à grande échelle de l’hydrogène nécessite d’installer des infrastructures de stockage et de distribution. Premièrement, l’hydrogène est stocké dans des réservoirs. Pour des raisons d’encombrement, il est pressurisé ou liquéfié. Ces réservoirs peuvent être enterrés, semi-enterrés ou aériens. Les réservoirs enterrés présentent de nombreux avantages : ils occupent moins de place au sol, ont une plus grande capacité de stockage et sont plus sécurisés. Nous avons alors choisi de nous dimensionner uniquement le stockage enterré par la suite. Nous nous sommes intéressés à trois types de cavités : les cavités salines, les cavités minées non revêtues et les cavités minées revêtues. \\
-
-%ici image
-
-Ensuite, il faut des infrastructures pour l’approvisionnement des véhicules. France Hydrogène prévoit d’augmenter le nombre de stations en service en France en passant de 57 en 2021, à 400 en 2025 puis entre 1000 et 1700, suivant le scénario envisagé, en 2030. La France pourrait importer de l’hydrogène depuis l’Ukraine, le Maghreb, le Moyen-Orient ou l’Amérique du Sud, ces derniers présentant des conditions favorables au développement d’énergies renouvelables. Il faudrait développer des pipelines entre pays frontaliers et au sein des pays, en parallèle du développement d’un réseau de camions, de bateaux ou de trains pour le transport.\\
+Ensuite, il faut des infrastructures pour l’approvisionnement des véhicules. France Hydrogène prévoit d’augmenter le nombre de stations en service en France en passant de 57 en 2021, à 400 en 2025 puis entre 1000 et 1700, suivant le scénario envisagé, en 2030. La France pourrait importer de l’hydrogène depuis l’Ukraine, le Maghreb, le Moyen-Orient ou l’Amérique du Sud, ces derniers présentant des conditions favorables au développement d’énergies renouvelables. Il faudrait développer des pipelines entre pays frontaliers et au sein des pays, en parallèle du développement d’un réseau de camions, de bateaux ou de trains pour le transport.
 
 Quels que soient les scénarios envisagés par l’ADEME, une grande part de l’hydrogène est utilisée dans l’industrie, que ce soit dans les raffineries, la production d’engrais (synthèse de l’ammoniac), l’industrie chimique ou l’acier. Un autre secteur prometteur est le domaine des transports. Nous n’avons considéré que l’industrie et les mobilités par la suite.\\
 
 \subsection{Nos configurations}
 
-Les configurations retenues s’ancrent dans deux thématiques : alimenter les industries ou les mobilités (Power to Mobility (P2M)/ Power to Industry (P2I)) \\
+Les configurations retenues s’ancrent dans deux thématiques : alimenter les industries ou les mobilités (Power to Mobility (P2M)/ Power to Industry (P2I)), et ont pour but de comparer les différents modes de production, la forme de l'hydrogène stocké et le type de stockage. \\
  
 \textbf{Configuration 1 : Power to Mobility } \\
 Alimentation de l’aéroport Charles de Gaulle et stockage en cavité saline. On se propose ici d’alimenter toute l’infrastructure de l’ensemble de l’aéroport à l’hydrogène. Cela ne concerne pas le carburant des avions. L’hydrogène serait produit par électrolyse et stocké en phase gazeuse en cavité saline . La consommation journalière de l’aéroport en H2 serait selon une estimation donnée par Air Liquide de 300 t par jour, avec 12h d’injection et 12h de soutirage. \\
@@ -248,7 +239,7 @@ Alimentation de toutes les infrastructures du port de Marseille-Fos. C’est un 
 Production d'hydrogène par électrolyse et stockage sous forme liquide dans un réservoir enterré de 73$m^3$ .Ce réservoir d’une capacité de 5,2 t constituerait une station pour alimenter les véhicules à hydrogène, avec vaporisation au préalable. \\
 
 \textbf{Configuration 6 : Power to Mobility}\\
-Production d'hydrogène par électrolyse et stockage sous forme liquide dans des cavités minées revêtues afin d’alimenter une flotte de 10 000 taxis à Paris. La demande en hydrogène est de 230 t par jour.  \\
+Production d'hydrogène par électrolyse et stockage sous forme liquide dans des cavités minées revêtues afin d’alimenter un réseau de transport à hydrogène. La demande en hydrogène est de 230 t par jour.  \\
 
 \textbf{Configuration 7 : Power to Industry. }\\
 Stockage de l'hydrogène sous forme liquide en cavité minée revêtue. Cette configuration est analogue à celle du port de Marseille puisqu’elle vise à comparer l’efficacité du stockage sous forme liquide et gazeuse. Les durées de soutirage et la masse utile (1000 t) sont les mêmes que pour le scénario de Marseille-Fos.\\
@@ -279,7 +270,7 @@ Nous détaillons ici les techniques de dimensionnement de différentes configura
 La cavité saline est envisagée uniquement pour le stockage de l'hydrogène en phase gazeuse. Nous cherchons à déterminer la pression dans la cavité et son volume. Prenons comme exemple la première configuration. On injecte l’H2 dans la cavité pendant 12h puis on le soutire pendant les 12h restantes. Le débit d’injection (respectivement soutirage) serait alors donné par $$ D_{injection}=\frac{m_{H_2}}{T_{injection}} \ \ \  D_{soutirage}=\frac{m_{H_2}}{T_{soutirage}} $$
 
 \begin{multicols}{2}
-Initialement, le massif est soumis à un régime de contraintes initiales dans trois directions (cf. ~\ref{fig:chap2contrainteSaline}) La contrainte verticale est donnée par le poids des terrains : $$\sigma_\nu = \rho g H $$ avec $\rho$ la masse volumique, $g=10 m.s^{-2} $ l'accélération de pensanteur et $H$ la profondeur.
+Initialement, le massif est soumis à un régime de contraintes initiales dans trois directions (cf. ~\ref{fig:chap2contrainteSaline}) La contrainte verticale est donnée par le poids des terrains : $$\sigma_\nu = \rho g H $$ avec $\rho$ la masse volumique du sol, $g=10 m.s^{-2} $ l'accélération de pensanteur et $H$ la profondeur.
  
 \begin{center}
 \includegraphics[width=.4\linewidth]{image/chap2/cube_contraintes.png}
@@ -311,12 +302,12 @@ On note donc $FS= W/F_{LRC} $ le facteur de sécurité. La figure ~\ref{fig:chap
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=.9\linewidth]{image/chap2/courbe_facteurDeSecu.png}
+\includegraphics[width=.8\linewidth]{image/chap2/courbe_facteurDeSecu.png}
 \caption{Facteur de sécurité en fonction de la profondeur aux pressions de 20 MPa et 15MPa.}
 \label{fig:chap2graphFS}
 \end{figure}
 
-Le facteur de sécurité étant jugé suffisant à partir de 1,5 on choisit une pression de 20 MPa pour une profondeur de 100m (on a fixé $\alpha = 40°$ et on a pris un rayon de 15m).\\
+Le facteur de sécurité étant jugé suffisant à partir de 1,5 on choisit une pression de 20 MPa pour une profondeur de 100m (on a fixé $\alpha = 40\textrm{°}$ et on a pris un rayon de 15m).\\
 
 \subsubsection{Configurations du stockage liquide}
 L’hydrogène ne peut exister sous forme liquide qu'à des températures extrêmement basses (de l’ordre de -253°C), cependant aucune forme de stockage n’est capable de maintenir l’hydrogène à cette température, celui-ci se réchauffe, ce qui entraîne l’évaporation d’une partie du stock et l’augmentation de la pression dans le réservoir, c’est le phénomène de boil-off.
@@ -324,7 +315,7 @@ L’hydrogène ne peut exister sous forme liquide qu'à des températures extrê
 Si l’on néglige ce boil-off, le stockage de l’hydrogène sous forme liquide est relativement simple à dimensionner ; en effet, sa densité liquide est quasiment constante.
 De plus les conditions de pression étant plus favorables, on peut stocker le LH2 en surface, dans des réservoirs enterrés à de très faibles profondeurs ou dans des cavités minées revêtues.
 
-Il y a deux approches de dimensionnement, la première est de reprendre les scénarios de stockage gazeux précédent et de calculer la quantité d’hydrogène liquide que l’on peut stocker dans une cavité de même dimension. La seconde approche consiste à dimensionner une nouvelle cavité plus petite et directement adaptée à l’usage considéré. Cette seconde approche a été retenue.
+Il y a deux approches de dimensionnement du stockage liquide, la première est de reprendre les scénarios de stockage gazeux précédent et de calculer la quantité d’hydrogène liquide que l’on peut stocker dans une cavité de même dimension. La seconde approche consiste à dimensionner une nouvelle cavité plus petite et directement adaptée à l’usage considéré. Cette seconde approche a été retenue.
 
 On peut également considérer le stockage dans un réservoir enterré dont les dimensions sont données en annexe C. On peut donc calculer le volume du réservoir cylindrique: $73 m^3$ et, connaissant la masse volumique de l’hydrogène liquide ($71 kg/m^3$), on en déduit que le réservoir stocke 5,2 tonnes d’hydrogène. De tels réservoirs seraient adaptés à la configuration 5.
 
@@ -373,15 +364,15 @@ Afin de vérifier la stabilité des cavités, la simulation du comportement des 
 \end{itemize}
 Sans ces critères, il y a un risque d’instabilité des cavités ou de fuite d’hydrogène.
 
-
 \begin{multicols}{2}
+
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{image/chap2/schema_cav.jpg}
 \captionof{figure}{Découpage typique d'une cavité}
 \end{center}
 
-Le logiciel \emph{DEMETHER} que nous avons utilisé nous a permis de vérifier la stabilité des cavités. Pour cela, il découpe la zone qui nous intéresse en 4 parties : 
+Le logiciel \emph{DEMETHER} que nous avons utilisé nous a permis de vérifier la stabilité des cavités. Le logiciel découpe la zone de stockage en 4 parties : 
 \begin{enumerate}
 \item Le puits
 \item Le massif autour du puits
@@ -389,7 +380,6 @@ Le logiciel \emph{DEMETHER} que nous avons utilisé nous a permis de vérifier l
 \item La cavité
 \end{enumerate}
 Il permet de simuler le lessivage de la cavité, le remplissage avec de l'hydrogène, le cyclage et le comportement à long terme.
-\end{multicols}
 
 Le logiciel s'intéresse à différents phénomènes : 
 \begin{itemize}
@@ -398,11 +388,16 @@ Le logiciel s'intéresse à différents phénomènes :
 \item Au niveau du massif de la cavité, on s’intéresse à la conduction et aux réactions mécaniques (température et contraintes).
 \item Dans la cavité, il s’agit de s’intéresser aux états thermodynamiques des différents fluides présents (température, pression, conductivité thermique).
 \end{itemize}
+
+\end{multicols}
+
  
-Les principales équations thermomécaniques utilisées sont les suivantes:  
-Equation d'équilibre : $$\vec{\nabla}\sigma + \rho \vec{g} = \vec{0}$$
-$$\rho C \frac{\partial T}{\partial t} + div(\vec{j}) = S $$
-$$\vec{j} = - \lambda \vec{\nabla}T $$
+Les principales équations thermomécaniques utilisées sont présentées ci-dessous: l'équation d'équilibre, l'équation de la chaleur et la loi de Fourier.  
+ $$
+ 	\vec{\nabla}\sigma + \rho \vec{g} = \vec{0} \ \ , \ \
+	\rho C \frac{\partial T}{\partial t} + div(\vec{j}) = S \ \ , \ \
+	\vec{j} = - \lambda \vec{\nabla}T
+ $$
 Avec:
 \begin{itemize}
 \item $\sigma$ le tenseur des contraintes de Cauchy
@@ -414,13 +409,13 @@ Avec:
 \item $S$ le terme source
 \end{itemize}
 
-Pour les cavités salines, il est également nécessaire de prendre en compte le fluage du sel, décrit par la loi de Lemaitre. Contrairement au dimensionnement préliminaire, qui considère l'hydrogène comme un gaz parfait, la modélisation cette fois-ci rend compte des vraies lois d'état, notamment l'effet joule-Thomson. 
+Pour les cavités salines, il est également nécessaire de prendre en compte le fluage du sel, décrit par la loi de Lemaitre. Contrairement au dimensionnement préliminaire, qui considère l'hydrogène comme un gaz parfait, la modélisation cette fois-ci rend compte des vraies lois d'état, notamment l'effet Joule-Thomson. 
 
 \emph{DEMETHER} va alors résoudre l’ensemble des équations thermodynamiques et thermomécaniques pendant les différentes phases dans les zones voulues. Nous nous sommes surtout intéressés aux zones 3 et 4, qui sont les plus importantes pour notre étude. \\
 
 \textbf{B-Application aux cavités salines}\\
 
-On a simulé grâce au logiciel \emph{DEMETHER} le comportement du stockage de l'hydrogène gazeux en cavité saline pendant une durée de plus de trente ans (correspond environ à la durée de vie d’une cavité). La modélisation commence par le lessivage (technique pour creuser la cavité), puis on remplit la cavité et finalement on simule 30 ans de cycle. On a ainsi étudié deux situations : le cas où le stockage est destiné à l’industrie, et le cas où il est destiné à la mobilité (cf. Annexe E). \\
+On a simulé grâce au logiciel \emph{DEMETHER} le comportement du stockage de l'hydrogène gazeux en cavité saline pendant une durée de plus de trente ans (correspond environ à la durée de vie d’une cavité). La modélisation commence par le lessivage (technique pour creuser la cavité), puis on remplit la cavité et finalement on simule 30 ans de cycle. On a ainsi étudié deux situations : le cas où le stockage est destiné à l’industrie, et le cas où il est destiné à la mobilité (cf. Annexe E).
 
 Dans la première application relative à l'industrie (configuration 3), nous considérons 1095 jours de lessivage à $P = P_{saumure} = 11,7 MPa$, 180 jours de remplissage (où la pression augmente jusqu’à $P = 14,5 MPa$) et 30 ans de cyclage. Nos résultats ont confirmé que la cavité saline envisagée était bien réalisable. En effet, nos modélisations donnent des pressions minimale et maximale admissibles par rapport aux seuils de stabilité, des contraintes négatives (ce qui confirme qu'il s'agit bien d'une compression et non d'une traction), des pertes volumiques en dessous de 1\% par an et un déviateur $q(p)$ de contrainte toujours inférieur au critère de dilatance linéaire considéré ($q = 1,3 p + 2,5$) où $p$ est la pression moyenne. Les figures 8 et 9 illustrent le resultat obtenu pour la configuration 3.\\
 
@@ -474,7 +469,7 @@ Dans la première application relative à l'industrie (configuration 3), nous co
 
 \textbf{C-Applications aux cavités minées revêtues}\\
 
-Nous avons également utilisé le logiciel \emph{DEMETHER} dans le but de simuler la création, le remplissage et les cycles soutirage-injection des cavités minées non revêtues (le logiciel ne permettant pas de modéliser l’interaction entre revêtement et le gaz/les roches).\\
+Nous avons également utilisé le logiciel \emph{DEMETHER} dans le but de simuler la création, le remplissage et les cycles soutirage-injection des cavités minées non revêtues (le logiciel ne permettant pas de modéliser l’interaction entre revêtement et le gaz/les roches).
 
 Contrairement au sel, les roches n’ont pas un comportement visco-plastique mais uniquement élastique, il n’y a pas de phénomène de fluage. Nous avons pris en entrée, cinq paramètres pour décrire les propriétés thermodynamiques des roches résistantes qui entourent la cavité : deux propriétés mécaniques et trois propriétés thermiques résumées dans le tableau ci-dessous:\\
 
@@ -566,7 +561,7 @@ Les contraintes sur la figure 12 prennent des valeurs positives. Les roches ento
 On distingue les reservoirs enterrés et les cavités minées revêtues.\\
 
 \textbf{A-Réservoirs enterrés}\\
-Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique (cf. figure x) enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données dans l'Annexe F sur la figure 47.\\
+Afin d’augmenter sa densité énergétique, l'hydrogène peut être stocké sous forme liquide. Nous allons ici nous intéresser au stockage dans des réservoirs enterrés. Le réservoir est une cuve cylindrique (cf. annexe C figure 48) enfoui à quelques mètres de profondeur constituée de dalles de béton, de sable, d’un isolant et de deux coques en acier. Les dimensions sont données dans l'Annexe C sur la figure 47.\\
 
 Compte tenu de la température de l’hydrogène liquide dans le réservoir ($T = 20K$), le froid risque de se propager dans le sol entourant la cuve et l’eau qu’il contient peut geler. L’eau solide occupant un volume plus important que l’eau liquide, cela risquerait d’engendrer un phénomène de gonflement du sol. Afin d’éviter ce phénomène, nous avons mené une étude sur le logiciel \emph{COMSOL} pour suivre l’évolution de température dans le sol et en surface. Pour cela, nous allons dimensionner le type d'isolant, l'épaisseur de l'isolant et la profondeur d'enfouissement.\\
 
@@ -574,7 +569,7 @@ Nous avons travaillé sur un réservoir en 2D d’une part pour écourter les te
 
 
 Dans un premier temps, nous avons lancé la simulation pour une température extérieure constante de 17°C, deux types d’isolants (air et perlite) d’une épaisseur de 15 cm.  
-Les résultats sont présentés en figure x de l'Annexe F. En réalité, la température dépend des saisons. Pour en tenir compte on suppose une température sous la forme : $$T_a(t) = A_a=B_a cos(\frac{2\pi(t-t_a)}{\tau})$$ $$A_a=\frac{1}{2}(T_{max} + T_{min}) \ , \ \ B_a =\frac{1}{2} ( T_{max} + T_{min})$$
+Les résultats sont présentés en figure 72 de l'Annexe F. En réalité, la température dépend des saisons. Pour en tenir compte on suppose une température sous la forme : $$T_a(t) = A_a=B_a cos(\frac{2\pi(t-t_a)}{\tau})$$ $$A_a=\frac{1}{2}(T_{max} + T_{min}) \ , \ \ B_a =\frac{1}{2} ( T_{max} + T_{min})$$
 Avec $T_{max}=25°C$,$T_{min}=5°C$ et $\tau=365 j$.
 
 
@@ -592,31 +587,26 @@ Ainsi en tenant compte de ces conditions, on retiendra pour notre isolant la per
 
 \textbf{B- Cavités minées revêtues}\\
 
-Les cavités minées revêtues sont une autre alternative pertinente pour le stockage de l’hydrogène liquide. Elles peuvent être creusées à faible profondeur, puisqu’il n’y a aucune contrainte concernant la pression (question qui se pose lors du stockage d’hydrogène gazeux). Comme pour le réservoir enterré, il est nécessaire d’avoir un revêtement isolant (afin de conserver l’hydrogène à une température de 20 Kelvin, mais aussi pour garantir la stabilité des roches, qui peuvent supporter des températures allant jusqu’à – 80°C selon le rapport de Geostock \cite{Geostock_2022}), ainsi qu’étanche, pour éviter toute fuite d’hydrogène liquide.
-
 \begin{multicols}{2}
+
+
+Les cavités minées revêtues sont une autre alternative pertinente pour le stockage de l’hydrogène liquide. Elles peuvent être creusées à faible profondeur, puisqu’il n’y a aucune contrainte concernant la pression (question qui se pose lors du stockage d’hydrogène gazeux). Comme pour le réservoir enterré, il est nécessaire d’avoir un revêtement isolant (afin de conserver l’hydrogène à une température de 20 Kelvin, mais aussi pour garantir la stabilité des roches, qui peuvent supporter des températures allant jusqu’à – 80°C selon le rapport de Geostock \cite{Geostock_2022}), ainsi qu’étanche, pour éviter toute fuite d’hydrogène liquide.
 
 Nous avons donc envisagé l’utilisation de cavités minées revêtues pour le scénario 7, en nous basant essentiellement sur l’étude de Geostock concernant le stockage de GNL (Gaz Naturel Liquéfié), ainsi que sur la cavité pilote réalisée à Daejon en Corée du Sud avec de l’azote liquide \cite{Nicolas_2008}. De fait, il n’existe pas encore de cavité minée revêtue pour le stockage d’hydrogène liquide (ni pour le GNL).
 
-Nous devions ainsi dimensionner la cavité afin qu’elle ait une capacité de 143 tonnes d’hydrogène, soit un volume total de 2014 $m^3$. Nous avons donc choisi de réaliser deux cavités de 1007 $m^3$ reliées par un réseau de galeries d’accès, comme pour le projet de Geostock [Figure 13].\\
-
 \begin{center}
-\includegraphics[width=\linewidth]{image/chap2/Figure 3.ii.2-1.png}
-\captionof{figure}{Structure des deux cavités minées revêtues du projet de Geostock pour le GNL}
+  \includegraphics[width=\linewidth]{image/chap2/Figure 3.ii.2-1.png}
+  \captionof{figure}{Structure des deux cavités minées revêtues du projet de Geostock pour le GNL}
 \end{center}
+
+Nous devions ainsi dimensionner la cavité afin qu’elle ait une capacité de 143 tonnes d’hydrogène, soit un volume total de 2014 $m^3$. Nous avons donc choisi de réaliser deux cavités de 1007 $m^3$ reliées par un réseau de galeries d’accès, comme pour le projet de Geostock [Figure 13].
+Pour chaque cavité, nous avons conservé la forme des cavités standards (qui est régie par les panneaux d’acier utilisés pour le revêtement).\\
 
 \end{multicols}
 
-Pour chaque cavité, nous avons conservé la forme des cavités standards (qui est régie par les panneaux d’acier utilisés pour le revêtement). En choisissant une section caractéristique de 36 $m^2$, nous avons obtenu les dimensions suivantes [Figure 14].\\
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=.8\linewidth]{image/chap2/Figure 3.ii.2-2.png}
-\caption{Dimensionnement des deux cavités minées revêtues}
-\end{figure}
-
-Nous nous sommes ensuite intéressés au revêtement de la cavité minée [Figure 15 a]. Celui-ci est constitué de plusieurs épaisseurs. La première est un « pare-vapeur » permettant l’étanchéité de la cavité. Ensuite vient une couche de béton, puis une couche d’isolant (généralement de la mousse de polyuréthane) entre deux épaisseurs de contreplaqué (afin d’avoir une surface parfaitement plane), ce qui permet à la fois de maintenir l’hydrogène à 20K, mais aussi d’éviter les températures extrêmement froides dans les roches. Puis vient un panneau ondulé en acier inoxydable de faible épaisseur (1,2 mm).
-Ce revêtement est inspiré de ceux utilisés dans les cuves des méthaniers transportant du gaz naturel liquéfié [Figure 15 b] qui sont également adaptés au transport d’un liquide devant être maintenu à très basse température (-160°C à pression atmosphérique).\\
+Nous nous sommes ensuite intéressés au revêtement de la cavité minée (cf. figure 14 a). Celui-ci est constitué de plusieurs épaisseurs. La première est un « pare-vapeur » permettant l’étanchéité de la cavité. Ensuite vient une couche de béton, puis une couche d’isolant (généralement de la mousse de polyuréthane) entre deux épaisseurs de contreplaqué (afin d’avoir une surface parfaitement plane), ce qui permet à la fois de maintenir l’hydrogène à 20K, mais aussi d’éviter les températures extrêmement froides dans les roches. Puis vient un panneau ondulé en acier inoxydable de faible épaisseur (1,2 mm).
+Ce revêtement est inspiré de ceux utilisés dans les cuves des méthaniers transportant du gaz naturel liquéfié (cf. figure 15 b) qui sont également adaptés au transport d’un liquide devant être maintenu à très basse température (-160°C à pression atmosphérique).\\
 
 \begin{figure}[h!]
 \centering
@@ -628,6 +618,7 @@ Ce revêtement est inspiré de ceux utilisés dans les cuves des méthaniers tra
 \includegraphics[width=\linewidth]{image/chap2/Figure 3.ii.2-4.png}
 \caption{Structure du revêtement des cuves des méthaniers}
 \end{subfigure}
+\caption{Revêtments pour les cavitées linées revêtues}
 \end{figure}
 
 Ensuite, nous nous sommes intéressés au phénomène de formation de glace autour de la cavité. En effet, contrairement au cas du réservoir enterré, il n’est pas nécessaire ici d’éviter complètement la formation de glace, car la cavité est située à faible profondeur dans un massif exposé à l'eau (nappe, circulation dans des fractures...). De plus, la formation d’un anneau de glace autour de la cavité sert également de seconde barrière d’étanchéité (en empêchant l’eau de s’infiltrer mais également l’hydrogène liquide de s’échapper). Cependant, il est nécessaire de contrôler la formation de glace autour de la cavité, pour éviter une surpression contre le revêtement. Ainsi, pendant la création de la cavité, l’eau des roches environnantes doit être draînée. 
@@ -642,11 +633,11 @@ Pour améliorer le dimensionnement, il faudrait effectuer des simulations à l�
 Les techniques de création de cavités de stockage pour l'hydrogène dépendent de la nature géologique du terrain. 
 
 \subsubsection{Création de cavités salines par lessivage}
-La méthode utilisée pour créer une cavité saline est le lessivage, elle s’appuie sur la dissolution de la couche de sel lorsque l’on injecte de l’eau. Il existe deux types de lessivage : direct et inverse. Dans notre étude, nous n’étudierons que le premier type car plus simple, bien que la valorisation de la saumure (eau salée) récupérée soit moindre (figures en annexe). \\
+La méthode utilisée pour créer une cavité saline est le lessivage, elle s’appuie sur la dissolution de la couche de sel lorsque l’on injecte de l’eau. Il existe deux types de lessivage : direct et inverse, leur description est fournie dans l'Annexe G. Dans notre étude, nous n’étudierons que le premier type car plus simple, bien que la valorisation de la saumure (eau salée) récupérée soit moindre. 
 
 Nous nous sommes appuyés sur la loi de Saberian qui donne la vitesse de dissolution du sel en fonction de différents paramètres : 
 $$ a = a_0 . F_1 . F_2 . F_3  $$
-Avec  $a0 = 0,5 m/jour$ la vitesse de dissolution du sel pour une paroi verticale avec de l’eau douce et à température 35°C; F1 fonction de la salinité de la saumure; F2 fonction de la température; F3 fonction de la géométrie.\\
+Avec  $a_0 = 0,5 m/jour$ la vitesse de dissolution du sel pour une paroi verticale avec de l’eau douce et à température 35°C; F1 fonction de la salinité de la saumure; F2 fonction de la température; F3 fonction de la géométrie.\\
 
 \begin{figure}[!h]
   \centering
@@ -662,8 +653,8 @@ Avec  $a0 = 0,5 m/jour$ la vitesse de dissolution du sel pour une paroi vertical
 \end{figure}
 
 
-Il est techniquement impossible de lessiver sur une hauteur supérieure à 30m, c’est pourquoi nous créons la cavité par passe, c’est-à-dire que nous superposons plusieurs cylindres de hauteur inférieure à 30m et de rayon différent.
-Nous avons dessiné les cavités correspondant aux configurations 1 et 3 (Figure 16), puis avons simulé la création afin d'obtenir l’évolution du rayon de la cavité au cours du temps et celle de la concentration de saumure (Figure 17).
+Il est techniquement impossible de lessiver sur une hauteur supérieure à 30 m, c’est pourquoi nous créons la cavité par passe, c’est-à-dire que nous superposons plusieurs cylindres de hauteur inférieure à 30 m et de rayon différent.
+Nous avons dessiné les cavités correspondant aux configurations 1 et 3 (cf. figure 15), caractérisé par des volumes utiles de $70000 m^3$ et $1300000 m^3$ puis avons simulé la création afin d'obtenir l’évolution du rayon de la cavité au cours du temps et celle de la concentration de saumure (cf. figure 16).
 
 
 \begin{figure}[h]
@@ -676,20 +667,19 @@ Nous avons dessiné les cavités correspondant aux configurations 1 et 3 (Figure
     \includegraphics[width=\linewidth]{image/chap2/Graphe rayon C3 100.png}
     \caption{ }
   \end{subfigure}
-  \caption{Graphiques de l’évolution du rayon (b) et de la concentration de saumure (a) au cours du temps pour la configuration 3 }
+  \caption{Evolution de la concentration de saumure (a) et du rayon (b) au cours du temps pour la configuration 3 }
 \end{figure}
 
-Nous remarquons que la durée de création de la cavité pour la configuration 3 est extrêmement longue (plus de 5500 jours, ce qui correspond à plus de 15 ans), nous avons donc essayé d’optimiser ce temps en doublant le débit (100 à 200 m3/h), en sachant que cela allait diminuer la concentration de saumure. On obtient donc une durée plus raisonnable : 3500 jours, ce qui correspond à moins de 10 ans (voir graphes en annexes). En ce qui concerne la configuration 1, la création dure 470 jours, nous n’avons donc pas modifié le débit. 
+Nous remarquons que la durée de création de la cavité pour la configuration 3 est extrêmement longue (plus de 5500 jours, ce qui correspond à plus de 15 ans), nous avons donc essayé d’optimiser ce temps en doublant le débit (100 à 200 $m^3/h$), en sachant que cela allait diminuer la concentration de saumure. On obtient donc une durée plus raisonnable : 3500 jours, ce qui correspond à moins de 10 ans (voir graphes en annexes). En ce qui concerne la configuration 1, la création dure 470 jours, nous n’avons donc pas modifié le débit. 
 
-En général la couche de sel n’est pas pure, il y a donc des impuretés dans la couche que nous appelons “insolubles”. Nous avons considéré un taux global homogène d’insolubles de 10\% dans la couche que l’on dissout, qui peut être sous la forme de couches épaisses qu’il est nécessaire de faire s’effondrer dans le puisard (partie de la cavité dédiée à recueillir les insolubles) ou bien de petits éléments épars dans la couche. La méthode d’effondrement des couches d’insolubles est détaillée en annexe.
-
+En général la couche de sel n’est pas pure, il y a donc des impuretés dans la couche que nous appelons “insolubles”. Nous avons considéré un taux global homogène d’insolubles de 10\% dans la couche que l’on dissout, qui peut être sous la forme de couches épaisses qu’il est nécessaire de faire s’effondrer dans le puisard (partie de la cavité dédiée à recueillir les insolubles) ou bien de petits éléments épars dans la couche. 
+Les graphiques montrant l'évolution du rayon et de la concentration de saumure pour la configuration 1 et la 3 optimisée sont en Annexe G, tout comme la méthode de gestion des insolubles.
 
 \subsubsection{Création des cavités minées revêtues}
 
-Dans cette partie, nous nous intéressons à la création même des cavités minées pour le stockage souterrain d’hydrogène sous phase gazeuse. A la différence des cavités salines, les roches minées ne disposent pas d’une étanchéité naturelle et le coût des travaux est nettement plus important que le simple lessivage. Les techniques pour creuser des galeries et la cavité sont déjà bien connues, notamment celle dite des longs trous dont la méthode est détaillée en annexe pour creuser la cavité elle-même. Creuser les galeries est aussi bien maîtrisé par les ingénieurs.
+Dans cette partie, nous nous intéressons à la création des cavités minées pour le stockage souterrain d’hydrogène sous phase gazeuse. A la différence des cavités salines, les roches minées ne disposent pas d’une étanchéité naturelle et le coût des travaux est nettement plus important que le simple lessivage. Les techniques pour creuser les galeries et la cavité sont déjà bien connues, notamment celle dite des longs trous dont la méthode est détaillée en Annexe H pour la création de la cavité elle-même. Creuser les galeries est aussi bien maîtrisé par les ingénieurs.
 
-Nous aurions pu éventuellement cherché à améliorer la disposition des explosifs pour creuser les galeries mais nous avons écarté cette piste de recherche dans notre travail par manque de temps.
-Une projet pilote de stockage d’hydrogène gazeux en cavité minée est encore en cours en Suède à Skallen avec une cavité de 50 000 m3. Il est intéressant de remarquer que la taille de ce type de stockage est aussi beaucoup plus petite que les cavités salines. Nous nous sommes basés sur ce pilote pour déterminer une technique d'étanchéification de la paroi.
+Une cavité de stockage de gaz naturel en cavité minée revêtue a été réalisé dans un terrain granitique a Skallen en Suède avec un volume de $40000 m^3$. Il est intéressant de remarquer que la taille de ce type de stockage est beaucoup plus petite que les cavités salines. Nous nous sommes basés sur ce projet pour déterminer la technique de revêtement de la paroi.
 Le revêtement est constitué de:
 
 \begin{itemize}
@@ -700,7 +690,20 @@ Le revêtement est constitué de:
 \item Un liner bitumineux d'épaisseur 5 mm intercalé entre le béton et l’acier pour éviter la transmission des déformations du terrain à l’acier. Il autorise ainsi un mouvement relatif du liner par rapport au béton et permet que l’ensemble du revêtement résiste aux déformations mécaniques.
 \end{itemize}
 
-Selon les scénarios, il est nécessaire de multiplier les cavités car celles-ci sont limitées en taille. Enfin, suite aux contraintes exercées sur les parois, on ne peut pas disposer aléatoirement les cavités dans les scénarios où il y a plusieurs cavités. Le détail des calculs est donné en annexe. Il faut retenir que pour conserver une marge de sécurité suffisante, chaque cavité doit être éloignée d’une distance au moins égale au double du diamètre des cavités. Le détail des calculs est exposé en annexe.
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{image/chap2/cav_skallen.jpg}
+    \caption{ }
+  \end{subfigure}
+  \begin{subfigure}[b]{0.43\linewidth}
+    \includegraphics[width=\linewidth]{image/chap2/crea_cav_min.jpg}
+    \caption{ }
+  \end{subfigure}
+  \caption{Cavité minée revêtue de Skallen (a) et revêtement associé (b)}
+\end{figure}
+
+Selon les scénarios, il est nécessaire de multiplier les cavités car celles-ci sont limitées en taille. Enfin, suite aux contraintes exercées sur les parois, on ne peut pas disposer aléatoirement les cavités dans les scénarios où il y a plusieurs cavités. Le détail des calculs est donné en annexe. Il faut retenir que pour conserver une marge de sécurité suffisante, chaque cavité doit être éloignée d’une distance au moins égale au double de son diamètre. Le détail des calculs est exposé en Annexe H.
 
 
 
@@ -713,35 +716,14 @@ Selon les scénarios, il est nécessaire de multiplier les cavités car celles-c
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Production, conditionnement, transport}
+\section{Chapitre III : Production, conditionnement et transport}
 La synthèse d'hydrogène n'est pas récente. Cependant, si l'hydrogène doit devenir un vecteur énergétique majeur dans une société décarbonnée, cela impose de revoir toute la chaîne de procédés: de sa production jusqu'à sa consommation. A partir des configurations types détaillées en chapitre 1, nous dimensionnons ces procédés.
 \subsection{Production d'hydrogène bas carbone}
-Les réactions thermodynamiques qui amènent à la production d'hydrogène sont toutes défavorisées: il faut donc amener des sources exterieures d'énergie. Il existe de nombreuses façons de synthétiser de l'hydrogène mais seules des productions bas carbone de celui-ci sont détaillées dans cette étude.  Actuellement, l'hydrogène est  produit à 96\% à partir de ressources fossiles \cite{Surla2019}. Deux synthèses sont ici détaillées: le vaporeformage qui utilise du gaz naturel (la technique la plus commune) et l'éctrolyse de l'eau. Il existe d'autres procédés, certains encore au stade de développement. Ils seront décrits en annexe.
+Les réactions thermodynamiques qui amènent à la production d'hydrogène sont toutes défavorisées: il faut donc amener des sources exterieures d'énergie. Il existe de nombreuses façons de synthétiser de l'hydrogène mais seules des productions bas carbone de celui-ci sont détaillées dans cette étude.  Actuellement, l'hydrogène est  produit à 96\% à partir de ressources fossiles \cite{Surla2019}. Deux synthèses sont ici détaillées: le vaporeformage qui utilise du gaz naturel (la technique la plus commune) et l'éctrolyse de l'eau. Il existe d'autres procédés, certains encore au stade de développement. On peut citer en exemple l'injection d'eau sous pression dans des terres à forte teneur en fer pour faire de l'oxyde de fer et de l'hydrogène.
 
 \subsubsection{Technologie SMR et CCS}
-La vaporeformage, ou \emph{Steam Methane Reforming} (SMR), est la technique de synthèse d'hydrogène la plus commune. Elle utilise du gaz naturel et est émettrice de gaz à effet de serre. Nous n'envisageons donc la production d'hydrogène par SMR que couplée  avec un procédé de capture de $CO_2$ (CCS).$48 \% $ de l'hydrogène est actuellement produit par SMR. Les autres procédés fossiles utilisent du naphta ou du charbon (resp. 30\% et 18\%) \textbf{[5]}. \\  Les SMR fonctionnent au gaz naturel et cette technique est émettrice de $C0_2$. On s'intéresse donc à la production d'hydrogène par SMR couplé à un captage de $C0_2$ pour rendre, si possible, ce procédé durable. Les unités de grande taille de production d'hydrogène atteignent aujourd’hui une production de 220.000 Nm 3/h. C'est sans conteste le procédé le moins cher et le plus efficace.
+La vaporeformage, ou \emph{Steam Methane Reforming} (SMR), est la technique de synthèse d'hydrogène la plus commune. Elle utilise du gaz naturel et est émettrice de gaz à effet de serre. Nous n'envisageons donc la production d'hydrogène par SMR que couplée  avec un procédé de capture de $CO_2$ (CCS). $48 \% $ de l'hydrogène est actuellement produit par SMR. Les autres procédés fossiles utilisent du naphta ou du charbon (resp. 30\% et 18\%) [5]. \\  
+Les unités de grande taille de production d'hydrogène atteignent aujourd’hui une production de $220000 Nm^3/h$. C'est sans conteste le procédé le moins cher et le plus efficace.
 
 \begin{center}
 \begin{figure}[!h]
@@ -751,14 +733,14 @@ La vaporeformage, ou \emph{Steam Methane Reforming} (SMR), est la technique de s
 \end{center}
 
 
-Le vaporeformage utilise du gaz naturel. Les étapes de production sont les suivantes:
+Les étapes de production sont les suivantes:
 \begin{enumerate}
 \item Il faut dans un premier temps traiter les composants chlorés et souffrés qui endommagent les catalyseurs lors de la suite du processus. Le souffre est éliminé dans des réacteurs d’adsorption à l’oxyde de zinc \cite{Prod_gaz_synth}
  avec la réaction $$ H_2S + ZnO \rightarrow ZnS + H_20 $$ 
 
 \item Le gaz naturel et les hydrocarbures légers sont ensuite transformés en gaz de synthèse par vaporeformage. La conversion du méthane est favorisée par une haute température, une basse pression et un large excès de vapeur d’eau. Des bruleurs fonctionnant àl'aide d'$H_2$ assurent la température. La réaction SMR : $$ CH_4 + H_2O \rightarrow CO + 3H_2 , \Delta H_{760\celsius}=226kJ/mol$$
 
-\item Ensuite on effectue en \emph{Water Gas Schift} (WGS) pour convertir $CO$ en $CO_2$. On souhaite augmenter la teneur en $H_2$ dans le gaz de synthèse avant la purification finale. La conversion du CO est favorisée à basse température et en large excès de vapeur d’eau \textbf{[5]}. La réaction WGS : $$ CO + H_2O \rightarrow CO_2 + H_2 , \Delta H_{760\celsius} =-34,3kJ/mol$$
+\item Ensuite on effectue en \emph{Water Gas Schift} (WGS) pour convertir $CO$ en $CO_2$. On souhaite augmenter la teneur en $H_2$ dans le gaz de synthèse avant la purification finale. La conversion du CO est favorisée à basse température et en large excès de vapeur d’eau \cite{Prod_gaz_synth}. La réaction WGS : $$ CO + H_2O \rightarrow CO_2 + H_2 , \Delta H_{760\celsius} =-34,3kJ/mol$$
 
 \item Le $CO_2$ produit est est ensuite récupéré par absorption par des amines dans une solution aqueuse. $C0_2$ est séparé de $H_2$. Il existe d'autres technologies en développement comme la récupération par cryogénie, développée par \emph{Air Liquide}.
 
@@ -768,20 +750,13 @@ Le vaporeformage utilise du gaz naturel. Les étapes de production sont les suiv
 
 On peut maintenant caractériser la technique SMR par ordres de grandeur.
 \begin{itemize}
-\item \textbf{Charge}. Pour produire $1kg$ de $H_2$ il faut e viron $3,7kg$ de gaz naturel \textbf{[5]}.
-\item \textbf{La taille} d'une unité SMR est comprise entre $10.000$ et $200.000 Nm^3/h$ \textbf{[5]}
-\item \textbf{Séquestration du carbone} Les unités de capture actuelles du $CO_2$ nécessitent en moyenne entre $750$ et $1100kWh/ton CO_2$. On pense atteindre $300kWh/ton CO_2$ avec des nouvelles technologies \textbf{[6]}.
-\item \textbf{Le $CO_2$ est capturé} à hauteur de 80 à 95\%. 1 kg d'$H_2$ produit génère donc $ 5,5 kg \times 0.10 = 550 g$ de $CO_2$\textbf{[6]}.
-\item \textbf{Prix SMR type} une unité de production d’hydrogène à partir du gaz naturel type d’une capacité de $100 000 Nm3/h$ avec purification de l’hydrogène par PSA (pureté 99,9 \% en volume, taux de récupération d’environ 90 \%) représente un investissement d’environ 120 M€.
+\item Charge : Pour produire $1kg$ de $H_2$ il faut e viron $3,7kg$ de gaz naturel \cite{Prod_gaz_synth}.
+\item La taille d'une unité SMR est comprise entre $10000$ et $200000 Nm^3/h$  \cite{Prod_gaz_synth}
+\item Séquestration du carbone : Les unités de capture actuelles du $CO_2$ nécessitent en moyenne entre $750$ et $1100kWh/ton CO_2$. On pense atteindre $300 kWh/t CO_2$ avec des nouvelles technologies \cite{Surla2019}.
+\item Le $CO_2$ est capturé à hauteur de 80 à 95\%. 1 kg d'$H_2$ produit génère donc $ 5,5 kg \times 0.10 = 550 g$ de $CO_2$ \cite{Surla2019}.
+\item Le prix d'un SMR type d'une unité de production d’hydrogène à partir du gaz naturel d’une capacité de $100000 Nm^3/h$ avec purification de l’hydrogène par PSA (pureté 99,9 \% en volume, taux de récupération d’environ 90 \%) représente un investissement d’environ 120 M€.
 \end{itemize}
 
-\begin{center}
-\begin{figure}[!h]
-\includegraphics[width=.9\linewidth]{image/chap3/Arrangement_four_vaporeformage.jpg}
-\caption{Arrangement typique d'un four de vaporeformage \cite{Prod_gaz_synth}}
-\label{fig:arrangement_four}
-\end{figure}
-\end{center}
 
 \subsubsection{L'électrolyse de l'eau}
 
@@ -791,15 +766,14 @@ Le signe positif de l’enthalpie signifie que la réaction est endothermique.
 Il y a plusieurs façons d’exploiter cette réaction à travers des demi réactions différentes. Nous nous sommes intéressés à trois technologies:\\
 
 \begin{enumerate}
-\item \textbf{L’Électrolyse à oxyde solide} \\ Les électrolyseurs utilisant cette méthode sont composés d’une anode en LSM (Manganite de lanthane dopé au strontium), et une cathode en nickel. Les demis réactions mis en jeu étant pour l’anode :  $2 O_2^- \rightarrow O_2 + 4 e^- $, et pour la cathode : $H_2O + 2 e^- \rightarrow H_2 + O_2^- $ . Cet électrolyseur nécessite une eau à haute température, un électrolyte pour faire migrer les ions et a une faible densité de courant. \\
+\item L’électrolyse à oxyde solide : Les électrolyseurs utilisant cette méthode sont composés d’une anode en LSM (Manganite de lanthane dopé au strontium), et une cathode en nickel. Les demis réactions mis en jeu étant pour l’anode :  $2 O_2^- \rightarrow O_2 + 4 e^- $, et pour la cathode : $H_2O + 2 e^- \rightarrow H_2 + O_2^- $ . Cet électrolyseur nécessite une eau à haute température, un électrolyte pour faire migrer les ions et a une faible densité de courant. \\
 
-\item \textbf{L’Électrolyse alcaline} \\ L’anode de ces électrolyseurs est à base de titane ou de nickel, et la cathode est en acier. Les réactions ayant lieu étant alors pour l’anode :  $2 OH^- \rightarrow H_2O + 1/2 O_2 + 2e^- $, et pour la cathode : $2 H_2O + 2 e^- \rightarrow H_2 +2 HO^- $ . Cet électrolyseur fait intervenir une migration lente des ions OH- à travers une membrane dans un électrolyte, et une faible densité de courant.\\
+\item L’électrolyse alcaline : L’anode de ces électrolyseurs est à base de titane ou de nickel, et la cathode est en acier. Les réactions ayant lieu étant alors pour l’anode :  $2 OH^- \rightarrow H_2O + 1/2 O_2 + 2e^- $, et pour la cathode : $2 H_2O + 2 e^- \rightarrow H_2 +2 HO^- $ . Cet électrolyseur fait intervenir une migration lente des ions OH- à travers une membrane dans un électrolyte, et une faible densité de courant.\\
 
-\item \textbf{L’Électrolyse PEM :Proton Exchange Membrane }\\ 
-L’anode de ces électrolyseurs est faite en oxyde d'iridium (IrO2) ou de ruthénium (RuO2), et la cathode est en platine. Le fer et le cobalt catalysent la réaction eux aussi mais sont instables dans les conditions de la réaction, d’où l’utilisation du platine. Les réactions aux électrodes sont pour l’anode (1) et la cathode (2):  
-$$2H_2O \rightarrow O_2 + 4H^+ + 4e^- \  (1) $$ $$ 4H^+ + 4e^-  \rightarrow 2H_2  \ (2)$$
+\item L’électrolyse PEM : Proton Exchange Membrane : L’anode de ces électrolyseurs est faite en oxyde d'iridium (IrO2) ou de ruthénium (RuO2), et la cathode est en platine. Le fer et le cobalt catalysent la réaction eux aussi mais sont instables dans les conditions de la réaction, d’où l’utilisation du platine. Les réactions aux électrodes sont pour l’anode (1) et la cathode (2):  
+$$2H_2O \rightarrow O_2 + 4H^+ + 4e^- \  (1) \ \ \ , \ \ \ 4H^+ + 4e^-  \rightarrow 2H_2  \ (2)$$
 
-Dotés d’un temps de réponse de l’ordre de la miliseconde et pouvant supporter de grande intensité, nous allons choisir ces électrolyseurs.
+Dotés d’un temps de réponse de l’ordre de la miliseconde et pouvant supporter de grande intensité, nous allons choisir ces électrolyseurs. Il faut néanmoins prendre en compte le fait que des métaux rares sont utilisés dans sa fabrication, notamment de l'iridium pour catalyser le réaction, ce qui est un réel frein au développement industriel de l'électrolyse PEM.
 
 \end{enumerate}
 
@@ -829,43 +803,41 @@ Pression de fonctionnement&1 bar& 0,3 - 30 Bar & Jusqu'à 35bar \\
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{image/chap3/Figure 3.2.b-3.png}
-    \caption{Formation d’un stack à partir de plusieurs unités. }
+    \caption{Formation d’un stack à partir de plusieurs unités.}
   \end{subfigure}
-  \caption{Une pile PEM }
+  \caption{Une pile PEM}
 \end{figure}
 
 On peut maintenant caractériser la pile PEM par ordre de grandeur:\\
 \begin{itemize}
 \item Les unités sont regroupés pour former des stacks (Figure 20(b))
-\item La réaction d’électrolyse ayant une \textbf{enthalpie} de $\Delta H =280KJ/mol$
-\item La \textbf{tension de fonctionnement} est alors de $U= \Delta H^0 /n\times \mathfrak{F} =1,4 V$ avec $n$ le nombre d’électrons échangés et $\mathfrak{F}$ la constante de Faraday. La tension varie en pratique entre $1,23V$ et $1.48V$. 
-\item Cette enthalpie nous permet de déduire qu’il faut théoriquement $38KWh$ d'\textbf{énergie} pour 1kg de $H_2$.
-\item Avec un \textbf{rendement} d’électrolyseurs de 70\% cette énergie peut monter à 55kWh par kilogramme de H2
+\item La réaction d’électrolyse ayant une enthalpie de $\Delta H = 280 KJ/mol$
+\item La tension de fonctionnement est alors de $U= \Delta H^0 /n\times \mathfrak{F} =1,4 V$ avec $n$ le nombre d’électrons échangés et $\mathfrak{F}$ la constante de Faraday. La tension varie en pratique entre $1,23V$ et $1.48V$. 
+\item Cette enthalpie nous permet de déduire qu’il faut théoriquement $38KWh$ d'énergie pour 1kg de $H_2$.
+\item Avec un rendement d’électrolyseurs de 70\% cette énergie peut monter à 55kWh par kilogramme de $H_2$
 \end{itemize}
 
 \subsection{Conditionnement de l'hydrogène}
 
-L’hydrogène, après avoir été produit par électrolyse ou SMR doit être conditionné en amont et en aval du stockage en cavité. Pour dimensionner ce conditionnement il convient de réfléchir sur l’état de stockage ou de transport de l’hydrogène, à savoir gazeux ou liquide. \\
+L’hydrogène, après avoir été produit par électrolyse ou SMR, doit être conditionné en amont et en aval du stockage en cavité. Pour dimensionner ce conditionnement, il convient de réfléchir sur l’état de stockage ou de transport de l’hydrogène, à savoir gazeux ou liquide.
 
-Pour appréhender cette partie, il est bon de retenir que le LH2 est plus dense énergétiquement et permet de baisser le coût global d'une chaîne de procédés si le transport est effectué sur des grandes distances ou en grandes quantités. Dans le cas contraire, on préfèrera le GH2. En effet, pour deux camions de poids identique de $36t$, le premier a une capacité de $4500kg LH_2$ tandis que pour le second, de seulement $300kg GH_2$ [V]. Notons aussi que le stockage ou transport sous forme liquide garantit une meilleure sécurité des installations. [V]
+Pour appréhender cette partie, il est bon de retenir que le LH2 est plus dense énergétiquement et permet de baisser le coût global d'une chaîne de procédés si le transport est effectué sur des grandes distances ou en grandes quantités. Dans le cas contraire, on préfèrera le GH2. En effet, pour deux camions de poids identique de $36t$, le premier a une capacité de $4500 kg LH_2$ tandis que pour le second, de seulement $300 kg GH_2$ [V]. Notons aussi que le stockage ou transport sous forme liquide garantit une meilleure sécurité des installations.
 
 \subsubsection{Compression}
 
-L'hydrogène sort de l'électrolyseur à 3 MPa et à 60°C, et de la cellule SMR à 2 MPa et à 27 °C. La pression d'injection de l'hydrogène en cavité saline (14 à 15 MPa) et minées revêtues (18 MPa) étant supérieure à celle de sortie de l'électrolyseur, il faut donc comprimer le gaz. En sortie de la cavité, il est parfois nécessaire de recomprimer le gaz (qui s’est détendu en sortant de la cavité), mais nous avons décidés de ne pas étudier cette étape dans notre étude. \\
+L'hydrogène sort de l'électrolyseur à 3 MPa et à 60°C, et de la station SMR à 2 MPa et à 27 °C. La pression d'injection de l'hydrogène en cavité saline (14 à 15 MPa) et minées revêtues (18 MPa) étant supérieure à celle de sortie de l'électrolyseur, il faut donc comprimer le gaz. En sortie de la cavité, il est parfois nécessaire de recomprimer le gaz (qui s’est détendu en sortant de la cavité), mais nous avons décidés de ne pas étudier cette étape dans notre étude. 
 
-D'un point de vue technique, le taux de compression ne peut techniquement pas dépasser 3, c'est-à-dire que la pression de sortie doit être inférieure à trois fois la pression d'entrée. De plus, la température dans le compresseur ne doit pas excéder 150°C afin de ne pas l'endommager [VI]. Par conséquent, il est nécessaire de refroidir l'hydrogène en sortie du compresseur avec des échangeurs et d'utiliser plusieurs étages de compression. \\
+D'un point de vue technique, le taux de compression ne peut techniquement pas dépasser 3, c'est-à-dire que la pression de sortie doit être inférieure à trois fois la pression d'entrée. De plus, la température dans le compresseur ne doit pas excéder 150°C afin de ne pas l'endommager [VI]. Par conséquent, il est nécessaire de refroidir l'hydrogène en sortie du compresseur avec des échangeurs et d'utiliser plusieurs étages de compression. 
 
-Pour ce faire, nous avons, à l’aide du diagramme des frigoristes de l’hydrogène, réalisé une étude thermodynamique simple pour dessiner les différents étages de compression, puis les avons modélisés à l’aide du logiciel ASPEN PLUS, couramment utilisé dans l'industrie notamment dans le domaine de la thermodynamique des procédés. \\
+Pour ce faire, nous avons, à l’aide du diagramme des frigoristes de l’hydrogène, réalisé une étude thermodynamique simple pour dessiner les différents étages de compression, puis les avons modélisés à l’aide du logiciel \emph{ASPEN PLUS}, couramment utilisé dans l'industrie notamment dans le domaine de la thermodynamique des procédés. L'annexe I détaille l'outil \textit{Aspen Plus} et ses crédits.
 
-En ce qui concerne le choix des compresseurs, nous avions le choix entre des compresseurs volumétriques et dynamiques. Après des recherches bibliographiques, le choix du compresseur volumétrique nous a paru le plus pertinent au vu des propriétés volumiques de l’hydrogène (densité)[VII]. Nous l’avons modélisé sur ASPEN PLUS comme un compresseur idéal isotherme. Pour les échangeurs, le liquide réfrigérant utilisé est de l’eau. \\
+En ce qui concerne le choix des compresseurs, nous avions le choix entre des compresseurs volumétriques et dynamiques. Après des recherches bibliographiques, le choix du compresseur volumétrique nous a paru le plus pertinent au vu des propriétés volumiques de l’hydrogène (densité)[VII]. Nous l’avons modélisé sur \emph{ASPEN PLUS} comme un compresseur idéal isotherme. Pour les échangeurs, le liquide réfrigérant utilisé est de l’eau. Un exemple de schéma du procédé de compression entre la phase de production et de stockage, pour la configuration 1, est donné par la figure 20.\\
 
 \begin{figure}[h!]
-\centering
-\includegraphics[width=.8\linewidth]{image/chap3/etage_compression.PNG}
-\caption{Procédé de compression modélisé avec \textit{ASPEN Plus} }
- \end{figure}
-
-
+ \centering
+ \includegraphics[width=.8\linewidth]{image/chap3/etage_compression.PNG}
+ \caption{Procédé de compression modélisé avec \textit{ASPEN PLUS} pour la configuration 1}
+\end{figure}
 
 
 
@@ -873,27 +845,27 @@ En ce qui concerne le choix des compresseurs, nous avions le choix entre des com
 
 
 \begin{multicols}{2}
-On cherche à liquéfier l'hydrogène pour augmenter sa densité énergétique. Liquéfier l'hydrogène pour le transporter ou le stocker est un défit technique de taille: l'hydrogène est liquide à une températue inférieure à 20K à pression athmosphérique. Il s'agit donc de dimensionner et caractériser un ensemble de cycles thermodynamiques pour refroidir l'hydrogène. 
+On cherche à liquéfier l'hydrogène pour augmenter sa densité énergétique. Liquéfier l'hydrogène pour le transporter ou le stocker est un défit technique de taille: l'hydrogène est liquide à une températue inférieure à 20K à pression athmosphérique (cf. figre 21). Il s'agit donc de dimensionner et caractériser un ensemble de cycles thermodynamiques pour refroidir l'hydrogène. 
 
-De plus, la liquéfaction de l'hydrogène présente un défi de nature quantique : la conversion orthohydrogène-parahydrogène. On parle de deux isomères de l'hydrogène. Pour l'orthohydrogène le proton de chaque molécule d'hydrogène possède des spins parallèles, pour le parahydrogène le proton de chaque molécule d'hydrogène possède des spins antiparallèles
+De plus, la liquéfaction de l'hydrogène présente un défi de nature quantique : la conversion orthohydrogène-parahydrogène. On parle de deux isomères de l'hydrogène. Pour l'orthohydrogène le proton de chaque molécule d'hydrogène possède des spins parallèles, pour le parahydrogène le proton de chaque molécule d'hydrogène possède des spins antiparallèles.
 
 
- \begin{center}
+\begin{center}
   \includegraphics[width=\linewidth]{image/chap3/diagramme de phase H2.png}
-    \captionof{figure}{Diagrammes de phase de l'hydrogène}
+  \captionof{figure}{Diagrammes de phase de l'hydrogène}
 \end{center}
 
 \end{multicols}
 
 \begin{figure}[!h]
-\centering
+  \centering
   \includegraphics[width=0.6\linewidth]{image/chap3/Ortho-para.png}
  \caption{Proportion ortho-para en fonction de la température et énergie de conversion \cite{orthopara}.}
 \end{figure}
 
 
-A 300 K, il y a 25\% de parahydrogène et 75\% d'orthohydrogène. A 20K, il y a 100\% d'orthohydrogène. On observe donc une conversion orthohydrogène à parahydrogène. Or, cette réaction est fortement exothermique : 
- $$ \Delta h _{conv} =500kJ/kg$$
+A 300 K, il y a 25\% de parahydrogène et 75\% d'orthohydrogène. A 20K, il y a 100\% d'orthohydrogène. On observe donc une conversion orthohydrogène à parahydrogène. Or, cette réaction est fortement exothermique (cf. figure 22): 
+ $$ \Delta h _{conv} = 500kJ/kg$$
 En cherchant à refroidir à de l'hydrogène on le réchauffe. L'équilibre s'atteint en quelques jours : c'est une réaction assez lente.
 
 \begin{figure}[h]
@@ -912,17 +884,17 @@ En cherchant à refroidir à de l'hydrogène on le réchauffe. L'équilibre s'at
 
 La conversion ortho-para est aussi une des causes de \emph{boil-off} dans les stockages : l'hydrogène liquide s'évapore et cela cause des surpressions dans les cavités. Il faut donc impérativement envisager la conversion ortho-para lors de la liquéfaction. Il existe des catalyseurs de la réaction de conversion et ceux-ci sont positionnés dans la chaîne de liquéfaction. 
 
-Plusieurs cycles thermodynamiques sont décrits dans la littératures pour liquéfier l'hydrogène. Nous avons fait le choix de synthétiser ceux-ci et de présenter un cycle simplifié. Ce cycle a le mérite d'exposer les ordres de grandeurs. Nous avons utilisé sa représentation sous \emph{Aspen Plus} pour en faire l'évaluation économique (cf chapitre 5).
+Plusieurs cycles thermodynamiques sont décrits dans la littératures pour liquéfier l'hydrogène. Nous avons fait le choix de synthétiser ceux-ci et de présenter un cycle simplifié. Ce cycle a le mérite d'exposer les ordres de grandeurs. Nous avons utilisé sa représentation sous \emph{ASPEN PLUS} pour en faire l'évaluation économique.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\linewidth]{image/chap3/liquéfaction.png}
-\caption{Représentation simplifiée avec \textit{Aspen Plus} de la liquéfaction}
+\caption{Représentation simplifiée avec \textit{ASPEN PLUS} de la liquéfaction}
 \end{figure}
 
-Nous détaillons ici les différentes étapes de la liquéfaction. On suppose que l'hydrogène gazeux arrive sous pression de 10 bars et à 60°C (sortie de vaporeformage ou d'électrolyseur).
+Nous détaillons ici les différentes étapes de la liquéfaction. On suppose que l'hydrogène gazeux arrive sous pression de 2 MPa et à 27°C (sortie de vaporeformage).
 \begin{enumerate}
-\item L'hydrogène est d'abord comprimé jusqu'à une pression de 30 bars. On négligera les pertes de charges par la suite.
+\item L'hydrogène est d'abord comprimé jusqu'à une pression de 3 MPa. On négligera les pertes de charges par la suite.
 \item L'hydrogène est amené à 20°C avec des échangeurs à eau liquide.
 \item L'hydrogène est refroidi dans un bain d'azote liquide. Il ressort à 80K.
 \item L'hydrogène est refroidi par la détente d'hélium jusqu'à 30K.
@@ -932,52 +904,52 @@ Nous détaillons ici les différentes étapes de la liquéfaction. On suppose qu
 \item On sépare les deux phases dans un séparateur.
 \end{enumerate}
 
-On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud. L'annexe J décrit le principe de modélisation du procédé de liquéfaction sous \textit{Aspen Plus} et les équations fonctionnelles utilisées dans le logiciel.
 
+Une fois liquide, l'hydrogène a alors une masse volumique de $70,973 kg/m^3$ à pression atmosphérique et à $20,28K$ \cite{Surla2019}. Cela donne un pouvoir calorifique de $9,93 MJ/L$ soit environ 4 fois moins que l'essence mais 780 fois plus grand que l'hydrogène gazeux à pression atmosphérique. On peut envisager toutes sortes d'optimisation des procédés, comme par exemple la réutilisation de l'hydrogène gazeux très froid pour refroidir l'hydrogène plus chaud. L'annexe I décrit le principe de modélisation du procédé de liquéfaction sous \textit{Aspen Plus} et les équations fonctionnelles utilisées dans le logiciel.
+L'annexe J détaille le procédé de liquéfaction.
 
 \subsection{Transport d'hydrogène}
-Le transport d'hydrogène pose des problèmes techniques nouveaux de part la nature thermodynamique de l'hydrogène. Le transport de l’hydrogène peut être envisagé sous deux conditionnement différents. Premièrement sous conditionnement gazeux par pipeline ou camion, mais aussi sous conditionnement liquide par camion ou bateau.
+Le transport de l'hydrogène pose des problèmes techniques nouveaux de part sa nature thermodynamique. Il peut être envisagé sous deux conditionnements différents. Premièrement sous forme gazeux par pipeline ou camion, mais aussi sous forme liquide par camion ou bateau.
 
 \subsubsection{Transport de $GH_2$}
 
-Transporter du gaz pose un problème technique: les pertes de charges dans les conduites. On désigne par charge la quantitée $\Pi = p+\rho g z + \frac{1}{2}\rho v^2$, avec $p$ la pression, $ \rho$ la masse volumique et $v$ la viteese du fluide. Cette quantitée diminue au cours de l'écoulement, à travers les différents éléments du réseau. Les \textbf{pertes de paroi} sont dûes à la viscosité du fluide et les \textbf{pertes singulières} au décollement du fluide des interfaces, ce qui redistribue les cartes de vitesse.\\
+Transporter du gaz pose un problème technique: les pertes de charges dans les conduites. On désigne par charge la quantitée $\Pi = p+\rho g z + \frac{1}{2}\rho v^2$, avec $p$ la pression, $ \rho$ la masse volumique et $v$ la viteese du fluide. Cette quantitée diminue au cours de l'écoulement, à travers les différents éléments du réseau. Les pertes de paroi sont dûes à la viscosité du fluide et les pertes singulières au décollement du fluide des interfaces, ce qui redistribue les cartes de vitesse.
 
-Dans le cas d'un fluide incompressible dans une conduite horizontale de rugosité relative $\frac{\epsilon}{D}$ on a une perte de charge $$ \Delta \Pi = \frac{1}{2} \rho v^2 \lambda ( Re, \frac{\epsilon}{D}) $$ et on lit $\lambda ( Re, \frac{\epsilon}{D}) $ sur des diagrammes de \emph{MOODY}. Mais l'$H_2$ est compressible.
+Dans le cas d'un fluide incompressible dans une conduite horizontale de rugosité relative $\frac{\epsilon}{D}$, on a une perte de charge $$ \Delta \Pi = \frac{1}{2} \rho v^2 \lambda ( Re, \frac{\epsilon}{D}) $$ et on lit $\lambda ( Re, \frac{\epsilon}{D}) $ sur les diagrammes de \emph{MOODY} sachant que l'$H_2$ est compressible.
 
-Lorsqu'une canalisation est parcourue par un fluide compressible, la masse volumique $\rho$ décroit dans le sens du courant à cause de la chute de pression. Par conservation du débit, la vitesse $V$ augmente. \\ Puisque chaque tronçon $dx$ n'est plus comparable car dans chacun d'eux la pression est différente, on décrit la perte de charge sur chaque tronçon et on intègre. \\
+Lorsqu'une canalisation est parcourue par un fluide compressible, la masse volumique $\rho$ décroit dans le sens du courant à cause de la chute de pression. Par conservation du débit, la vitesse $V$ augmente. \\ Puisque chaque tronçon $dx$ n'est plus comparable car dans chacun d'eux la pression est différente, on décrit la perte de charge sur chaque tronçon et on intègre. 
 On a en régime turbulent: 
 $$
-\begin{array}{cc}
- 	dp + \rho V dV= -\frac{\lambda}{2}\rho v^2 \frac{dx}{D} & (1) \\
- 	\rho V =cte &(2) \\
- 	T_{ext}=cte & (3) \\
-\end{array}
+ 	dp + \rho V dV= -\frac{\lambda}{2}\rho v^2 \frac{dx}{D} \ \ , \ \
+ 	\rho V =cte  \ \ , \ \
+ 	T_{ext}=cte  \ \ , \ \
  $$
  
 Et on trouve alors:
 $$ p_1^2 - p_2^2 =2 p_1 \rho_1 v_1^2 (\frac{\lambda L}{2 D} + ln\frac{p_2}{p_1}) $$
 
-Transporter du gaz par pipeline est donc couteux en énergie à cause des pertes de charges. Tous les 100km on perd 1,2\% de l'énergie transportée. De plus, l'hydrogène est une molécule très petite. On assiste donc à des phénomènes d'\emph{embrittlment} qui fragilisent les matérieux.
-
 \begin{multicols}{2}
-Pour un transport sur de courtes ou moyennes distances, le transport par camion est plus adapté. En effet, la construction de pipeline est onéreuse (un million d’euros par kilomètre en ordre de grandeur) et le transport d’hydrogène gazeux par un pipeline soulève de nombreux problèmes techniques. Ainsi on peut transporter l’hydrogène gazeux comprimé dans des bouteilles. Il en existe deux types, le premier est une bouteille entièrement en acier, et l’autre alternative, plébiscitée par Airliquide, est une bouteille composée de plusieurs matériaux [Figure 26]. Ces bouteilles sont composées premièrement d’une structure en fibre de carbone garantissant la résistance aux efforts mécaniques. Cette structure recouvre une épaisse couche d’acier sur laquelle repose un liner en polymère qui garantit l’étanchéité de la bouteille. On peut alors comprimer l’hydrogène à 500 bar et stocker de 5 à 10 kg par bouteille \cite{MAHYTEC}. Un camion peut ainsi transporter 300 kg d’hydrogène [V].
+
+Transporter du gaz par pipeline est donc couteux en énergie à cause des pertes de charges. Tous les 100km on perd 1,2\% de l'énergie transportée. De plus, l'hydrogène est une molécule très petite. On assiste donc à des phénomènes de fragilisation des matériaux.
+
+Pour des courtes ou moyennes distances, le transport par camion est plus adapté. En effet, la construction de pipeline est onéreuse (un million d’euros par kilomètre en ordre de grandeur) et le transport d’hydrogène gazeux par un pipeline soulève de nombreux problèmes techniques. Ainsi on peut transporter l’hydrogène gazeux comprimé dans des bouteilles. Il en existe deux types, le premier est une bouteille entièrement en acier, et l’autre alternative, plébiscitée par Airliquide, est une bouteille composée de plusieurs matériaux ( cf. figure 25). Ces bouteilles sont composées premièrement d’une structure en fibre de carbone garantissant la résistance aux efforts mécaniques. Cette structure recouvre une épaisse couche d’acier sur laquelle repose un liner en polymère qui garantit l’étanchéité de la bouteille. On peut alors comprimer l’hydrogène à 500 bar et stocker de 5 à 10 kg par bouteille \cite{MAHYTEC}. Un camion peut ainsi transporter 300 kg d’hydrogène [V].
 
 \begin{center}
 \includegraphics[width=.8\linewidth]{image/chap3/Figure 3.i-1.png}
-\captionof{figure}{Bouteilles de matériaux composites}
+\captionof{figure}{Bouteille en matériaux composites}
 \end{center}
 
 \end{multicols}
 
 \subsubsection{Transport de $LH_2$}
 
-Tout l’intérêt de l’hydrogène liquide réside dans le transport de celui-ci, plutôt que le transport de l’hydrogène sous forme gazeuse. En effet, l’hydrogène liquide est plus dense énergétiquement que l’hydrogène gazeux. Ainsi, selon Airliquide, pour un poids de camion identique (36 tonnes), on peut transporter jusqu’à 4500 kg d’hydrogène sous conditionnement liquide contre seulement 300 kg sous conditionnement gazeux, soit 15 fois plus [V]. \\
-
-Ainsi on pourrait envisager le transport de l’hydrogène liquide par camion pour les courtes à moyennes distances, et par bateau pour les longues distances. Concernant le transport d’hydrogène liquide par camion, il s’effectue dans des citernes pouvant transporter de grandes quantités d’hydrogène liquide [V]. C’est ainsi le moyen de transport pour lequel nous avons opté pour les configurations 4 et 5. Concernant premièrement la configuration 4, il s’agit d’un stockage en cavité minée revêtue d’une capacité de 230 tonnes d’hydrogène liquide se situant à 240 km du lieu d’utilisation. Il faudrait alors 50 camions par jour pour transporter l’hydrogène sous conditionnement liquide. Concernant la configuration 5, il s’agit aussi d’une cavité minée revêtue, mais d’une capacité plus faible (143 tonnes) et relativement proche du lieu d’utilisation (12 km). Ainsi, il faudrait en théorie 30 camions par jour, cependant étant donné la faible distance séparant les lieux de stockage et d’utilisation, on pourrait réduire le nombre de camions en leur faisant effectuer plusieurs fois le trajet.\\
-
 \begin{multicols}{2}
 
-Concernant le transport par bateau, un projet pilote est actuellement en cours (Figure 27). Il s’agit du « Suiso Frontier », destiné à relier l’Australie au Japon, et dont la capacité est de 1250 m3 (soit près de 90 tonnes d’hydrogène liquide \cite{The_Suiso_Frontier}. Ce moyen de transport n’est pas nécessairement intéressant pour nos scénarios, étant donné que tout est localisé en France. Cependant, comme pour le projet pilote, il devient très intéressant lorsque l’on veut transporter de l’hydrogène d’un continent à un autre. Ainsi, cela pourrait être particulièrement pertinent si l’on envisage que l’hydrogène tienne un rôle important dans la transition énergétique.
+Tout l’intérêt de l’hydrogène liquide réside dans son transport en comparaison avec sa forme gazeuse. En effet, l’hydrogène liquide est plus dense énergétiquement que l’hydrogène gazeux. Selon Air Liquide, pour un poids de camion identique (36 tonnes), on peut transporter jusqu’à 4500 kg d’hydrogène sous conditionnement liquide contre seulement 300 kg sous conditionnement gazeux, soit 15 fois plus [V].
+
+Ainsi on pourrait envisager le transport de l’hydrogène liquide par camion pour les courtes à moyennes distances, et par bateau pour les longues distances. Concernant le transport d’hydrogène liquide par camion, il s’effectue dans des citernes pouvant transporter de grandes quantités d’hydrogène liquide [V]. C’est le moyen de transport pour lequel nous avons opté pour les configurations 5, 6 et 7. Concernant la configuration 6, il s’agit d’un stockage en cavité minée revêtue d’une capacité de 230 tonnes d’hydrogène liquide se situant à 240 km du lieu d’utilisation. Il faudrait alors 50 camions par jour pour transporter l’hydrogène sous conditionnement liquide. Pour la configuration 7, il s’agit aussi d’une cavité minée revêtue, mais d’une capacité plus faible (143 tonnes) et relativement proche du lieu d’utilisation (12 km). Ainsi, il faudrait en théorie 30 camions par jour, cependant étant donné la faible distance séparant les lieux de stockage et d’utilisation, on pourrait réduire le nombre de camions en leur faisant effectuer plusieurs fois le trajet.\\
+
+Concernant le transport par bateau, un projet pilote est actuellement en cours (Figure 26). Il s’agit du « Suiso Frontier », destiné à relier l’Australie au Japon, et dont la capacité est de 1250 m3 (soit près de 90 tonnes d’hydrogène liquide \cite{The_Suiso_Frontier}. Ce moyen de transport n’est pas nécessairement intéressant pour nos scénarios, étant donné que tout est localisé en France. Cependant, comme pour le projet pilote, il devient très intéressant lorsque l’on veut transporter de l’hydrogène d’un continent à un autre. Ainsi, cela pourrait être particulièrement pertinent si l’on envisage que l’hydrogène tienne un rôle important dans la transition énergétique.
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{image/chap3/Figure 3.ii-3.jpg}
@@ -986,7 +958,15 @@ Concernant le transport par bateau, un projet pilote est actuellement en cours (
 
 \end{multicols}
 
-\subsection{Applications aux scénarii retenus}
+\subsection{Applications aux configurations retenues}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.9\linewidth]{image/chap3/Tableau 1 chap 2.4.png}
+  \caption{Récapitulatif des installations de surface pour les différentes configurations}
+  \end{figure}
+
 
 \begin{figure}[!h]
 \centering
@@ -994,22 +974,17 @@ Concernant le transport par bateau, un projet pilote est actuellement en cours (
 \caption{Récapitulatif des paramètres nécessaires au dimensionnement des stockages des différentes configurations }
 \end{figure}
 
-Les simulations numériques du comportement thermomécanique du stockage des scénarios nous ont permis de valider ou d'invalider certains paramètres en jeu afin d’affiner nos modèles. Nous avons extrait de ces simulations 7 applications industrielles ou de mobilité qui ont été étudiées dans le détail.
+Les simulations numériques du comportement thermomécanique du stockage des configurations nous ont permis de valider ou d'ajuster certains paramètres en jeu. Nous avons extrait de ces simulations 7 applications industrielles ou de mobilité qui ont été étudiées dans le détail.
 
-La figure 29 résume les paramètres des scénarios de stockage retenus pour les 7 applications industrielles ou de mobilité, tandis que la figure 28 regroupe les paramètres de chaque scénario de stockage, les installations de surface qui lui sont associées et les puissances électriques mobilisées.  \\
+La figure 27 regroupe les installations de surface qui leur sont associées et les puissances électriques mobilisées, tandis que la figure 28 résume les paramètres des configurations de stockage retenues pour les 7 applications industrielles ou de mobilité.
 
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.9\linewidth]{image/chap3/Tableau 1 chap 2.4.png}
-\caption{Récapitulatif des installations de surface pour les différentes configurations}
-\end{figure}
 
-Chaque scénario étudié peut être synthétisé par un \textit{flowsheet}. Un \textit{flowsheet} permet d'indiquer les différents flux physiques qui rentrent ou sortent dans chacune des étapes d'un procédé, d'où son nom. C'est un outil très pratique de visualisation d'un procédé qui permet d'identifier aisément les différentes dépendances.
+Chaque configuration étudiée peut être synthétisée par un \textit{flowsheet}. Un \textit{flowsheet} permet d'indiquer les différents flux physiques qui rentrent ou sortent dans chacune des étapes d'un procédé, d'où son nom. C'est un outil très pratique de visualisation d'un procédé qui permet d'identifier aisément les différentes dépendances. La figure 29 en donne une illustration.
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.6\linewidth]{image/chap3/figure2_chap2.4.png}
-\caption{ \textit{flowsheet} des installations de surface de la configuration 1.}
+\includegraphics[width=0.7\linewidth]{image/chap3/figure2_chap2.4.png}
+\caption{ \textit{Flowsheet} des installations de surface de la configuration 1.}
 \end{figure}
 
 
@@ -1017,15 +992,11 @@ Chaque scénario étudié peut être synthétisé par un \textit{flowsheet}. Un 
 
 
 
-
-
-
-
-\section{Impacts environnementaux et sociétaux}
+\section{Chapitre IV : Impacts environnementaux et sociétaux}
 \subsection{Réglementation}
 
 Afin de stocker de l’hydrogène en souterrain, il est nécessaire d’effectuer plusieurs procédures administratives. L’installation de la cavité est réglementée par le code minier (articles 211-1 et suivants).
-Tout d’abord, la possession d’un titre minier (Livre I – Titres II à IV + décret 2006-648) est nécessaire pour pouvoir construire la cavité souterraine. Si le stockage est supérieur à 100 kg d’Hydrogène, ce qui correspond au seuil des Installations Classées pour la Protection de l’Environnement (ICPE), ont est soumis au code minier mais aussi au code environnemental. Dans ce cas, les travaux suivent la directive SEVESO, directive européenne qui encadre les sites industriels à risque majeur. 
+Tout d’abord, la possession d’un titre minier (Livre I – Titres II à IV + décret 2006-648) est nécessaire pour pouvoir construire la cavité souterraine. Si le stockage est supérieur à 100 kg d’hydrogène, ce qui correspond au seuil des Installations Classées pour la Protection de l’Environnement (ICPE), ont est soumis au code minier mais aussi au code environnemental. Dans ce cas, les travaux suivent la directive SEVESO, directive européenne qui encadre les sites industriels à risque majeur. 
 L’installation peut ainsi être classée selon un seuil SEVESO bas ou un seuil SEVESO haut (ce qui dépend de la quantité stockée). Dans le cas contraire, on est soumis aux titres VI du livre II du code minier, le décret n°2006-649 du 2 juin 2006 relatif aux travaux miniers, aux travaux de stockage souterrain et à la police des mines et des stockages souterrains, le décret n°2016-1303 du 4 octobre 20164 relatif aux travaux de recherches par forage et d’exploitation par puits de substances minières (dit décret « forage »), et l’arrêté ministériel du 14 octobre 2016. Si la cavité existe déjà, il faut déclarer qu’on modifie un ICPE déjà existant au Préfet, s’il juge que les modifications sont notables, une demande doit être déposée selon le code de l’environnement. Celle-ci doit contenir une étude de dangers (L181-25 + D181-15-2-III) et une étude d’impact (L122-3 + R122-4 et 5) ou d’incidence environnementale (L181-8 et R181-14).
 
 
@@ -1039,7 +1010,6 @@ Pour comprendre les risques liés à l'utilisation de l'hydrogène, il faut tout
 \item Risque de détonation : en cas d'accumulation de l'hydrogène, d'énergie d'inflammation élevée ou de présence d'obstacles qui accélèrent la flamme, il peut y avoir détonation. Elle se caractérise par un front de flamme se déplaçant à vitesse supersonique accompagné d'ondes de choc.
 \end{itemize}
 
-\begin{multicols}{2}
 L'opération de stockage (ici en cavité saline) présente aussi des risques tels que la rupture du massif de sel, la perte excessive de volume de la cavité ou la perte de l'étanchéité du sel. Pour l'hydrogène liquide, le boil-off reste le principal facteur de fuite. \cite{ADEME_2022}
 
 Afin de prévenir les risques liés à l'hydrogène, il faut :
@@ -1058,50 +1028,44 @@ De plus, lors du stockage, "une fuite dans des aquifères sous-jacents ou de cou
 
 L'hydrogène stocké peut aussi constituer une source d'énergie pour de nombreux microorganismes qui le consomment. Le nombre des microorganismes peut augmenter ce qui présente un risque de colmatage de la roche aquifère, et donc une diminution de la porosité. Une telle activité microbienne dans les aquifères modifie durablement les conditions physico-chimiques de l'eau.\\
 
-\begin{center}
-\includegraphics[width=0.65\linewidth]{image/chap4/colmatage.PNG}
-\captionof{figure}{ Phénomènes de colmatage de la roche causés par le développement de microorganismes}
-\end{center}
-\end{multicols}
 
 
 \subsection{Acceptabilité}
-L’étude de l’acceptabilité sociale est une phase cruciale de notre projet dans le sens où il n’est pas envisageable de changer radicalement la direction de celui-ci lors de l'exploitation pour un souci économique. Il est donc nécessaire d’observer le lien entre les acteurs et les porteurs de sujet mais aussi les besoins de la population pour savoir si le stockage et l’utilisation de dihydrogène dans la société seront communément acceptés. L’ensemble des lois et des réglementations est régi par l’opinion publique, il est donc important d’avoir connaissance de cet opinion, afin de conserver une longueur d’avance dans la mise en place de notre projet.
+L’étude de l’acceptabilité sociale est une phase cruciale de notre projet, il est donc nécessaire d’observer le lien entre les acteurs et les porteurs de sujet mais aussi les besoins de la population pour savoir si le stockage et l’utilisation de dihydrogène dans la société seront communément acceptés. L’ensemble des lois et des réglementations est régi par l’opinion publique, il est donc important d’avoir connaissance de cet opinion, afin de conserver une longueur d’avance dans la mise en place de notre projet.
 
 De nombreuses études sociologiques ont déjà été menées notamment en Normandie avec l’étude VERTIGO en avril 2021. En effet, cette région a décidé de développer son réseau de bus circulant au dihydrogène. Il en ressort que malgré la méconnaissance du sujet par la plupart des usagers, ceux-ci y restent favorables car cette technologie est présentée comme écologique. Peu d’individus dénoncent les dangers liés au stockage d’hydrogène dans les bus. En revanche, la principale source d’inquiétude dans ce milieu plus rural où la mobilité tient une place essentielle dans la vie professionnelle est l’éventuel changement d’habitudes qu’amènerait cette transition à l’hydrogène.
-Une autre étude sur l’acceptabilité du stockage souterrain se rapprochant plus explicitement de la nôtre, menée par l’université de Lorraine pour le projet ROSTOCK-H – WP5.2 en octobre 2020, soulève les mêmes inquiétudes de la part de la population.
+Une autre étude sur l’acceptabilité du stockage souterrain se rapprochant plus explicitement de la nôtre, menée par l’université de Lorraine pour le projet ROSTOCK-H en octobre 2020, soulève les mêmes inquiétudes de la part de la population.
 
-Nous avons donc mené notre propre enquête dont le détail a été développé en annexe. Sur 136 réponses, voici ce qu'il en ressort. La population étudiée avait en majorité (70.6\%) déjà quelques notions scientifiques du fait de leurs études ou leur travail et une partie affirme bien connaître le sujet (46.3\%). Les motivations restent portées par une conscience écologique mais les avis restent partagés sur la mise en place d’un tel projet et l’engouement ne semble pas aussi important que celui présenté par les médias. Seule une moitié (55.6\%) des individus interrogés annonce être prête à avoir des stockages souterrains à proximité de leur logement. Le dihydrogène est majoritairement retenu comme une solution dans le mix énergétique et ne voit pas une dominance de ce vecteur d’énergie à l’avenir.
+Nous avons donc mené notre propre enquête dont le détail a été développé en Annexe L. Sur 136 réponses, voici ce qu'il en ressort. La population étudiée avait en majorité (70.6\%) déjà quelques notions scientifiques du fait de leurs études ou leur travail et une partie affirme bien connaître le sujet (46.3\%). Les motivations restent portées par une conscience écologique mais les avis restent partagés sur la mise en place d’un tel projet et l’engouement ne semble pas aussi important que celui présenté par les médias. Seule une moitié (55.6\%) des individus interrogés annonce être prête à avoir des stockages souterrains à proximité de leur logement. Le dihydrogène est majoritairement retenu comme une solution dans le mix énergétique mais ne sera certainement pas le vecteur d’énergie dominant à l’avenir.
 
 
-\subsection{Les sites de stockage}
+\subsection{Sites potentiels de stockage}
 Nous nous intéressons ici au choix des sites de stockage en France, à la fois pour les cavités minées et salines, pour le stockage gazeux et liquide et pour les utilisations pour la mobilité et l'industrie. 
 \subsubsection{Critères de choix}
 Le choix des sites potentiels pour le stockage de l’hydrogène souterrain est dépendant de plusieurs critères : 
 \begin{itemize}
 \item critères géologiques : dans le cadre de la France métropolitaine, on dispose d’une géologie variée, comme on peut le voir sur la carte géologique fournie en annexe M. La profondeur, l’épaisseur et la pureté de la roche souhaitée entrent en jeu.
 \item critères géographiques : la zone choisie nécessite une liaison au réseau électrique haute tension et un acheminement d’hydrogène. Dans le cas des cavités salines, il est également nécessaire de prendre en compte les possibilités d’acheminement de l’eau lors du creusement des cavités.
-\item critères économiques : les perspectives économiques liées au marché et aux besoins hydrogène doivent être pris en compte. On s’intéresse notamment aux besoins et à la présence d’infrastructures de production d’énergies renouvelables à proximité, dans la perspective de produire de l’hydrogène dit “vert”. Il faut également prendre en compte les scénarios retenus.
+\item critères économiques : les perspectives économiques liées au marché et aux besoins hydrogène doivent être prises en compte. On s’intéresse notamment aux besoins et à la présence d’infrastructures de production d’énergies renouvelables à proximité, dans la perspective de produire de l’hydrogène dit “vert”. Il faut également prendre en compte les deux applications retenues.
 \item critères environnementaux : les zones isolées et non protégées sont à privilégier. Dans le cas des cavités salines, on s’intéresse aussi aux possibilités d’exutoire de saumure ou de partenariat industriel pour une revalorisation.
 \end{itemize}
 
 \subsubsection{Choix des sites pour les cavités salines}
 
 \begin{multicols}{2}
-Le sel se forme par évaporation des sels contenus dans l’eau de mers existant il y a plusieurs millions d’années. Il peut être présent sous forme de diapirs ou de couches.
-La principale difficulté réside donc dans le fait que le sel n’est pas présent partout en France. Il n’est concentré que dans certaines régions, comme en témoigne la carte ci-contre (figure ~\ref{fig:carteSelFrance}) \cite{Hadj_Hassen_Jallais_2020}.
-
-Les principales zones de recherches sont donc le Bassin Aquitain, la vallée du Rhône, le bassin Rhénan et l’Alsace-Lorraine. 
-La deuxième difficulté est la profondeur de la couche de sel et l’épaisseur de celle-ci. Pour creuser une cavité saline qui respecte les critères choisis, l’idéal serait de trouver du sel atteignant des profondeurs de l’ordre de 1000 mètres et une épaisseur de quelques centaines de mètres.
-
 
 \begin{center}
-\includegraphics[width=.95\linewidth]{image/chap4/IV.4.ii.jpg}
+\includegraphics[width=.85\linewidth]{image/chap4/IV.4.ii.jpg}
 \captionof{figure}{Couches géologiques de sel en France \cite{Hadj_Hassen_Jallais_2020}}
 \label{fig:carteSelFrance}
 \end{center}
 
-\end{multicols}
+Le sel se forme par évaporation des sels contenus dans l’eau de mers existant il y a plusieurs millions d’années. Il peut être présent sous forme de diapirs ou de couches.
+La principale difficulté réside donc dans le fait que le sel n’est pas présent partout en France. Il n’est concentré que dans certaines régions, comme en témoigne la carte ci-contre (figure ~\ref{fig:carteSelFrance}) \cite{Hadj_Hassen_Jallais_2020}.
+
+Les principales zones de recherches sont donc le Bassin Aquitain, la vallée du Rhône, le bassin Rhénan et l’Alsace-Lorraine. 
+La deuxième difficulté est la profondeur de la couche de sel et l’épaisseur de celle-ci. Pour creuser une cavité saline qui respecte les critères choisis, l’idéal serait de trouver du sel atteignant des profondeurs de l’ordre de 1000 mètres et 
+une épaisseur de quelques centaines de mètres.
 
 Les recherches menées à l’aide du site Infoterre et de coupes géologiques nous ont permis de sélectionner 5 sites pouvant accueillir des cavités salines (ceux-ci sont présentés en détail dans l'annexe M) : 
 \begin{itemize}
@@ -1111,13 +1075,16 @@ Les recherches menées à l’aide du site Infoterre et de coupes géologiques n
 \item Site de Mackenheim : l’épaisseur de la couche à cet endroit est plus faible que pour les autres, mais cela reste intéressant dans une optique d’ouverture sur le marché européen.
 \end{itemize}
 
+
 Ces sites ont été choisis en fonction des critères définis en amont. Les sites choisis sont résumés sur la carte montrée à la figure ~\ref{fig:carteResumee}.
 
 Les sites choisis ont été reliés à une configuration pour alimenter en hydrogène les zones d’intérêt. Hauterives a par exemple été choisi pour incarner la configuration 1 et alimenter Lyon en hydrogène dans l’optique du scénario P2M. 
 
-\subsubsection{Choix de sites potentiels pour des cavités minées}
-Les zones de recherche sont celles présentant des roches compétentes principalement du granite et du calcaire et à bonne profondeur, dans notre cas 100m 
-Parmis la liste de 8 sites retenus nous présentons ici un en particulier qui correspond au scénario numéro 6.
+\end{multicols}
+
+\subsubsection{Choix de sites potentiels pour les cavités minées}
+Les zones de recherche sont celles présentant des roches compétentes principalement du granite et du calcaire et à bonne profondeur, dans notre cas 100 m.
+Parmis la liste de 8 sites retenus, nous présentons ici un en particulier qui correspond à la configuration 2.
 
 \begin{figure}[!h]
 \centering
@@ -1130,7 +1097,7 @@ Parmis la liste de 8 sites retenus nous présentons ici un en particulier qui co
 \subsubsection{Choix des sites pour le stockage liquide}
 La particularité du stockage liquide est qu’il ne nécessite pas de grandes profondeurs (engendrant donc des coûts moins élevés) et que les cavités sont plus petites. 
 Nous nous sommes alors intéressés à des régions où nous n’avions pas encore sélectionné de sites, afin de pallier le manque. Par exemple, la région du Havre était signalée par France Hydrogène comme une zone à besoin. Dans cette ville, il existe des zones composées de craie, à une profondeur de 3 mètres. Nous avons également cherché à placer un réservoir en Normandie, région laissée de côté jusqu’alors. Le granite d’Avranches s’est avéré très pertinent car il n’est pas profond.
-Paris est également une ville pour laquelle les cavités enterrées et le stockage liquide sont intéressants. En effet, la mobilité parisienne est très développée et nécessite donc de l’hydrogène pour alimenter les transports en commun. En se plaçant à Boulogne, on trouve du calcaire à 3m de profondeur, ce qui est intéressant. 
+Paris est également une ville pour laquelle les cavités enterrées et le stockage liquide sont intéressants. En effet, la mobilité parisienne est très développée et nécessite donc de l’hydrogène pour alimenter les transports en commun. En se plaçant à Boulogne, on trouve du calcaire à 3 m de profondeur, ce qui est intéressant. 
 Nous avons aussi retenu le granite de Grézieu-la-Varenne, près de Lyon, pour les mêmes raisons de profondeur. Les détails des sites géologiques sont présentés en annexe M.
 
 
@@ -1139,10 +1106,10 @@ Nous avons aussi retenu le granite de Grézieu-la-Varenne, près de Lyon, pour l
 
 
 
-\section{Bilan économique}
+\section{Chapitre V : Bilan économique}
 Dans les chapitres précédents, sept principales configurations de stockage en cavités salines, minées et réservoirs enterrés ont été identifiées par rapport aux applications possibles de l'hydrogène produit par électrolyse de l’eau ou vaporeformage.
 
-L’objectif de ce dernier chapitre est d’approfondir l’étude de ces scénarios en réalisant une étude économique simple, prenant en compte les coûts générés sur 30 ans. La finalité de ce propos visera une conclusion sur la faisabilité des différents projets, incluant leur rentabilité et de les comparer à d’autres techniques de stockage déjà existantes.
+L’objectif de ce dernier chapitre est d’approfondir l’étude de ces configurations en réalisant une étude économique simple, prenant en compte les coûts générés sur 30 ans. La finalité de ce propos visera une conclusion sur la faisabilité des différents projets, incluant leur rentabilité et de les comparer à d’autres techniques de stockage déjà existantes.
 
 \subsection{Flux monétaires}
 
@@ -1159,8 +1126,8 @@ Notre évaluation économique est basée sur un modèle simple dans lequel les d
 De plus, dans l'analyse économique d'un projet, il faut tenir compte des fluctuations de la valeur de la monnaie, qui sont décrites par deux grandeurs : l'inflation (i) et le taux d'intérêt d'un placement ($\tau$). 
 
 \subsubsection{Evaluation des CAPEX}
-Les coûts retenus pour les infrastructures diffèrent d'une configuration à l'autre en fonction de l'application industrielle envisagée (P2I ou P2M), mais aussi en fonction du type de cavité de stockage, du type de transport et des moyens de production.  Les CAPEX calculés pour les 7 infrastructures comprennent leur achat et leur installation (Figure 34).  
-Pour évaluer les investissements initiaux nécessaires à la phase de conditionnement, nous nous sommes appuyés sur des simulations réalisées avec le logiciel ASPEN PLUS, implémenté des schémas de conditionnement données chapitre 3.2.1. Les données récoltées sont résumées dans la Figure 34 (exemple pour la configuration 1):
+Les coûts retenus pour les infrastructures diffèrent d'une configuration à l'autre en fonction de l'application industrielle envisagée (P2I ou P2M), mais aussi en fonction du type de cavité de stockage, du type de transport et des moyens de production.  Les CAPEX calculés pour les 7 infrastructures comprennent leur achat et leur installation (cf. figure 32).  
+Pour évaluer les investissements initiaux nécessaires à la phase de conditionnement, nous nous sommes appuyés sur des simulations réalisées avec le logiciel \emph{ASPEN PLUS}, et avons implémenté les schémas de conditionnement donnés précédement Les données récoltées sont résumées dans la figure 32 (exemple pour la configuration 1):
 
 \begin{figure}[h!]
 \centering
@@ -1168,17 +1135,17 @@ Pour évaluer les investissements initiaux nécessaires à la phase de condition
 \caption{Résumé des coûts de conditionnement de la configuration 1. }
 \end{figure}
 
-Pour les coûts liés à la création de cavités minées revêtues, nous nous sommes appuyés sur les données de GEOSTOCK concernant le projet ayant eu lieu à Skallen en Suède précisées en Annexe L. Aussi nous prendrons comme coût de la cavité saline 100 €/m3, d’après des données proposées par Storengy (Annexe L). 
+Pour les coûts liés à la création de cavités minées revêtues, nous nous sommes appuyés sur les données du projet ayant eu lieu à Skallen en Suède précisées en Annexe N. Aussi nous prendrons comme coût de la cavité saline 100 €/m3, d’après des données proposées par Storengy (cf. Annexe N). 
 
 Les coûts des installations de génie civil et leur gestion ont également été pris en compte (20 \% du CAPEX initial) et les données que nous avons utilisées pour évaluer les coûts liés au transport ainsi que les prix des matériaux qui interviennent dans nos différentes configurations sont précisés en Annexe L. 
 
-En ce qui concerne le transport de l’hydrogène, le prix des pipelines étant de 1M€/km, ce qui représente un coût faramineux pour le producteur d’hydrogène, nous avons décidé de considérer que le coût lié aux pipelines serait assumé par l’état ou l’union européenne. Pour les transports par camion, bien que les distances entre les sites de stockage et d’utilisation soient différentes en fonction des configurations, nous allons les considérer identiques et égales à 100km (dans un souci de comparaison) 
-De plus, la durée de vie des appareils nous permet de prévoir le nombre de remplacements afin de calculer le CAPEX de renouvellement sur 30 ans. Nous pouvons ainsi comparer la part des différents appareils dans le CAPEX total sur 30 ans (voir Figure 35).
+En ce qui concerne le transport de l’hydrogène, le prix des pipelines étant de 1 M€/km, ce qui représente un coût faramineux pour le producteur d’hydrogène, nous avons décidé de considérer que le coût lié aux pipelines serait assumé par l’état ou l’union européenne. Pour les transports par camion, bien que les distances entre les sites de stockage et d’utilisation soient différentes en fonction des configurations, nous allons les considérer identiques et égales à 100 km (dans un souci de comparaison).
+De plus, la durée de vie des appareils nous permet de prévoir le nombre de remplacements afin de calculer le CAPEX de renouvellement sur 30 ans. Nous pouvons ainsi comparer la part des différents appareils dans le CAPEX total sur 30 ans (cf. figure 33).
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\linewidth]{image/chap5/Tableau 2 chap 5.png}
-\caption{Résumé des CAPEX des différentes configurations. }
+\caption{Résumé des CAPEX des différentes configurations.}
 \end{figure}
 
 On remarque que la majorité du coût se concentre sur la production par SMR ou électrolyse. En effet, ces procédés sont chers et les électrolyseurs doivent être renouvelés tous les 7-8 ans, soit 4 fois sur 30 ans.  
@@ -1190,21 +1157,21 @@ De plus, le coût d’un électrolyseur par rapport à une station SMR est bien 
 
 \subsubsection{Evaluation des OPEX}
 
-Les coûts annuels considérés sont principalement le coût de l’électricité dans les phases de production et de conditionnement, auxquels nous avons ajouté les salaires, que nous avons estimés à 15\% du CAPEX d’investissement. La Figure 36 résume les OPEX annuels pour chaque configuration.
+Les coûts annuels considérés sont principalement le coût de l’électricité dans les phases de production et de conditionnement, auxquels nous avons ajouté les salaires, que nous avons estimés à 15\% du CAPEX d’investissement. La figure 34 résume les OPEX annuels pour chaque configuration.
 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\linewidth]{image/chap5/Tableau 3 chap 5.png}
-\caption{ Résumé des OPEX des différentes configurations. }
+\caption{Résumé des OPEX des différentes configurations. }
 \end{figure}
 
-Afin de déterminer le prix de l’électricité de la partie conditionnement, nous avons, à l’aide du logiciel Aspen Plus, déterminé les puissances de chaque composant en multipliant la variation d’enthalpie à chaque étape et le débit considéré. Puis, dans une démarche de transition énergétique, nous avons utilisé le prix de l’électricité verte en France.
+Afin de déterminer le prix de l’électricité de la partie conditionnement, nous avons, à l’aide du logiciel \emph{ASPEN PLUS}, déterminé les puissances de chaque composant en multipliant la variation d’enthalpie à chaque étape et le débit considéré. Puis, dans une démarche de transition énergétique, nous avons utilisé le prix de l’électricité verte en France.
 
 En général, l’eau utilisée dans les échangeurs est directement puisée dans les nappes phréatiques, nous avons négligé le prix de l’eau devant celui de l’électricité. On retiendra que le prix de l’électricité de l’électrolyseur est très important par rapport au reste des coûts annuels.  
 
 \subsubsection{Flux entrants : évaluation des recettes}
-Concernant les recettes, nous avons uniquement considéré celles dues à la vente de l’hydrogène, sous forme liquide ou gazeuse. Pour l’application industrielle, \textbf{nous avons fixé un prix de l'hydrogène de 5€/kg et pour la mobilité, un prix de 14€/kg} \hyperref[sec:presRef]{[VII]}.
+Concernant les recettes, nous avons uniquement considéré celles dues à la vente de l’hydrogène, sous forme liquide ou gazeuse. Pour l’application industrielle, nous avons fixé un prix de l'hydrogène de 5 €/kg pour l'industrie, et pour la mobilité, un prix de 14 €/kg \hyperref[sec:presRef]{[VII]}.
 Nous avons décidé de ne pas prendre en compte la valorisation de capacité de stockage, c’est-à-dire la potentielle prime gouvernementale attribuée pour des capacités de stockage d’énergie verte. Cela ne gêne pas notre étude car cette dernière est comparative.
 Pour les scénarios utilisant la technique de production SMR, il est impératif d’utiliser une cellule CCS pour capter le carbone rejeté mais cela entraîne un coût important (en CAPEX et en OPEX). Ce coût est en réalité amorti par la taxe carbone (taxe environnementale sur les émissions de $CO_2$) non prise en compte dans notre étude.
 
@@ -1244,7 +1211,7 @@ La comparaison des configurations 2 et 6 nous amène à penser que le stockage d
 
 Pour comparer les configurations 4 et 7, deux paramètres sont modifiés : l’état de l’Hydrogène et le type de production. Nous savons de la comparaison précédente qu’il est bien plus avantageux de stocker en liquide qu’en gazeux l’hydrogène, or ici la configuration 7 a un meilleur TRI que la configuration 4 mais l’écart est moindre, on en déduit donc que la production par vaporeformage du méthane est plus économique que l’électrolyse, il ne faut en revanche pas oublier que cette méthode est bien plus polluante que la seconde (car émettrice de $CO_2$) 
 
-En ce qui concerne les scénarios 5 et 6, si on ramène à la tonne d’hydrogène produit, on obtient un TRI de 2,4\% pour le réservoir enterré et 1\% pour les cavités minées revêtues. Ainsi, d’après nos calculs et avec les hypothèses faites, nous trouvons que les réservoirs enterrés semblent plus rentables que les cavités minées revêtues. Une explication possible peut être liée au fait que les réservoirs enterrés ont besoin d’être à des profondeurs bien inférieures.  
+En ce qui concerne les configurations 5 et 6, si on ramène à la tonne d’hydrogène produit, on obtient un TRI de 2,4\% pour le réservoir enterré et 1\% pour les cavités minées revêtues. Ainsi, d’après nos calculs et avec les hypothèses faites, nous trouvons que les réservoirs enterrés semblent plus rentables que les cavités minées revêtues. Une explication possible peut être liée au fait que les réservoirs enterrés ont besoin d’être à des profondeurs bien inférieures.  
 
 Enfin, on remarque que la technique de vaporeformage puis stockage en cavité saline pour l’industrie (scénario 3) ne semble pas optimale : le TRI est bas et la VAN négative, ce qui veut dire qu’on aurait gagné plus d’argent si l’investissement initial avait été placé en banque. Soyons néanmoins vigilants avec cette conclusion car quelques recettes compensatoires n’ont pas été prises en compte ici. 
 
@@ -1256,24 +1223,25 @@ Enfin, on remarque que la technique de vaporeformage puis stockage en cavité sa
 \section*{Conclusion}  \addcontentsline{toc}{section}{Conclusion}
 
 \phantomsection
+L'hydrogène est un vecteur énergétique qui permettrait la décarbonnation de différents procédés. Nous avons présenté dans cette étude deux utilisations de l'hydrogène: une utilisation Power to Mobility
+et une utilisation Power to Industry. Nous avons volontairement écarté une utilisation Power to Power qui ne représenterait qu'une économie de niche sous l'hypothèse d'une énergie décarbonnée disponible à profusion. Utiliser l'hydrogène dans les transports ou dans l'industrie présente de nombreux défis techniques et sociétaux. 
+Il faut produire, stocker et dstribuer l'hydrogène en prenant en compte les aspects environnementaux des procédés et de la viabilité économique des procédés. Au chapitre premier nous avons présenté le contexte et les ambitions européennes et françaises ainsi que différentes configurations types pour l'utilisation de l'hydrogène. Au chapitre 2 nous avons vu les problématiques de stockage de l'hydrogène et au chapitre ses problématiques de productions. Au chapitre 4 nous avons questionné son acceptabilité sociétale et les risques environnementaux liés à l'hydrogène. Au chaptre 5 nous nous sommes penchés sur la viabilité économique des configurations présentées au chapitre 1.
 
-Pour réduire nos émissions de gaz à effet de serre, la production d’énergies renouvelables est amenée à augmenter et à constituer une part très importante de la production électrique. Néanmoins, le caractère intermittent de cette production pose problème si on veut être sûr de pouvoir alimenter le réseau en accord avec la demande fluctuante. 
+Le chapitre 1 a présenté les ambitions européennes et françaises autour de l'hydrogène. L'UE souhaite produire 10 millions de tonnes d'hydrogène et en importer autant à l'horizon 2030. La France souhaite installer 6,5GW d'électrolyseurs dans un plan d'investissement de 30 milliards d'euros pour faire de la France le leader de l'hydrogène vert en 2030.
 
-chapitre 1
-
-chapitre 2
 
 Différentes méthodes de stockage  ont été retenues en fonction de l'utilisation de l'hydrogène et de son état (gazeux ou liquide). 
 Il est plus intéressant de stocker de l'hydrogène sous forme liquide puisqu'il contient la même énergie dans un volume beaucoup plus faible comparé à l'état gazeux. 
 L'hydrogène liquide peut être stocké soit dans des reservoirs enterrés, soit dans des cavités minées revêtues. Limiter la propagation du froid constitue le principal enjeu du stockage liquide et l'isolant thermique retenu est la perlite. Il n'est pas nécessaire  de comprimer l'hydrogène liquide, on évite ainsi d'avoir à creuser aussi profond que dans le cas gazeux. Cela est donc intéressant économiquement. Cependant, il peut être nécessaire de drainer l'eau contenue dans les roches environnantes afin d'éviter l'endommagement de la cavité. Le choix entre cavité minée revêtue et réservoir enterré dépend essentiellement de l'application que l'on souhaite faire de l'hydrogène.
 L'hydrogène gazeux peut être stocké en cavité minée revêtue ou saline. Il semble plus pertinant de privilégier les cavités salines, si possible, puisqu'elles restent plus simples à créer (il n'y a pas besoin de creuser), même si cela peut prendre plusieurs années. Le sel présente également l'avantage d'être naturellement étanche : pas besoin d'isolant ou de béton armé. Enfin, il n'est souvent pas nécessaire de construire plusieurs cavités salines, on évite ainsi les problématiques liées à la distance minimale de sécurité entre les cavités.
 
-chapitre 3
+L'hydrogène n'est pas présent à l'état naturel et il faut donc le produire en apportant de l'énergie de l'extérieur. Nous avons étudié deux méthodes de production de l'hydrogène: le vaporeformage couplé et l'électrolyse. 96\% de l'hydrogène est produit par vaporeformage actuellement. Cette technique utilise du gaz naturel. On on casse les liaisons carbone-hydrogène en chauffant à $760°C$. Le vaporeformage couplé à une captation de $CO_2$ est émeteur de $CO_2$ à hauteur de $550g $ pour $1kg$ de $H_2$ dans le meilleur des cas. Le vaporeformage présente néanmoins un intérêt économique certain. La production d'hydrogène pas vaporeformage est bien connue des industriels. On peut aussi synthétiser de l'hydrogène par électrolyse de l'eau et c'est cette technique qui est mise en avant dans les rapports et publications gouvernementales. Nous avons retenu ce type d'électrolyseurs car ils présentent un temps de réponse très faible et le plus grand débit de production d'hydrogène parmi les technologies d'électrolyse. C'est aussi cette technique qui est utilisé dans les électrolyseurs d'\emph{Elogen}. L'électrolyse a cependant un rendement de $70\%$. Il faut un apport très conséquent d'électricité décarbonée ($55kWh/kg H_2$), ce qui représente un véritable défi. Après production il faut ensuite conditionner l'hydrogène pour son transport ou son utilisation. On peut penser à le liquéfier ou le comprimer à très haute pression. Liquide, l'hydrogène a un pouvoir calorifique 4 fois moins grand que l'essence mais 780 fois plus grand que l'hydrogène gazeux à pression atmosphérique. Pour liquéfier l'hydrogène il faut le refroidir en dessous de 20,3K à pression atmosphérique en prenant en compte la réaction de conversion ortho-parahydrogène fortement exothermique. Comprimer l'hydrogène est aussi une solution pour augmenter sa densité énergétique mais il faut considérer des alliages spéciaux dans les outils de stockage pour supporter les hautes pressions. Transporter l'hydrogène sous forme de gaz fait apparaître des problèmes de pertes de charges dans les conduites et donc des pertes énergétiques. Transporter l'hydrogène sous forme liquide nécessite d'isoler thermiquement les réservoirs pour éviter les phénomènes de regazéification qui pourraient détruire les biens par surpression.
 
-chapitre 4
+Nous avons considéré dans un quatrième temps les impacts environnementaux et sociétaux de l'hydrogène. L'hydrogène est fortement inflammable et détonnant ce qui nécessite des dispositifs de détection des fuites et de ventilation. C'est aussi un gaz à fort effet de serre 11 fois plus important que le méthane. Les installations de stockage de l'hydrogène peuvent ainsi être classées \textit{SEVESO} au même titre que les installations de stockage de gaz naturel. D'un point de vue sociétal, il semblerait que le public soit relativement favorable au développement de la filière hydrogène et dénonce peu les risques écologiques. L'hydrogène n'est pas perçu comme un vecteur énergétique dominant dans le mix énergétique futur. Nous avons pu caractériser des sites de stockage \textit{ad hoc} en fonction de la géologie française.
 
-chapitre 5
+chapitre 5: go go Eva !
 
+In fine, le développement de la filière hydrogène en France pour décarbonner des procédés nécéssite de surmonter moulte défis techniques dans sa production, son transport et son stockage. Au regard de notre rapport, l'hydrogène peut s'inscrire dans la transition énergétique mais ne sera pour autant pas prédominant dans le mix énergétique final. Si l'hydrogène devait devenir un vecteur énergétique bas-carbone, c'est avant tout sous l'hypothèse d'une énergie primaire elle aussi bas-carbone. La production d'énergie primaire décarbonnée est donc l'objectif principal des prochaines années. 
 
 
 \newpage
@@ -1283,7 +1251,9 @@ chapitre 5
 
 \section*{Annexes} \addcontentsline{toc}{section}{Annexes}
 
-\subsection*{Tableau de bord}\addcontentsline{toc}{subsection}{Tableau de bord}
+\subsection*{Tableau de bord de la première semaine}\addcontentsline{toc}{subsection}{Tableau de bord}
+La première semaine a été consacrée à des visites d'entreprise afin de mieux connaître le sujet de l'hydrogène.
+
 Lors de la première journée,  après un rapide rappel des objectifs du MIG, nous avons assisté à une conférence de France Hydrogène pendant la fin de matinée. Cette conférence était utile pour nous présenter le marché actuel du dihydrogène en France et dans le monde, les intérêts de cette molécule et les enjeux techniques et économiques liés à celle-ci. 
 Nous avons ensuite enchaîné sur une visite de Elogen l’après-midi, qui est le premier fabriquant d’électrolyseur en France : cela nous a permis d‘apprendre les procédés techniques concrets qui servent à la production d’hydrogène vert et des précisions utiles sur les défis et les enjeux environnementaux, techniques et économiques liés à ce mode de production. 
 
@@ -1302,7 +1272,7 @@ Enfin, nous avons consacré la cinquième journée à la visite d’un site de s
 \includegraphics[width=0.5\linewidth]{image/annexe/tab_bord2.png}
 \end{center}
 
-\subsection*{Annexe A: Configurations étudiées} 
+\subsection*{Annexe A: Configurations étudiées} \addcontentsline{toc}{subsection}{Annexe A: Configurations étudiées}
 
 \begin{figure}[h]
 \centering
@@ -1311,7 +1281,7 @@ Enfin, nous avons consacré la cinquième journée à la visite d’un site de s
 \end{figure}
 
 \FloatBarrier
-\subsection*{Annexe B: Configurations des cavités minées} 
+\subsection*{Annexe B: Configurations des cavités minées} \addcontentsline{toc}{subsection}{Annexe B: Configurations des cavités minées}
 
 \begin{figure}
 \centering
@@ -1378,7 +1348,7 @@ Enfin, nous avons consacré la cinquième journée à la visite d’un site de s
 \end{figure}
 
 \FloatBarrier
-\subsection*{Annexe C : Dimensions du réservoir enterré}
+\subsection*{Annexe C : Dimensions du réservoir enterré}\addcontentsline{toc}{subsection}{Annexe C : Dimensions du réservoir enterré}
 
 \begin{figure}[h]
 \centering
@@ -1388,12 +1358,12 @@ Enfin, nous avons consacré la cinquième journée à la visite d’un site de s
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=.8\linewidth]{image/annexe/reservoir_ent/reservoir3D.png}
+\includegraphics[width=.7\linewidth]{image/annexe/reservoir_ent/reservoir3D.png}
 \caption{Schéma d'un réservoir enterré - Emad Jahangir}
 \end{figure}
 
 \FloatBarrier
-\subsection*{Annexe D : Rhéologie des roches} 
+\subsection*{Annexe D : Rhéologie des roches} \addcontentsline{toc}{subsection}{Annexe D : Rhéologie des roches}
 Cette section présente le détail des essais réalisés en laboratoire afin de caractériser la rhéologie des roches utiles à l’étude de cavités. 
 Les propriétés ainsi mesurées ont été implémentées dans le fichier input du logiciel DEMETER. 
 
@@ -1601,13 +1571,13 @@ Le coefficient de dilatation thermique $\alpha th$ peut être mesuré à chaque 
 
 
 \FloatBarrier
-\subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} 
+\subsection*{Annexe E : Simulation des cavités salines et minées sur DEMETHER} \addcontentsline{toc}{subsection}{Annexe E : Simulation des cavités salines et minées sur DEMETHER}
 
 Pour l'application à l'industrie (détaillée dans le 2.3.1-B), on a utilisé les données d'entrée ci-dessous:
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\linewidth]{image/annexe/cav_sal/ind.png}
+  \includegraphics[width=0.65\linewidth]{image/annexe/cav_sal/ind.png}
   \caption{Données d'entrée dans le cas de l'industrie.}
   \end{figure}
 \FloatBarrier
@@ -1615,7 +1585,7 @@ On a également modélisé des cavités salines qui stockeraient de l'hydrogène
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\linewidth]{image/annexe/cav_sal/p2mf.png}
+  \includegraphics[width=0.65\linewidth]{image/annexe/cav_sal/p2mf.png}
   \caption{Données d'entrée dans le cas de la mobilité.}
   \end{figure}
 \FloatBarrier
@@ -1717,31 +1687,31 @@ Voici les résultats obtenus pour l’application du stockage en cavités minée
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_pression.jpg}
+\includegraphics[width=.7\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_pression.jpg}
     \caption{Evolution de la pression dans la cavité}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_temperature.jpg}
+\includegraphics[width=.65\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_temperature.jpg}
 \caption{Evolution de la température}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_orthoradiale.jpg}
+\includegraphics[width=.65\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_orthoradiale.jpg}
 \caption{Evolution de la contrainte orthoradiale}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=.8\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_axiale.jpg}
+\includegraphics[width=.65\linewidth]{image/annexe/Simul_cav_minee/Cav_minée_GH2_P2M_contrainte_axiale.jpg}
 \caption{Evolution de la contrainte selon z (MPa)}
 \end{figure}
 
 \newpage
 \FloatBarrier
-\subsection*{Annexe F : Simulation numérique du réservoir enterré sur COMSOL}
+\subsection*{Annexe F : Simulation numérique du réservoir enterré sur COMSOL}\addcontentsline{toc}{subsection}{Annexe F : Simulation numérique du réservoir enterré sur COMSOL}
   
 \begin{figure}[h]
 \centering
@@ -1793,41 +1763,41 @@ Voici les résultats obtenus pour l’application du stockage en cavités minée
 
 \FloatBarrier
 \newpage
-\subsection*{Annexe G : Création des cavités salines} 
+\subsection*{Annexe G : Création des cavités salines} \addcontentsline{toc}{subsection}{Annexe G : Création des cavités salines}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/créa_cav_mine/Lessivage direct.png}
+  \includegraphics[width=.6\linewidth]{image/annexe/créa_cav_mine/Lessivage direct.png}
   \caption{Lessive direct}
   \end{figure}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/créa_cav_mine/Lessivage inverse.png}
+  \includegraphics[width=.6\linewidth]{image/annexe/créa_cav_mine/Lessivage inverse.png}
   \caption{Lessivage inverse}
   \end{figure}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C3 200.png}
+  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C3 200.png}
   \caption{Graphiques de l'évolution de la concentration de saumure pour la configuration 3 avec un débit de $200m^3/h$}
   \end{figure}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C3 200.png}
+  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C3 200.png}
   \caption{Graphiques de l'évolution du rayon pour la configuration 3 avec un débit de $200m^3/h$}
   \end{figure}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C1.png}
+  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe concentration C1.png}
   \caption{Graphiques de l'évolution de la concentration de saumure pour la configuration 1}
   \end{figure}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C1.png}
+  \includegraphics[width=.65\linewidth]{image/annexe/créa_cav_mine/Graphe rayon C1.png}
   \caption{Graphiques de l'évolution du rayon pour la configuration 1}
   \end{figure}
 
@@ -1835,14 +1805,14 @@ Méthode d’effondrement des couches d’insolubles :
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/créa_cav_mine/Insolubles.png}
+  \includegraphics[width=.7\linewidth]{image/annexe/créa_cav_mine/Insolubles.png}
   \caption{Schéma montrant les étapes de lessivage lorsque l’on doit faire tomber une couche d’insolubles }
   \end{figure}
 
 Il s’agit de lessiver en dessous de la couche pour la fragiliser sans la faire tomber, puis de remonter les tuyaux à son niveau, pour ainsi lessiver au-dessus de la couche et la faire s’écrouler sans qu’elle n’abîme les tuyaux. 
 
 \FloatBarrier
-\subsection*{Annexe H : Création cavités minées}
+\subsection*{Annexe H : Création cavités minées}\addcontentsline{toc}{subsection}{Annexe H : Création cavités minées}
 Comme expliqué précédemment dans le rapport, la technique pour creuser les cavités est déjà bien connue des ingénieurs. De même pour les revêtements, la technique de pose des revêtements a déja été étudiée par les ingénieurs. Nous nous sommes donc contentés de reprendre les travaux de la cavité de Skallen dont les photographies suivantes sont issues.
 
 \FloatBarrier
@@ -1852,7 +1822,7 @@ Dans un premier temps, il s’agit de creuser des galeries au dessus et en desso
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/chap2/figure4iiacreusagegalerie.png}
+  \includegraphics[width=.5\linewidth]{image/annexe/chap2/figure4iiacreusagegalerie.png}
   \caption{Creusage des galeries inférieures et supérieures}
   \end{figure}
 
@@ -1874,22 +1844,19 @@ Les illustrations sont issues de la présentation Storengy sur la cavité Skalle
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/chap2/soudure.png}
+  \includegraphics[width=.3\linewidth]{image/annexe/chap2/soudure.png}
   \caption{Soudure du revêtement métalique}
   \end{figure}
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=.8\linewidth]{image/annexe/chap2/beton.png}
+  \includegraphics[width=.3\linewidth]{image/annexe/chap2/beton.png}
   \caption{Béton coulé entre la paroi et le revetement une fois celui-ci installé}
   \end{figure}
 
 
 
 \FloatBarrier
-\subsection*{Annexe I : Compression}
-
-\FloatBarrier
-\subsection*{Annexe J : Procédé de liquéfaction} 
+\subsection*{Annexe I : Compression}\addcontentsline{toc}{subsection}{Annexe I : Compression}
 
 Aspen Plus est un logiciel sous licence. Plusieurs équations fonctionnelles sont mises à disposition de l'utilisateur pour calculer les évolutions des grandeurs thermodynamiques lors des différentes transformations. Nous avons utilisé les équations fonctionnelles de GERG2008. Les caluls sont alors réalisés par le logiciel Aspen Plus sur la base de ces équations.
 
@@ -1902,10 +1869,32 @@ Pour résumer nous avons utilisé:
 
 Les méthodes pour estimer les CAPEX et les OPEX sont implémentées dans Aspen Plus via APEA. Elles permettent d'estimer les coûts à partir d'une base de données mise à jour régulièrement.
 
+\FloatBarrier
+\subsection*{Annexe J : Procédé de liquéfaction} \addcontentsline{toc}{subsection}{Annexe J : Procédé de liquéfaction}
+
+On peut se pencher plus en détail sur le cycle de refroidissement et  de liquéfaction de l'hydrogène. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{image/annexe/liquefaction/cycle_liqu.jpg}
+  \caption{Liquéfaction de l'hydrogène}
+\end{figure}
+
+Nous avons sythétisé ici au maximum les différents procédés de liquéfaction de l'hydrogène présent dans la littérature.
+Contrairement à la section liquéfaction du chapitre 3, il n'y a pas la présence d'un compresseur et d'un échangeur thermique en amont pour amener l'hydrogène
+à une température de $T=300K$ et une pression $P=30 bar$. Nous détaillons les grandes lignes de ce procédé:
+\begin{enumerate}
+  \item L'hydrogène gazeux est refroidi jusqu'à $T=80 K$ dans un bain d'azote liquide. On remarque que ce bain refroidi aussi de l'hélium comprimé à la température de l'hydrogène.
+  \item L'hélium est ensuite détendu, ce qui le refroidit. Ainsi l'hélium refroidit l'hydrogène à $T=20K$ et l'amène à un état supercritique. Les catalyseurs de la réaction 
+  ortho-para sont positionnés dans les échageurs thermiques pour convertir l'orthohydrogène en parahydrogène pendant le refroidissement. De plus, les industriels utilisent des mélanges de liquide de refroidissement (et pas seulement de l'helium) pour que la courbe de changement d'état 
+  du mélange réfrigérant et de l'hydrogène soient le plus semblables possible. En effet, les liquides diphasés offrent de meilleurs propriétés d'échanges thermiques.
+  \item Une détente Joule-Thomson ramène l'hydrogène à pression atmosphérique et dans un état diphasé. Dans le procédé de liquéfaction ainsi réalisé, on touve une proportion d'$LH_2$ de $70\%$ dans le séparateur de phases.
+\end{enumerate}
+
 
 \newpage
 \FloatBarrier
-\subsection*{Annexe K : Flow sheets des differentes configurations} 
+\subsection*{Annexe K : Flow sheets des differentes configurations} \addcontentsline{toc}{subsection}{Annexe K : Flow sheets des differentes configurations}
 
 \begin{figure}[h]
 \centering
@@ -1964,7 +1953,7 @@ Les méthodes pour estimer les CAPEX et les OPEX sont implémentées dans Aspen 
 
 \FloatBarrier
 \newpage
-\subsection*{Annexe L : Étude de l'acceptabilité}
+\subsection*{Annexe L : Étude de l'acceptabilité}\addcontentsline{toc}{subsection}{Annexe L : Étude de l'acceptabilité}
 
 Voici les résultats détaillés de notre enquête que nous avons partagé sur les réseaux sociaux Linkedin et Facebook. Ce questionnaire a aussi été diffusé au sein des familles des élèves du MIG qui l’ont à leur tour relayé
 Tout d’abord nous avons posé quelques questions pour connaître le profil des individus ayant répondu au sondage.
@@ -2010,7 +1999,7 @@ On remarque que les jeunes se sentent concernés par les enjeux environnementaux
 
 \FloatBarrier
 \newpage
-\subsection*{Annexe M : Choix des sites de stockage} 
+\subsection*{Annexe M : Choix des sites de stockage} \addcontentsline{toc}{subsection}{Annexe M : Choix des sites de stockage}
 
 \begin{figure}[h]
 \centering
@@ -2120,7 +2109,7 @@ On remarque que les jeunes se sentent concernés par les enjeux environnementaux
         \caption{Logs géologiques des sites pour réservoirs enterrés}
 \end{figure}
 \FloatBarrier
-\subsection*{Annexe N : Eléments d'évaluation économique}
+\subsection*{Annexe N : Eléments d'évaluation économique}\addcontentsline{toc}{subsection}{Annexe N : Eléments d'évaluation économique}
 
 En ce qui concerne l’acheminement de l’hydrogène du lieu de stockage au lieu d’utilisation, nous avons retenu les pipelines et les camions pour l’hydrogène gazeux et les camions pour l’hydrogène liquide.
 Un camion peut transporter jusqu’à 300 kg d’hydrogène gazeux contre 4500 kg d’hydrogène liquide.
